@@ -221,24 +221,21 @@
           
 
     <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Exceptions">Exceptions<a class="anchor-link" href="#Exceptions">&#182;</a></h2>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Exceptions">Exceptions<a class="anchor-link" href="#Exceptions">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>When we learned about testing, we saw that Python complains when things go wrong by raising an "Exception" naming a type of error:</p>
 
@@ -253,7 +250,7 @@
 <div class=" highlight hl-ipython3"><pre><span></span><span class="mi">1</span><span class="o">/</span><span class="mi">0</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -263,7 +260,7 @@
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_text output_error">
@@ -282,8 +279,7 @@
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Exceptions are objects, forming a class hierarchy. We just raised an instance
 of the ZeroDivisionError class, making the program crash.</p>
@@ -300,7 +296,7 @@ of the ZeroDivisionError class, making the program crash.</p>
 <span class="n">inspect</span><span class="o">.</span><span class="n">getmro</span><span class="p">(</span><span class="ne">ZeroDivisionError</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -310,7 +306,7 @@ of the ZeroDivisionError class, making the program crash.</p>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[2]:</div>
+    <div class="prompt output_prompt">Out[2]:</div>
 
 
 
@@ -326,8 +322,7 @@ of the ZeroDivisionError class, making the program crash.</p>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>So we can see that a zero division error is a particular kind of Arithmetic Error.</p>
 
@@ -344,7 +339,7 @@ of the ZeroDivisionError class, making the program crash.</p>
 <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="n">x</span><span class="p">:</span> <span class="nb">print</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -354,7 +349,7 @@ of the ZeroDivisionError class, making the program crash.</p>
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_text output_error">
@@ -382,7 +377,7 @@ of the ZeroDivisionError class, making the program crash.</p>
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">inspect</span><span class="o">.</span><span class="n">getmro</span><span class="p">(</span><span class="ne">TypeError</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -392,7 +387,7 @@ of the ZeroDivisionError class, making the program crash.</p>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[4]:</div>
+    <div class="prompt output_prompt">Out[4]:</div>
 
 
 
@@ -408,8 +403,7 @@ of the ZeroDivisionError class, making the program crash.</p>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>When we were looking at testing, we saw that it is important for code to crash with a meaningful exception type when something is wrong.
 We raise an Exception with <code>raise</code>. Often, we can look for an appropriate exception from the standard set to raise.</p>
@@ -429,7 +423,7 @@ We raise an Exception with <code>raise</code>. Often, we can look for an appropr
 <span class="k">raise</span><span class="p">(</span><span class="n">MyCustomErrorType</span><span class="p">(</span><span class="s2">&quot;Problem&quot;</span><span class="p">))</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -439,7 +433,7 @@ We raise an Exception with <code>raise</code>. Often, we can look for an appropr
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_text output_error">
@@ -460,8 +454,7 @@ We raise an Exception with <code>raise</code>. Often, we can look for an appropr
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>You can add custom data to your exception:</p>
 
@@ -483,7 +476,7 @@ We raise an Exception with <code>raise</code>. Often, we can look for an appropr
 <span class="k">raise</span><span class="p">(</span><span class="n">MyCustomErrorType</span><span class="p">(</span><span class="mi">404</span><span class="p">))</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -493,7 +486,7 @@ We raise an Exception with <code>raise</code>. Often, we can look for an appropr
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_text output_error">
@@ -514,8 +507,7 @@ We raise an Exception with <code>raise</code>. Often, we can look for an appropr
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>The real power of exceptions comes, however, not in letting them crash the program, but in letting your program handle them. We say that an exception has been "thrown" and then "caught".</p>
 
@@ -543,7 +535,7 @@ We raise an Exception with <code>raise</code>. Often, we can look for an appropr
 <span class="nb">print</span><span class="p">(</span><span class="n">user</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -553,7 +545,7 @@ We raise an Exception with <code>raise</code>. Often, we can look for an appropr
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -568,8 +560,7 @@ anonymous
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Note that we specify only the error we expect to happen and want to handle. Sometimes you see code that catches everything:</p>
 
@@ -592,7 +583,7 @@ anonymous
 <span class="nb">print</span><span class="p">(</span><span class="n">user</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -602,7 +593,7 @@ anonymous
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -616,8 +607,7 @@ anonymous
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>There was a mistyped function name there ('<code>lod</code>'), but we did not notice the error, as the generic except caught it. 
 Therefore, we should catch only the error we want.</p>
@@ -639,7 +629,7 @@ Therefore, we should catch only the error we want.</p>
     <span class="n">outfile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;password: secret</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -667,7 +657,7 @@ Therefore, we should catch only the error we want.</p>
     <span class="k">return</span> <span class="n">user</span><span class="p">,</span> <span class="n">password</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -680,7 +670,7 @@ Therefore, we should catch only the error we want.</p>
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">read_credentials</span><span class="p">(</span><span class="s1">&#39;datasource2.yaml&#39;</span><span class="p">))</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -690,7 +680,7 @@ Therefore, we should catch only the error we want.</p>
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -711,7 +701,7 @@ Therefore, we should catch only the error we want.</p>
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">read_credentials</span><span class="p">(</span><span class="s1">&#39;datasource.yaml&#39;</span><span class="p">))</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -721,7 +711,7 @@ Therefore, we should catch only the error we want.</p>
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -743,7 +733,7 @@ Therefore, we should catch only the error we want.</p>
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">read_credentials</span><span class="p">(</span><span class="s1">&#39;datasource3.yaml&#39;</span><span class="p">))</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -753,7 +743,7 @@ Therefore, we should catch only the error we want.</p>
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -768,8 +758,7 @@ Therefore, we should catch only the error we want.</p>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>This last code has a flaw: the file was successfully opened, the missing key was noticed, but not explicitly closed. It's normally OK, as python will close the file as soon as it notices there are no longer any references to datasource in memory, after the function exits. But this is not good practice, you should keep a file handle for as short a time as possible.</p>
 
@@ -796,14 +785,13 @@ Therefore, we should catch only the error we want.</p>
     <span class="k">return</span> <span class="n">user</span><span class="p">,</span> <span class="n">password</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>The <code>finally</code> clause is executed whether or not an exception occurs.</p>
 <p>The last optional clause of a <code>try</code> statement, an <code>else</code> clause is called only if an exception is NOT raised. It can be a better place than the <code>try</code> clause to put code other than that which you expect to raise the error, and which you do not want to be executed if the error is raised. It is executed in the same circumstances as code put in the end of the <code>try</code> block, the only difference is that errors raised during the <code>else</code> clause are not caught. Don't worry if this seems useless to you; most languages implementations of try/except don't support such a clause.</p>
@@ -831,14 +819,13 @@ Therefore, we should catch only the error we want.</p>
     <span class="k">return</span> <span class="n">user</span><span class="p">,</span> <span class="n">password</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Exceptions do not have to be caught close to the part of the program calling
 them. They can be caught anywhere "above" the calling point in
@@ -863,7 +850,7 @@ the call stack: control can jump arbitrarily far in the program: up to the <code
         <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">()</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -882,7 +869,7 @@ the call stack: control can jump arbitrarily far in the program: up to the <code
         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;F3Except&quot;</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -901,7 +888,7 @@ the call stack: control can jump arbitrarily far in the program: up to the <code
         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;F2Except&quot;</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -920,7 +907,7 @@ the call stack: control can jump arbitrarily far in the program: up to the <code
         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;F1Except&quot;</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -933,7 +920,7 @@ the call stack: control can jump arbitrarily far in the program: up to the <code
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">f1</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -943,7 +930,7 @@ the call stack: control can jump arbitrarily far in the program: up to the <code
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -969,7 +956,7 @@ F1After
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">f1</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -979,7 +966,7 @@ F1After
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -1005,7 +992,7 @@ F1After
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">f1</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1015,7 +1002,7 @@ F1After
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -1040,7 +1027,7 @@ F1After
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">f1</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1050,7 +1037,7 @@ F1After
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -1067,16 +1054,14 @@ F1Except
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Design-with-Exceptions">Design with Exceptions<a class="anchor-link" href="#Design-with-Exceptions">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Now we know how exceptions work, we need to think about the design implications... How best to use them.</p>
 <p>Traditional software design theory will tell you that they should only be used
@@ -1111,7 +1096,7 @@ examine the type of the supplied content:</p>
     <span class="nb">print</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1124,7 +1109,7 @@ examine the type of the supplied content:</p>
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">analysis</span><span class="p">({</span><span class="s1">&#39;modelname&#39;</span><span class="p">:</span><span class="s1">&#39;Super&#39;</span><span class="p">})</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1134,7 +1119,7 @@ examine the type of the supplied content:</p>
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -1156,7 +1141,7 @@ examine the type of the supplied content:</p>
     <span class="n">outfile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;modelname: brilliant</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1169,7 +1154,7 @@ examine the type of the supplied content:</p>
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">analysis</span><span class="p">(</span><span class="s1">&#39;example.yaml&#39;</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1179,7 +1164,7 @@ examine the type of the supplied content:</p>
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -1193,8 +1178,7 @@ examine the type of the supplied content:</p>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>However, we can also use the try-it-and-handle-exceptions approach to this.</p>
 
@@ -1218,7 +1202,7 @@ examine the type of the supplied content:</p>
 <span class="n">analysis</span><span class="p">(</span><span class="s1">&#39;example.yaml&#39;</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1228,7 +1212,7 @@ examine the type of the supplied content:</p>
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -1242,8 +1226,7 @@ examine the type of the supplied content:</p>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>This approach is more extensible, and <strong>behaves properly if we give it some
 other data-source which responds like a dictionary or string.</strong></p>
@@ -1275,7 +1258,7 @@ other data-source which responds like a dictionary or string.</strong></p>
 <span class="n">analysis</span><span class="p">(</span><span class="s2">&quot;modelname: Amazing&quot;</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1285,7 +1268,7 @@ other data-source which responds like a dictionary or string.</strong></p>
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -1299,8 +1282,7 @@ other data-source which responds like a dictionary or string.</strong></p>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Sometimes we want to catch an error, partially handle it, perhaps add some
 extra data to the exception, and then re-raise to be caught again further up
@@ -1325,14 +1307,13 @@ safe to do except: without catching a specfic type of error.</p>
     <span class="k">raise</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>It can be useful to catch and re-throw an error as you go up the chain, doing any clean-up needed for each layer of a program.</p>
 <p>The error will finally be caught and not re-thrown only at a higher program
@@ -1393,7 +1374,7 @@ principle.</p>
       <li class="footer__item text-muted small">University College London,&nbsp;Gower Street,&nbsp;London,&nbsp;WC1E 6BT&nbsp;Tel:&nbsp;+44&nbsp;(0)&nbsp;20 7679 2000</li>
     </ul>
     <ul class="list-inline footer__list list-unstyled list-inline--divided">
-      <li class="text-muted small">Copyright © 2018-06-01 11:04:20 +0000 UCL</li>
+      <li class="text-muted small">Copyright © 2018-09-25 16:44:08 +0000 UCL</li>
       <li class="text-muted small"><a href="#">Disclaimer</a>
       </li>
       <li class="text-muted small"><a href="#">Freedom of Information</a>

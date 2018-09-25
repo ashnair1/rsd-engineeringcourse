@@ -221,16 +221,14 @@
           
 
     <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Class-design">Class design<a class="anchor-link" href="#Class-design">&#182;</a></h2>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>The concepts we have introduced are common between different object oriented languages.
 Thus, when we design our program using these concepts, we can think at an architectural level,
@@ -252,14 +250,13 @@ independent of language syntax.</p>
        <span class="bp">self</span><span class="o">.</span><span class="n">position</span><span class="o">+=</span> <span class="bp">self</span><span class="o">.</span><span class="n">velocity</span><span class="o">*</span><span class="n">delta_t</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Particle</span> <span class="p">{</span>
     <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;</span> <span class="n">position</span><span class="p">;</span>
@@ -273,8 +270,7 @@ independent of language syntax.</p>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <div class="highlight"><pre><span></span><span class="k">type </span><span class="n">particle</span>
     <span class="kt">real</span> <span class="kd">::</span> <span class="n">position</span>
@@ -289,16 +285,14 @@ independent of language syntax.</p>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="UML">UML<a class="anchor-link" href="#UML">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>UML is a conventional diagrammatic notation used to describe "class structures" and other higher level
 aspects of software design.</p>
@@ -309,16 +303,14 @@ Working programmers can still benefit from using UML to describe their designs.<
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="YUML">YUML<a class="anchor-link" href="#YUML">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>We can see a YUML model for a Particle class with <code>position</code> and <code>velocity</code> data and a <code>move()</code> method using
 the <a href="http://yuml.me/">YUML</a> online UML drawing tool.</p>
@@ -329,8 +321,7 @@ the <a href="http://yuml.me/">YUML</a> online UML drawing tool.</p>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Here's how we can use Python code to get an image back from YUML:</p>
 
@@ -350,7 +341,7 @@ the <a href="http://yuml.me/">YUML</a> online UML drawing tool.</p>
     <span class="k">return</span> <span class="n">IPython</span><span class="o">.</span><span class="n">core</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">Image</span><span class="p">(</span><span class="n">result</span><span class="o">.</span><span class="n">content</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -363,7 +354,7 @@ the <a href="http://yuml.me/">YUML</a> online UML drawing tool.</p>
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">yuml</span><span class="p">(</span><span class="s2">&quot;[Particle|position;velocity|move()]&quot;</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -373,7 +364,7 @@ the <a href="http://yuml.me/">YUML</a> online UML drawing tool.</p>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[3]:</div>
+    <div class="prompt output_prompt">Out[3]:</div>
 
 
 
@@ -391,16 +382,14 @@ the <a href="http://yuml.me/">YUML</a> online UML drawing tool.</p>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Information-Hiding">Information Hiding<a class="anchor-link" href="#Information-Hiding">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Sometimes, our design for a program would be broken if users start messing around with variables we don't want them to change.</p>
 <p>Robust class design requires consideration of which subroutines are intended for users to use, and which are internal.
@@ -437,7 +426,7 @@ Languages provide features to implement this: access control.</p>
 <span class="n">MyClass</span><span class="p">()</span><span class="o">.</span><span class="n">called_inside</span><span class="p">()</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -450,7 +439,7 @@ Languages provide features to implement this: access control.</p>
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">MyClass</span><span class="p">()</span><span class="o">.</span><span class="n">_private_method</span><span class="p">()</span> <span class="c1"># Works, but forbidden by convention</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -465,7 +454,7 @@ Languages provide features to implement this: access control.</p>
 <span class="nb">print</span><span class="p">(</span><span class="n">MyClass</span><span class="p">()</span><span class="o">.</span><span class="n">_private_data</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -475,7 +464,7 @@ Languages provide features to implement this: access control.</p>
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -496,7 +485,7 @@ Languages provide features to implement this: access control.</p>
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">MyClass</span><span class="p">()</span><span class="o">.</span><span class="n">public_data</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -506,7 +495,7 @@ Languages provide features to implement this: access control.</p>
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -527,7 +516,7 @@ Languages provide features to implement this: access control.</p>
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">MyClass</span><span class="p">()</span><span class="o">.</span><span class="n">__private_method</span><span class="p">()</span> <span class="c1"># Generates error</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -537,7 +526,7 @@ Languages provide features to implement this: access control.</p>
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_text output_error">
@@ -563,7 +552,7 @@ Languages provide features to implement this: access control.</p>
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">MyClass</span><span class="p">()</span><span class="o">.</span><span class="n">__private_data</span><span class="p">)</span> <span class="c1"># Generates error</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -573,7 +562,7 @@ Languages provide features to implement this: access control.</p>
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_text output_error">
@@ -592,16 +581,14 @@ Languages provide features to implement this: access control.</p>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Property-accessors">Property accessors<a class="anchor-link" href="#Property-accessors">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Python provides a mechanism to make functions appear to be variables. This can be used if you want to
 change the way a class is implemented without changing the interface:</p>
@@ -621,14 +608,13 @@ change the way a class is implemented without changing the interface:</p>
 <span class="k">assert</span><span class="p">(</span><span class="n">Person</span><span class="p">()</span><span class="o">.</span><span class="n">name</span> <span class="o">==</span> <span class="s2">&quot;James Hetherington&quot;</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>becomes:</p>
 
@@ -652,7 +638,7 @@ change the way a class is implemented without changing the interface:</p>
 <span class="k">assert</span><span class="p">(</span><span class="n">Person</span><span class="p">()</span><span class="o">.</span><span class="n">name</span> <span class="o">==</span> <span class="s2">&quot;James Hetherington&quot;</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -676,14 +662,13 @@ change the way a class is implemented without changing the interface:</p>
  
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Note that the code behaves the same way to the outside user.
 The implementation detail is hidden by private variables.
@@ -709,14 +694,13 @@ access data through functions:</p>
 <span class="k">assert</span><span class="p">(</span><span class="n">Person</span><span class="p">()</span><span class="o">.</span><span class="n">name</span><span class="p">()</span> <span class="o">==</span> <span class="s2">&quot;James Hetherington&quot;</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>But in Python this is unnecessary.</p>
 
@@ -724,8 +708,7 @@ access data through functions:</p>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h4 id="UML-for-private/public">UML for private/public<a class="anchor-link" href="#UML-for-private/public">&#182;</a></h4>
 </div>
@@ -739,7 +722,7 @@ access data through functions:</p>
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">yuml</span><span class="p">(</span><span class="s2">&quot;[Particle|+public;-private|+publicmethod();-privatemethod]&quot;</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -749,7 +732,7 @@ access data through functions:</p>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[14]:</div>
+    <div class="prompt output_prompt">Out[14]:</div>
 
 
 
@@ -767,16 +750,14 @@ access data through functions:</p>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Class-Members">Class Members<a class="anchor-link" href="#Class-Members">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><em>Class</em>, or <em>static</em> members, belong to the class as a whole, and are shared between instances.</p>
 
@@ -805,7 +786,7 @@ access data through functions:</p>
 <span class="n">Counted</span><span class="o">.</span><span class="n">howMany</span><span class="p">()</span> <span class="c1"># 6 </span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -815,7 +796,7 @@ access data through functions:</p>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[15]:</div>
+    <div class="prompt output_prompt">Out[15]:</div>
 
 
 
@@ -831,24 +812,21 @@ access data through functions:</p>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Inheritance-and-Polymorphism">Inheritance and Polymorphism<a class="anchor-link" href="#Inheritance-and-Polymorphism">&#182;</a></h2>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Object-based-vs-Object-Oriented">Object-based vs Object-Oriented<a class="anchor-link" href="#Object-based-vs-Object-Oriented">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>So far we have seen only object-based programming, not object-oriented programming.</p>
 <p>Using Objects doesn't mean your code is object-oriented.</p>
@@ -858,16 +836,14 @@ access data through functions:</p>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Inheritance">Inheritance<a class="anchor-link" href="#Inheritance">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
 <li>Inheritance allows related classes to share code</li>
@@ -878,16 +854,14 @@ access data through functions:</p>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Ontology-and-inheritance">Ontology and inheritance<a class="anchor-link" href="#Ontology-and-inheritance">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
 <li>A bird is a kind of animal</li>
@@ -905,16 +879,14 @@ access data through functions:</p>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Inheritance-in-python">Inheritance in python<a class="anchor-link" href="#Inheritance-in-python">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 
 </div>
@@ -939,7 +911,7 @@ access data through functions:</p>
 <span class="n">Eagle</span><span class="p">()</span><span class="o">.</span><span class="n">hunt</span><span class="p">()</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -949,7 +921,7 @@ access data through functions:</p>
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -964,16 +936,14 @@ I&#39;m gonna eatcha!
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Inheritance-terminology">Inheritance terminology<a class="anchor-link" href="#Inheritance-terminology">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
 <li>A <em>derived class</em> <em>derives</em> from a <em>base class</em></li>
@@ -989,8 +959,7 @@ I&#39;m gonna eatcha!
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Inheritance-and-constructors">Inheritance and constructors<a class="anchor-link" href="#Inheritance-and-constructors">&#182;</a></h3>
 </div>
@@ -1011,22 +980,20 @@ I&#39;m gonna eatcha!
         <span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="o">=</span><span class="n">name</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Inheritance-UML-diagrams">Inheritance UML diagrams<a class="anchor-link" href="#Inheritance-UML-diagrams">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>UML shows inheritance with an open triangular arrow pointing from subclass to superclass.</p>
 
@@ -1041,7 +1008,7 @@ I&#39;m gonna eatcha!
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">yuml</span><span class="p">(</span><span class="s2">&quot;[Animal]^-[Bird],[Bird]^-[Eagle],[Bird]^-[Starling]%&quot;</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1051,7 +1018,7 @@ I&#39;m gonna eatcha!
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[18]:</div>
+    <div class="prompt output_prompt">Out[18]:</div>
 
 
 
@@ -1069,16 +1036,14 @@ I&#39;m gonna eatcha!
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Aggregation-vs-Inheritance">Aggregation vs Inheritance<a class="anchor-link" href="#Aggregation-vs-Inheritance">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>If one object <em>has</em> or <em>owns</em> one or more objects, this is <em>not</em> inheritance.</p>
 <p>For example, in my solution to the Boids task from last week, the overal Model owned several Boids,
@@ -1088,16 +1053,14 @@ and each Boid owned two 2-vectors, one for position and one for velocity.</p>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Aggregation-in-UML">Aggregation in UML<a class="anchor-link" href="#Aggregation-in-UML">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>The Boids situation can be represented thus:</p>
 
@@ -1112,7 +1075,7 @@ and each Boid owned two 2-vectors, one for position and one for velocity.</p>
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">yuml</span><span class="p">(</span><span class="s2">&quot;[Model]&lt;&gt;-*&gt;[Boid],[Boid]position++-&gt;[Vector],[Boid]velocity++-&gt;[Vector]%&quot;</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1122,7 +1085,7 @@ and each Boid owned two 2-vectors, one for position and one for velocity.</p>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[19]:</div>
+    <div class="prompt output_prompt">Out[19]:</div>
 
 
 
@@ -1140,8 +1103,7 @@ and each Boid owned two 2-vectors, one for position and one for velocity.</p>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>The open diamond indicates <strong>Aggregation</strong>, the closed diamond <strong>composition</strong>.
 (A given boid might belong to multiple models, a given position vector is forever part of the corresponding Boid.)</p>
@@ -1151,16 +1113,14 @@ and each Boid owned two 2-vectors, one for position and one for velocity.</p>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Refactoring-to-inheritance">Refactoring to inheritance<a class="anchor-link" href="#Refactoring-to-inheritance">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Smell: Repeated code between two classes which are both ontologically subtypes of something</p>
 <p>Before:</p>
@@ -1188,14 +1148,13 @@ and each Boid owned two 2-vectors, one for position and one for velocity.</p>
         <span class="bp">self</span><span class="o">.</span><span class="n">age</span> <span class="o">+=</span> <span class="mi">1</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>After:</p>
 
@@ -1219,14 +1178,13 @@ and each Boid owned two 2-vectors, one for position and one for velocity.</p>
         <span class="nb">super</span><span class="p">(</span><span class="n">Person</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">age</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Polymorphism">Polymorphism<a class="anchor-link" href="#Polymorphism">&#182;</a></h3>
 </div>
@@ -1256,7 +1214,7 @@ and each Boid owned two 2-vectors, one for position and one for velocity.</p>
     <span class="nb">print</span><span class="p">(</span><span class="n">animal</span><span class="o">.</span><span class="n">noise</span><span class="p">())</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1266,7 +1224,7 @@ and each Boid owned two 2-vectors, one for position and one for velocity.</p>
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -1285,8 +1243,7 @@ Miaow
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>This will print "Bark Bark Miaow Oink Moo Miaow"</p>
 <p>If two classes support the same method, but it does different things for the two classes, 
@@ -1297,16 +1254,14 @@ whatever class the instance is an instance of.</p>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Polymorphism-and-Inheritance">Polymorphism and Inheritance<a class="anchor-link" href="#Polymorphism-and-Inheritance">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Often, polymorphism uses multiple derived classes with a common base class.
 However, duck typing in Python means that all that is required is that the 
@@ -1340,7 +1295,7 @@ of the derived classes to have.</p>
     <span class="nb">print</span><span class="p">(</span><span class="n">animal</span><span class="o">.</span><span class="n">noise</span><span class="p">())</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1350,7 +1305,7 @@ of the derived classes to have.</p>
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -1368,16 +1323,14 @@ Bark
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Undefined-Functions-and-Polymorphism">Undefined Functions and Polymorphism<a class="anchor-link" href="#Undefined-Functions-and-Polymorphism">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>In the above example, we put in a dummy noise for Animals that don't know what type they are.</p>
 <p>Instead, we can explicitly deliberately leave this undefined, and we get a crash if we access an undefined method.</p>
@@ -1395,7 +1348,7 @@ Bark
 <span class="k">class</span> <span class="nc">Worm</span><span class="p">(</span><span class="n">Animal</span><span class="p">):</span> <span class="k">pass</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1408,7 +1361,7 @@ Bark
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">Worm</span><span class="p">()</span><span class="o">.</span><span class="n">noise</span><span class="p">()</span> <span class="c1"># Generates error</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1418,7 +1371,7 @@ Bark
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_text output_error">
@@ -1437,16 +1390,14 @@ Bark
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Refactoring-to-Polymorphism">Refactoring to Polymorphism<a class="anchor-link" href="#Refactoring-to-Polymorphism">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Smell: a function uses a big set of <code>if</code> statements or a <code>case</code> statement to decide what to do:</p>
 <p>Before:</p>
@@ -1472,14 +1423,13 @@ Bark
             <span class="k">return</span> <span class="s2">&quot;Moo&quot;</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>which is better replaced by the code above.</p>
 
@@ -1487,16 +1437,14 @@ Bark
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Interfaces-and-concepts">Interfaces and concepts<a class="anchor-link" href="#Interfaces-and-concepts">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>In C++, it is common to define classes which declare dummy methods, called "virtual" methods, which specify
 the methods which derived classes must implement. Classes which define these methods, which cannot be instantiated
@@ -1509,16 +1457,14 @@ built-in Python concepts. A class is said to "implement and interface" or "satis
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Interfaces-in-UML">Interfaces in UML<a class="anchor-link" href="#Interfaces-in-UML">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Interfaces implementation in UML is indicated thus:</p>
 
@@ -1533,7 +1479,7 @@ built-in Python concepts. A class is said to "implement and interface" or "satis
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">yuml</span><span class="p">(</span><span class="s2">&quot;[&lt;&lt;Animal&gt;&gt;]^-.-[Dog]&quot;</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1543,7 +1489,7 @@ built-in Python concepts. A class is said to "implement and interface" or "satis
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[27]:</div>
+    <div class="prompt output_prompt">Out[27]:</div>
 
 
 
@@ -1561,16 +1507,14 @@ built-in Python concepts. A class is said to "implement and interface" or "satis
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Further-UML">Further UML<a class="anchor-link" href="#Further-UML">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>UML is a much larger diagram language than the aspects we've shown here.</p>
 <ul>
@@ -1634,7 +1578,7 @@ built-in Python concepts. A class is said to "implement and interface" or "satis
       <li class="footer__item text-muted small">University College London,&nbsp;Gower Street,&nbsp;London,&nbsp;WC1E 6BT&nbsp;Tel:&nbsp;+44&nbsp;(0)&nbsp;20 7679 2000</li>
     </ul>
     <ul class="list-inline footer__list list-unstyled list-inline--divided">
-      <li class="text-muted small">Copyright © 2018-06-01 11:04:20 +0000 UCL</li>
+      <li class="text-muted small">Copyright © 2018-09-25 16:44:08 +0000 UCL</li>
       <li class="text-muted small"><a href="#">Disclaimer</a>
       </li>
       <li class="text-muted small"><a href="#">Freedom of Information</a>

@@ -221,24 +221,21 @@
           
 
     <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Exercise:-Refactoring-The-Bad-Boids">Exercise: Refactoring The Bad Boids<a class="anchor-link" href="#Exercise:-Refactoring-The-Bad-Boids">&#182;</a></h2>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Bad_Boids">Bad_Boids<a class="anchor-link" href="#Bad_Boids">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>I have written some <em>very bad</em> code implementing our Boids flocking example.</p>
 <p>Here's the <a href="https://github.com/jamespjh/bad-boids">Github link</a>.</p>
@@ -248,8 +245,7 @@
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <div class="highlight"><pre><span></span>git clone     git@github.com:yourname/bad-boids.git 
 <span class="c1"># OR git clone https://github.com/yourname/bad-boids.git</span>
@@ -259,8 +255,7 @@
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>For the Exercise, you should start from the GitHub repository, but here's my terrible code:</p>
 
@@ -331,7 +326,7 @@
                                <span class="n">frames</span><span class="o">=</span><span class="mi">200</span><span class="p">,</span> <span class="n">interval</span><span class="o">=</span><span class="mi">50</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -341,26 +336,24 @@
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stderr output_text">
 <pre>Traceback (most recent call last):
-  File &#34;/home/travis/virtualenv/python3.4.6/lib/python3.4/site-packages/matplotlib/cbook/__init__.py&#34;, line 388, in process
-    proxy(*args, **kwargs)
-  File &#34;/home/travis/virtualenv/python3.4.6/lib/python3.4/site-packages/matplotlib/cbook/__init__.py&#34;, line 228, in __call__
-    return mtd(*args, **kwargs)
-  File &#34;/home/travis/virtualenv/python3.4.6/lib/python3.4/site-packages/matplotlib/animation.py&#34;, line 1026, in _start
+  File &#34;/home/travis/virtualenv/python3.6.3/lib/python3.6/site-packages/matplotlib/cbook/__init__.py&#34;, line 215, in process
+    func(*args, **kwargs)
+  File &#34;/home/travis/virtualenv/python3.6.3/lib/python3.6/site-packages/matplotlib/animation.py&#34;, line 999, in _start
     self._init_draw()
-  File &#34;/home/travis/virtualenv/python3.4.6/lib/python3.4/site-packages/matplotlib/animation.py&#34;, line 1750, in _init_draw
+  File &#34;/home/travis/virtualenv/python3.6.3/lib/python3.6/site-packages/matplotlib/animation.py&#34;, line 1715, in _init_draw
     self._draw_frame(next(self.new_frame_seq()))
-  File &#34;/home/travis/virtualenv/python3.4.6/lib/python3.4/site-packages/matplotlib/animation.py&#34;, line 1772, in _draw_frame
+  File &#34;/home/travis/virtualenv/python3.6.3/lib/python3.6/site-packages/matplotlib/animation.py&#34;, line 1737, in _draw_frame
     self._drawn_artists = self._func(framedata, *self._args)
   File &#34;&lt;ipython-input-1-5572ae12a16a&gt;&#34;, line 53, in animate
     scatter.set_offsets(zip(boids[0],boids[1]))
-  File &#34;/home/travis/virtualenv/python3.4.6/lib/python3.4/site-packages/matplotlib/collections.py&#34;, line 444, in set_offsets
+  File &#34;/home/travis/virtualenv/python3.6.3/lib/python3.6/site-packages/matplotlib/collections.py&#34;, line 440, in set_offsets
     offsets = np.asanyarray(offsets, float)
-  File &#34;/home/travis/virtualenv/python3.4.6/lib/python3.4/site-packages/numpy/core/numeric.py&#34;, line 583, in asanyarray
+  File &#34;/home/travis/virtualenv/python3.6.3/lib/python3.6/site-packages/numpy/core/numeric.py&#34;, line 583, in asanyarray
     return array(a, dtype, copy=False, order=order, subok=True)
 TypeError: float() argument must be a string or a number, not &#39;zip&#39;
 </pre>
@@ -372,8 +365,7 @@ TypeError: float() argument must be a string or a number, not &#39;zip&#39;
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>If you go into your folder and run the code:</p>
 
@@ -381,8 +373,7 @@ TypeError: float() argument must be a string or a number, not &#39;zip&#39;
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <div class="highlight"><pre><span></span><span class="nb">cd</span> bad_boids
 python bad_boids.py
@@ -392,8 +383,7 @@ python bad_boids.py
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>You should be able to see some birds flying around, and then disappearing as they leave the window.</p>
 
@@ -401,16 +391,14 @@ python bad_boids.py
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Your-Task">Your Task<a class="anchor-link" href="#Your-Task">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Transform bad_boids <strong>gradually</strong> into better code, while making sure it still works, using a Refactoring approach.</p>
 
@@ -418,16 +406,14 @@ python bad_boids.py
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="A-regression-test">A regression test<a class="anchor-link" href="#A-regression-test">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>First, have a look at the regression test I made.</p>
 <p>To create it, I saved out the before and after state
@@ -437,8 +423,7 @@ for one iteration of some boids, using ipython:</p>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">yaml</span>
 <span class="kn">import</span> <span class="nn">boids</span>
@@ -456,16 +441,14 @@ for one iteration of some boids, using ipython:</p>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Invoking-the-test">Invoking the test<a class="anchor-link" href="#Invoking-the-test">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Then, I used the fixture file to define the test:</p>
 
@@ -473,8 +456,7 @@ for one iteration of some boids, using ipython:</p>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">boids</span> <span class="kn">import</span> <span class="n">update_boids</span>
 <span class="kn">from</span> <span class="nn">nose.tools</span> <span class="kn">import</span> <span class="n">assert_equal</span>
@@ -494,16 +476,14 @@ for one iteration of some boids, using ipython:</p>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Make-the-regression-test-fail">Make the regression test fail<a class="anchor-link" href="#Make-the-regression-test-fail">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Check the tests pass:</p>
 
@@ -511,8 +491,7 @@ for one iteration of some boids, using ipython:</p>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <div class="highlight"><pre><span></span>nosetests
 </pre></div>
@@ -521,8 +500,7 @@ for one iteration of some boids, using ipython:</p>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Edit the file to make the test fail, see the fail, then reset it:</p>
 
@@ -530,8 +508,7 @@ for one iteration of some boids, using ipython:</p>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 
 <pre><code>git checkout boids.py</code></pre>
@@ -540,16 +517,14 @@ for one iteration of some boids, using ipython:</p>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Start-Refactoring">Start Refactoring<a class="anchor-link" href="#Start-Refactoring">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Look at the code, consider the <a href="#refactoring-summary">list of refactorings</a>, and make changes</p>
 <p>Each time, do a git commit on your fork, and write a commit message explaining the 
@@ -612,7 +587,7 @@ refactoring you did.</p>
       <li class="footer__item text-muted small">University College London,&nbsp;Gower Street,&nbsp;London,&nbsp;WC1E 6BT&nbsp;Tel:&nbsp;+44&nbsp;(0)&nbsp;20 7679 2000</li>
     </ul>
     <ul class="list-inline footer__list list-unstyled list-inline--divided">
-      <li class="text-muted small">Copyright © 2018-06-01 11:04:20 +0000 UCL</li>
+      <li class="text-muted small">Copyright © 2018-09-25 16:44:08 +0000 UCL</li>
       <li class="text-muted small"><a href="#">Disclaimer</a>
       </li>
       <li class="text-muted small"><a href="#">Freedom of Information</a>

@@ -221,24 +221,21 @@
           
 
     <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Data-structures">Data structures<a class="anchor-link" href="#Data-structures">&#182;</a></h2>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Nested-Lists-and-Dictionaries">Nested Lists and Dictionaries<a class="anchor-link" href="#Nested-Lists-and-Dictionaries">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>In research programming, one of our most common tasks is building an appropriate <em>structure</em> to model our complicated
 data. Later in the course, we'll see how we can define our own types, with their own attributes, properties, and methods. But probably the most common approach is to use nested structures of lists, dictionaries, and sets to model our data. For example, an address might be modelled as a dictionary with appropriately named fields:</p>
@@ -258,7 +255,7 @@ data. Later in the course, we'll see how we can define our own types, with their
 <span class="p">}</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -275,14 +272,13 @@ data. Later in the course, we'll see how we can define our own types, with their
 <span class="p">}</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>A collection of people's addresses is then a list of dictionaries:</p>
 
@@ -297,7 +293,7 @@ data. Later in the course, we'll see how we can define our own types, with their
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">addresses</span><span class="o">=</span><span class="p">[</span><span class="n">UCL</span><span class="p">,</span> <span class="n">James</span><span class="p">]</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -310,7 +306,7 @@ data. Later in the course, we'll see how we can define our own types, with their
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">addresses</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -320,14 +316,14 @@ data. Later in the course, we'll see how we can define our own types, with their
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[4]:</div>
+    <div class="prompt output_prompt">Out[4]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>[{&#39;City&#39;: &#39;London&#39;, &#39;Postcode&#39;: &#39;WC1E 6BT&#39;, &#39;Street&#39;: &#39;Gower Street&#39;},
- {&#39;City&#39;: &#39;London&#39;, &#39;Postcode&#39;: &#39;E2 8HH&#39;, &#39;Street&#39;: &#39;Waterson Street&#39;}]</pre>
+<pre>[{&#39;City&#39;: &#39;London&#39;, &#39;Street&#39;: &#39;Gower Street&#39;, &#39;Postcode&#39;: &#39;WC1E 6BT&#39;},
+ {&#39;City&#39;: &#39;London&#39;, &#39;Street&#39;: &#39;Waterson Street&#39;, &#39;Postcode&#39;: &#39;E2 8HH&#39;}]</pre>
 </div>
 
 </div>
@@ -337,8 +333,7 @@ data. Later in the course, we'll see how we can define our own types, with their
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>A more complicated data structure, for example for a census database, might have a list of residents or employees at each address:</p>
 
@@ -353,7 +348,7 @@ data. Later in the course, we'll see how we can define our own types, with their
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">UCL</span><span class="p">[</span><span class="s1">&#39;people&#39;</span><span class="p">]</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Clare&#39;</span><span class="p">,</span><span class="s1">&#39;James&#39;</span><span class="p">,</span> <span class="s1">&#39;Owain&#39;</span><span class="p">]</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -366,7 +361,7 @@ data. Later in the course, we'll see how we can define our own types, with their
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">James</span><span class="p">[</span><span class="s1">&#39;people&#39;</span><span class="p">]</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Sue&#39;</span><span class="p">,</span> <span class="s1">&#39;James&#39;</span><span class="p">]</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -379,7 +374,7 @@ data. Later in the course, we'll see how we can define our own types, with their
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">addresses</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -389,19 +384,19 @@ data. Later in the course, we'll see how we can define our own types, with their
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[7]:</div>
+    <div class="prompt output_prompt">Out[7]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
 <pre>[{&#39;City&#39;: &#39;London&#39;,
-  &#39;Postcode&#39;: &#39;WC1E 6BT&#39;,
   &#39;Street&#39;: &#39;Gower Street&#39;,
+  &#39;Postcode&#39;: &#39;WC1E 6BT&#39;,
   &#39;people&#39;: [&#39;Clare&#39;, &#39;James&#39;, &#39;Owain&#39;]},
  {&#39;City&#39;: &#39;London&#39;,
-  &#39;Postcode&#39;: &#39;E2 8HH&#39;,
   &#39;Street&#39;: &#39;Waterson Street&#39;,
+  &#39;Postcode&#39;: &#39;E2 8HH&#39;,
   &#39;people&#39;: [&#39;Sue&#39;, &#39;James&#39;]}]</pre>
 </div>
 
@@ -412,8 +407,7 @@ data. Later in the course, we'll see how we can define our own types, with their
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Which is then a list of dictionaries, with keys which are strings or lists.</p>
 
@@ -421,8 +415,7 @@ data. Later in the course, we'll see how we can define our own types, with their
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>We can go further, e.g.:</p>
 
@@ -437,14 +430,13 @@ data. Later in the course, we'll see how we can define our own types, with their
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">UCL</span><span class="p">[</span><span class="s1">&#39;Residential&#39;</span><span class="p">]</span><span class="o">=</span><span class="kc">False</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>And we can write code against our structures:</p>
 
@@ -460,7 +452,7 @@ data. Later in the course, we'll see how we can define our own types, with their
 <span class="n">leaders</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -470,7 +462,7 @@ data. Later in the course, we'll see how we can define our own types, with their
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[9]:</div>
+    <div class="prompt output_prompt">Out[9]:</div>
 
 
 
@@ -486,8 +478,7 @@ data. Later in the course, we'll see how we can define our own types, with their
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>This was an example of a 'list comprehension', which have used to get data of this structure, and which we'll see more of in a moment...</p>
 
@@ -495,16 +486,14 @@ data. Later in the course, we'll see how we can define our own types, with their
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Exercise:-a-Maze-Model.">Exercise: a Maze Model.<a class="anchor-link" href="#Exercise:-a-Maze-Model.">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Work with a partner to design a data structure to represent a maze using dictionaries and lists.</p>
 
@@ -512,8 +501,7 @@ data. Later in the course, we'll see how we can define our own types, with their
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
 <li>Each place in the maze has a name, which is a string.</li>
@@ -527,8 +515,7 @@ or 'sideways'</li>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Create an example instance, in a notebook, of a simple structure for your maze:</p>
 
@@ -536,8 +523,7 @@ or 'sideways'</li>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
 <li>The front room can hold 2 people. James is currently there. You can go outside to the garden, or upstairs to the bedroom, or north to the kitchen.</li>
@@ -550,8 +536,7 @@ or 'sideways'</li>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Make sure that your model:</p>
 <ul>
@@ -564,8 +549,7 @@ or 'sideways'</li>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>myhouse = [ "Your answer here" ]</p>
 
@@ -623,7 +607,7 @@ or 'sideways'</li>
       <li class="footer__item text-muted small">University College London,&nbsp;Gower Street,&nbsp;London,&nbsp;WC1E 6BT&nbsp;Tel:&nbsp;+44&nbsp;(0)&nbsp;20 7679 2000</li>
     </ul>
     <ul class="list-inline footer__list list-unstyled list-inline--divided">
-      <li class="text-muted small">Copyright © 2018-06-01 11:04:20 +0000 UCL</li>
+      <li class="text-muted small">Copyright © 2018-09-25 16:44:08 +0000 UCL</li>
       <li class="text-muted small"><a href="#">Disclaimer</a>
       </li>
       <li class="text-muted small"><a href="#">Freedom of Information</a>

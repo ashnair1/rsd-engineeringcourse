@@ -221,16 +221,14 @@
           
 
     <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="An-Adventure-In-Packaging:-An-exercise-in-research-software-engineering.">An Adventure In Packaging: An exercise in research software engineering.<a class="anchor-link" href="#An-Adventure-In-Packaging:-An-exercise-in-research-software-engineering.">&#182;</a></h1>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>In this exercise, you will convert the already provided solution to the programming challenge defined in this Jupyter notebook, into a proper Python package.</p>
 
@@ -238,8 +236,7 @@
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>The code to actually solve the problem is already given, but as roughly sketched out code in a notebook.</p>
 
@@ -247,8 +244,7 @@
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Your job will be to convert the code into a formally structured package, with unit tests, a command line interface, and demonstrating your ability to use <code>git</code> version control.</p>
 
@@ -256,8 +252,7 @@
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>The exercise will be semi-automatically marked, so it is <em>very</em> important that you adhere in your solution to the correct file and folder structure, as defined in the rubric below. An otherwise valid solution which doesn't work with our marking tool will <strong>not</strong> be given credit.</p>
 
@@ -265,8 +260,7 @@
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>First, we set out the problem we are solving, and it's informal solution. Next, we specify in detail the target for your tidy solution. Finally, to assist you in creating a good solution, we state the marks scheme we will use.</p>
 
@@ -274,16 +268,14 @@
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Treasure-Hunting-for-Beginners:-an-AI-testbed">Treasure Hunting for Beginners: an AI testbed<a class="anchor-link" href="#Treasure-Hunting-for-Beginners:-an-AI-testbed">&#182;</a></h1>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>We are going to look at a simple game, a modified version of one with a <a href="https://en.wikipedia.org/wiki/Hunt_the_Wumpus">long history</a>. Games of this kind have been used as test-beds for development of artificial intelligence.</p>
 <p>A <em>dungeon</em> is a network of connected <em>rooms</em>. One or more rooms contain <em>treasure</em>. Your character, the <em>adventurer</em>, moves between rooms, looking for the treasure.
@@ -298,8 +290,7 @@ A <em>troll</em> is also in the dungeon. The troll moves between rooms at random
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Our data structure for a dungeon will be somewhat familiar from the Maze example:</p>
 
@@ -321,14 +312,13 @@ A <em>troll</em> is also in the dungeon. The troll moves between rooms at random
 <span class="p">}</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>So this example shows a 3-room linear corridor: with the adventurer at one end, the troll at the other, and the treasure in the middle.</p>
 
@@ -336,8 +326,7 @@ A <em>troll</em> is also in the dungeon. The troll moves between rooms at random
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>With the adventurer following a random walk strategy, we can define a function to update a dungeon:</p>
 
@@ -356,7 +345,7 @@ A <em>troll</em> is also in the dungeon. The troll moves between rooms at random
     <span class="k">return</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">targets</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -371,7 +360,7 @@ A <em>troll</em> is also in the dungeon. The troll moves between rooms at random
     <span class="n">dungeon</span><span class="p">[</span><span class="s1">&#39;troll&#39;</span><span class="p">]</span><span class="o">=</span><span class="n">random_move</span><span class="p">(</span><span class="n">dungeon</span><span class="p">[</span><span class="s1">&#39;network&#39;</span><span class="p">],</span> <span class="n">dungeon</span><span class="p">[</span><span class="s1">&#39;troll&#39;</span><span class="p">])</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -386,7 +375,7 @@ A <em>troll</em> is also in the dungeon. The troll moves between rooms at random
 <span class="n">dungeon1</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -396,13 +385,13 @@ A <em>troll</em> is also in the dungeon. The troll moves between rooms at random
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[4]:</div>
+    <div class="prompt output_prompt">Out[4]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>{&#39;adventurer&#39;: 1, &#39;network&#39;: [[1], [0, 2], [1]], &#39;treasure&#39;: [1], &#39;troll&#39;: 1}</pre>
+<pre>{&#39;treasure&#39;: [1], &#39;adventurer&#39;: 1, &#39;troll&#39;: 1, &#39;network&#39;: [[1], [0, 2], [1]]}</pre>
 </div>
 
 </div>
@@ -412,8 +401,7 @@ A <em>troll</em> is also in the dungeon. The troll moves between rooms at random
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>We can also define a function to test if the adventurer has won, died, or if the game continues:</p>
 
@@ -433,7 +421,7 @@ A <em>troll</em> is also in the dungeon. The troll moves between rooms at random
     <span class="k">return</span> <span class="mi">0</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -446,7 +434,7 @@ A <em>troll</em> is also in the dungeon. The troll moves between rooms at random
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">outcome</span><span class="p">(</span><span class="n">dungeon1</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -456,7 +444,7 @@ A <em>troll</em> is also in the dungeon. The troll moves between rooms at random
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[6]:</div>
+    <div class="prompt output_prompt">Out[6]:</div>
 
 
 
@@ -472,8 +460,7 @@ A <em>troll</em> is also in the dungeon. The troll moves between rooms at random
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>So we can loop, to determine the outcome of an adventurer in a dungeon:</p>
 
@@ -499,7 +486,7 @@ A <em>troll</em> is also in the dungeon. The troll moves between rooms at random
     <span class="k">return</span> <span class="n">result</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -521,7 +508,7 @@ A <em>troll</em> is also in the dungeon. The troll moves between rooms at random
 <span class="p">}</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -534,7 +521,7 @@ A <em>troll</em> is also in the dungeon. The troll moves between rooms at random
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">run_to_result</span><span class="p">(</span><span class="n">dungeon2</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -544,7 +531,7 @@ A <em>troll</em> is also in the dungeon. The troll moves between rooms at random
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[9]:</div>
+    <div class="prompt output_prompt">Out[9]:</div>
 
 
 
@@ -560,8 +547,7 @@ A <em>troll</em> is also in the dungeon. The troll moves between rooms at random
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Note that we might get a different result sometimes, depending on how the adventurer moves, so we need to run multiple times to get our probability:</p>
 
@@ -584,7 +570,7 @@ A <em>troll</em> is also in the dungeon. The troll moves between rooms at random
     <span class="k">return</span> <span class="n">success_fraction</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -597,7 +583,7 @@ A <em>troll</em> is also in the dungeon. The troll moves between rooms at random
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">success_chance</span><span class="p">(</span><span class="n">dungeon2</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -607,13 +593,13 @@ A <em>troll</em> is also in the dungeon. The troll moves between rooms at random
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[11]:</div>
+    <div class="prompt output_prompt">Out[11]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>0.4984</pre>
+<pre>0.4922</pre>
 </div>
 
 </div>
@@ -623,8 +609,7 @@ A <em>troll</em> is also in the dungeon. The troll moves between rooms at random
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Make sure you understand why this number should be a half, given a large value for <code>trials</code>.</p>
 
@@ -649,7 +634,7 @@ A <em>troll</em> is also in the dungeon. The troll moves between rooms at random
 <span class="p">}</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -662,7 +647,7 @@ A <em>troll</em> is also in the dungeon. The troll moves between rooms at random
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">success_chance</span><span class="p">(</span><span class="n">dungeon3</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -672,13 +657,13 @@ A <em>troll</em> is also in the dungeon. The troll moves between rooms at random
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[13]:</div>
+    <div class="prompt output_prompt">Out[13]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>0.3912</pre>
+<pre>0.3905</pre>
 </div>
 
 </div>
@@ -688,8 +673,7 @@ A <em>troll</em> is also in the dungeon. The troll moves between rooms at random
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>[Not for credit] Do you understand why this number should be 0.4? Hint: The first move is always the same. In the next state, a quarter of the time, you win. 3/8 of the time, you end up back where you were before. The rest of the time, you lose (eventually). You can sum the series: $\frac{1}{4}(1+\frac{3}{8}+(\frac{3}{8})^2+...)=\frac{2}{5}$.</p>
 
@@ -697,16 +681,14 @@ A <em>troll</em> is also in the dungeon. The troll moves between rooms at random
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Packaging-the-Treasure:-your-exercise">Packaging the Treasure: your exercise<a class="anchor-link" href="#Packaging-the-Treasure:-your-exercise">&#182;</a></h1>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>You must submit your exercise solution to <strong>Moodle</strong> as a single uploaded <strong>Zip</strong> format archive. (You must use only the <em>zip</em> tool, <strong>not</strong> any other archiver, such as <code>.tgz</code> or <code>.rar</code>. If we cannot unzip the archiver with <code>zip</code>, you will receive zero marks.)</p>
 
@@ -714,8 +696,7 @@ A <em>troll</em> is also in the dungeon. The troll moves between rooms at random
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>The folder structure inside your zip archive must have a single top-level folder, whose <strong>folder name is your student number</strong>, so that on running <code>unzip</code> this folder appears. This top level folder must contain all the parts of your solution. You will lose marks if, on unzip, your archive creates other files or folders at the same level as this folder, as we will be unzipping all the assignments in the same place on our computers when we mark them!</p>
 
@@ -723,8 +704,7 @@ A <em>troll</em> is also in the dungeon. The troll moves between rooms at random
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Inside your top level folder, you should create a setup.py file to make the code installable. You should also create some other files, per the lectures, that should be present in all research software packages. (Hint, there are three of these.)</p>
 
@@ -732,8 +712,7 @@ A <em>troll</em> is also in the dungeon. The troll moves between rooms at random
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Your tidied-up version of the solution code should be in a sub-folder called <code>adventure</code> which will be the python package itself. It will contain an <strong>init</strong>.py file, and the code itself must be in a file called dungeon.py. This should define a class <code>Dungeon</code>: instead of a data structure and associated functions, you must refactor this into a class and methods.</p>
 <p>Thus, if you run python in your top-level folder, you should be able to <code>from adventure.dungeon import Dungeon</code>. If you cannot do this, you will receive zero marks.</p>
@@ -742,8 +721,7 @@ A <em>troll</em> is also in the dungeon. The troll moves between rooms at random
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>You must create a command-line entry point, called hunt. This should use the entry_points facility in setup.py, to point toward a module designed for use as the entry point, in adventure/command.py. This should use the <code>Argparse</code> library. When invoked with <code>hunt mydungeon.yml --samples 500</code> the command must print on standard output the probability of finding the treasure in the specified dungeon, using the random walk strategy, after the specified number of test runs.</p>
 
@@ -751,8 +729,7 @@ A <em>troll</em> is also in the dungeon. The troll moves between rooms at random
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>The dungeon.yml file should be a yml file containing a structure representing the dungeon state. Use the same structure as the sample code above, even though you'll be building a <code>Dungeon</code> object from this structure rather than using it directly.</p>
 
@@ -760,8 +737,7 @@ A <em>troll</em> is also in the dungeon. The troll moves between rooms at random
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>You must create unit tests which cover a number of examples. These should be defined in <code>adventure/tests/test_dungeon.py</code>. Don't forget to add an <strong>init.py</strong> file to that folder too, so that at the top of the test file you can " <code>from ..dungeon import Dungeon</code>." If your unit tests use a fixture file to DRY up tests, this must be called <code>adventure/tests/fixtures.yml</code>. For example, this could contain a yaml array of many dungeon structures.</p>
 
@@ -769,8 +745,7 @@ A <em>troll</em> is also in the dungeon. The troll moves between rooms at random
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>You should <code>git init</code> inside your student-number folder, as soon as you create it, and <code>git commit</code> your work regularly as the exercise progresses.</p>
 
@@ -778,8 +753,7 @@ A <em>troll</em> is also in the dungeon. The troll moves between rooms at random
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Due to our automated marking tool, <strong>only</strong> work that has a valid git repository, and follows the folder and file structure described above, will receive credit.</p>
 
@@ -787,8 +761,7 @@ A <em>troll</em> is also in the dungeon. The troll moves between rooms at random
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Due to the need to avoid plagiarism, do <em>not</em> use a public github repository for your work - instead, use git on your local disk (with <code>git commit</code> but not <code>git push</code>), and *ensure the secret <code>.git</code> folder is part of your zipped archive.</p>
 
@@ -796,16 +769,14 @@ A <em>troll</em> is also in the dungeon. The troll moves between rooms at random
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Marks-Scheme">Marks Scheme<a class="anchor-link" href="#Marks-Scheme">&#182;</a></h1>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Note that because of our automated marking tool, a solution which does not match the standard solution structure defined above, with file and folder names exactly as stated, may not receive marks, even if the solution is otherwise good. "Follow on marks" are <strong>not</strong> guaranteed in this case.</p>
 
@@ -813,8 +784,7 @@ A <em>troll</em> is also in the dungeon. The troll moves between rooms at random
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
 <li>Code in dungeon.py, implementing the random walk strategy (5 marks)<ul>
@@ -864,13 +834,25 @@ A <em>troll</em> is also in the dungeon. The troll moves between rooms at random
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Total: 25 marks</p>
 
 </div>
 </div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
 </div>
  
 
@@ -923,7 +905,7 @@ A <em>troll</em> is also in the dungeon. The troll moves between rooms at random
       <li class="footer__item text-muted small">University College London,&nbsp;Gower Street,&nbsp;London,&nbsp;WC1E 6BT&nbsp;Tel:&nbsp;+44&nbsp;(0)&nbsp;20 7679 2000</li>
     </ul>
     <ul class="list-inline footer__list list-unstyled list-inline--divided">
-      <li class="text-muted small">Copyright © 2018-06-01 11:04:20 +0000 UCL</li>
+      <li class="text-muted small">Copyright © 2018-09-25 16:44:08 +0000 UCL</li>
       <li class="text-muted small"><a href="#">Disclaimer</a>
       </li>
       <li class="text-muted small"><a href="#">Freedom of Information</a>

@@ -221,8 +221,7 @@
           
 
     <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Working-with-multiple-remotes">Working with multiple remotes<a class="anchor-link" href="#Working-with-multiple-remotes">&#182;</a></h2><h3 id="Distributed-versus-centralised">Distributed versus centralised<a class="anchor-link" href="#Distributed-versus-centralised">&#182;</a></h3><p>Older version control systems (cvs, svn) were "centralised"; the history was kept only on a server,
 and all commits required an internet.</p>
@@ -260,8 +259,7 @@ and all commits required an internet.</p>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>With modern distributed systems, we can add a second remote. This might be a personal <em>fork</em> on github:</p>
 
@@ -280,7 +278,7 @@ and all commits required an internet.</p>
 <span class="n">os</span><span class="o">.</span><span class="n">chdir</span><span class="p">(</span><span class="n">working_dir</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -296,7 +294,7 @@ git remote add jamespjh git@github.com:jamespjh/github-example.git
 git remote -v
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -306,13 +304,11 @@ git remote -v
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Your branch is ahead of &#39;origin/master&#39; by 1 commit.
-  (use &#34;git push&#34; to publish your local commits)
-jamespjh	git@github.com:jamespjh/github-example.git (fetch)
+<pre>jamespjh	git@github.com:jamespjh/github-example.git (fetch)
 jamespjh	git@github.com:jamespjh/github-example.git (push)
 origin	git@github.com:UCL/github-example.git (fetch)
 origin	git@github.com:UCL/github-example.git (push)
@@ -322,7 +318,7 @@ origin	git@github.com:UCL/github-example.git (push)
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stderr output_text">
@@ -336,8 +332,7 @@ origin	git@github.com:UCL/github-example.git (push)
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>We can push to a named remote:</p>
 
@@ -358,7 +353,7 @@ Mountains In the Pennines
 * Whernside
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -368,7 +363,7 @@ Mountains In the Pennines
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -390,7 +385,7 @@ Mountains In the Pennines
 git commit -am <span class="s2">&quot;Add Whernside&quot;</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -400,11 +395,11 @@ git commit -am <span class="s2">&quot;Add Whernside&quot;</span>
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[master ee47339] Add Whernside
+<pre>[master f3d81a8] Add Whernside
  1 file changed, 2 insertions(+), 1 deletion(-)
 </pre>
 </div>
@@ -423,7 +418,7 @@ git commit -am <span class="s2">&quot;Add Whernside&quot;</span>
 git push -uf jamespjh master
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -433,23 +428,15 @@ git push -uf jamespjh master
 
 <div class="output_area">
 
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Branch &#39;master&#39; set up to track remote branch &#39;master&#39; from &#39;jamespjh&#39;.
-</pre>
-</div>
-</div>
-
-<div class="output_area">
-
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stderr output_text">
-<pre>To github.com:jamespjh/github-example.git
- + fcf4712...ee47339 master -&gt; master (forced update)
+<pre>Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
 </pre>
 </div>
 </div>
@@ -459,8 +446,7 @@ git push -uf jamespjh master
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Referencing-remotes">Referencing remotes<a class="anchor-link" href="#Referencing-remotes">&#182;</a></h3><p>You can always refer to commits on a remote like this:</p>
 
@@ -477,7 +463,7 @@ git fetch
 git log --oneline --left-right jamespjh/master...origin/master
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -487,24 +473,18 @@ git log --oneline --left-right jamespjh/master...origin/master
 
 <div class="output_area">
 
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>&lt; ee47339 Add Whernside
-&lt; c845a02 Add github pages YAML frontmatter
-</pre>
-</div>
-</div>
-
-<div class="output_area">
-
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stderr output_text">
-<pre>From github.com:jamespjh/github-example
- * [new branch]      gh-pages   -&gt; jamespjh/gh-pages
+<pre>Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+fatal: ambiguous argument &#39;jamespjh/master...origin/master&#39;: unknown revision or path not in the working tree.
+Use &#39;--&#39; to separate paths from revisions, like this:
+&#39;git &lt;command&gt; [&lt;revision&gt;...] -- [&lt;file&gt;...]&#39;
 </pre>
 </div>
 </div>
@@ -514,8 +494,7 @@ git log --oneline --left-right jamespjh/master...origin/master
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>To see the differences between remotes, for example.</p>
 <p>To see what files you have changed that aren't updated on a particular remote, for example:</p>
@@ -532,7 +511,7 @@ git log --oneline --left-right jamespjh/master...origin/master
 git diff --name-only origin/master
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -542,12 +521,13 @@ git diff --name-only origin/master
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Pennines.md
-index.md
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>fatal: ambiguous argument &#39;origin/master&#39;: unknown revision or path not in the working tree.
+Use &#39;--&#39; to separate paths from revisions, like this:
+&#39;git &lt;command&gt; [&lt;revision&gt;...] -- [&lt;file&gt;...]&#39;
 </pre>
 </div>
 </div>
@@ -557,8 +537,7 @@ index.md
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>When you reference remotes like this, you're working with a cached copy of the last time you interacted with the remote. You can do <code>git fetch</code> to update local data with the remotes without actually pulling. You can also get useful information about whether tracking branches are ahead or behind the remote breanches they track:</p>
 
@@ -574,7 +553,7 @@ index.md
 git branch -vv
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -584,12 +563,12 @@ git branch -vv
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>  gh-pages c845a02 [origin/gh-pages] Add github pages YAML frontmatter
-* master   ee47339 [jamespjh/master] Add Whernside
+<pre>  gh-pages ea89fbc Add github pages YAML frontmatter
+* master   f3d81a8 Add Whernside
 </pre>
 </div>
 </div>
@@ -599,8 +578,7 @@ git branch -vv
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Hosting-Servers">Hosting Servers<a class="anchor-link" href="#Hosting-Servers">&#182;</a></h2><h3 id="Hosting-a-local-server">Hosting a local server<a class="anchor-link" href="#Hosting-a-local-server">&#182;</a></h3><ul>
 <li>Any repository can be a remote for pulls</li>
@@ -622,7 +600,7 @@ git branch -vv
 <span class="n">os</span><span class="o">.</span><span class="n">chdir</span><span class="p">(</span><span class="n">git_dir</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -638,7 +616,7 @@ mkdir -p bare_repo
 git init --bare
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -648,7 +626,7 @@ git init --bare
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -669,7 +647,7 @@ git init --bare
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">os</span><span class="o">.</span><span class="n">chdir</span><span class="p">(</span><span class="n">working_dir</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -684,7 +662,7 @@ git remote add local_bare ../bare_repo
 git push -u local_bare master
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -694,7 +672,7 @@ git push -u local_bare master
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -705,7 +683,7 @@ git push -u local_bare master
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stderr output_text">
@@ -728,7 +706,7 @@ git push -u local_bare master
 git remote -v
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -738,7 +716,7 @@ git remote -v
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -757,8 +735,7 @@ origin	git@github.com:UCL/github-example.git (push)
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>You can now work with this local repository, just as with any other git server.
 If you have a colleague on a shared file system, you can use this approach to collaborate through that file system.</p>
@@ -767,8 +744,7 @@ If you have a colleague on a shared file system, you can use this approach to co
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Home-made-SSH-servers">Home-made SSH servers<a class="anchor-link" href="#Home-made-SSH-servers">&#182;</a></h3><p>Classroom exercise: Try creating a server for yourself using a machine you can SSH to:</p>
 
@@ -776,8 +752,7 @@ If you have a colleague on a shared file system, you can use this approach to co
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <div class="highlight"><pre><span></span>ssh &lt;mymachine&gt;
 mkdir mygitserver
@@ -792,8 +767,7 @@ git push -u &lt;somename&gt; master
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="SSH-keys-and-GitHub">SSH keys and GitHub<a class="anchor-link" href="#SSH-keys-and-GitHub">&#182;</a></h2><p>Classroom exercise: If you haven't already, you should set things up so that you don't have to keep typing in your
 password whenever you interact with GitHub via the command line.</p>
@@ -858,7 +832,7 @@ website</a>.</p>
       <li class="footer__item text-muted small">University College London,&nbsp;Gower Street,&nbsp;London,&nbsp;WC1E 6BT&nbsp;Tel:&nbsp;+44&nbsp;(0)&nbsp;20 7679 2000</li>
     </ul>
     <ul class="list-inline footer__list list-unstyled list-inline--divided">
-      <li class="text-muted small">Copyright © 2018-06-01 11:04:20 +0000 UCL</li>
+      <li class="text-muted small">Copyright © 2018-09-25 16:44:08 +0000 UCL</li>
       <li class="text-muted small"><a href="#">Disclaimer</a>
       </li>
       <li class="text-muted small"><a href="#">Freedom of Information</a>

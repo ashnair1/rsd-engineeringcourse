@@ -221,16 +221,14 @@
           
 
     <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Operator-overloading">Operator overloading<a class="anchor-link" href="#Operator-overloading">&#182;</a></h2>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Warning: Advanced Topic!</p>
 
@@ -238,16 +236,14 @@
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Operator-overloading">Operator overloading<a class="anchor-link" href="#Operator-overloading">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>We need to use a metaprogramming trick to make this teaching notebook work.
 I want to be able to put explanatory text in between parts of a class definition,
@@ -274,14 +270,13 @@ so I'll define a decorator to help me build up a class definition gradually.</p>
     <span class="k">return</span> <span class="n">decorator</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Imagine we wanted to make a library to describe some kind of symbolic algebra system:</p>
 
@@ -300,7 +295,7 @@ so I'll define a decorator to help me build up a class definition gradually.</p>
                 <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">symbols</span><span class="p">,</span> <span class="n">powers</span><span class="p">)}</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -315,14 +310,13 @@ so I'll define a decorator to help me build up a class definition gradually.</p>
         <span class="bp">self</span><span class="o">.</span><span class="n">terms</span><span class="o">=</span><span class="n">terms</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>So that $5x^2y+7x+2$ might be constructed as:</p>
 
@@ -343,14 +337,13 @@ so I'll define a decorator to help me build up a class definition gradually.</p>
 <span class="n">result</span><span class="o">=</span><span class="n">Expression</span><span class="p">([</span><span class="n">first</span><span class="p">,</span> <span class="n">second</span><span class="p">,</span> <span class="n">third</span><span class="p">])</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>This is pretty cumbersome.</p>
 <p>What we'd really like is to have <code>2x+y</code> give an appropriate expression.</p>
@@ -398,7 +391,7 @@ so I'll define a decorator to help me build up a class definition gradually.</p>
                 <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">symbols</span><span class="p">,</span> <span class="n">powers</span><span class="p">)}</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -413,14 +406,13 @@ so I'll define a decorator to help me build up a class definition gradually.</p>
         <span class="bp">self</span><span class="o">.</span><span class="n">terms</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">terms</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>We could define add() and multiply() operations on expressions and terms:</p>
 
@@ -439,7 +431,7 @@ so I'll define a decorator to help me build up a class definition gradually.</p>
     
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -469,7 +461,7 @@ so I'll define a decorator to help me build up a class definition gradually.</p>
         <span class="k">return</span> <span class="n">Term</span><span class="p">(</span><span class="n">result_data</span><span class="p">,</span><span class="n">result_coeff</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -493,14 +485,13 @@ so I'll define a decorator to help me build up a class definition gradually.</p>
         <span class="k">return</span> <span class="n">result</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>We can now construct the above expression as:</p>
 
@@ -521,14 +512,13 @@ so I'll define a decorator to help me build up a class definition gradually.</p>
 <span class="n">expr</span><span class="o">=</span><span class="n">first</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">second</span><span class="p">,</span><span class="n">third</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>This is better, but we still can't write the expression in a 'natural' way.</p>
 <p>However, we can define what <code>*</code> and <code>+</code> do when applied to Terms!:</p>
@@ -551,7 +541,7 @@ so I'll define a decorator to help me build up a class definition gradually.</p>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">multiply</span><span class="p">(</span><span class="n">other</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -571,7 +561,7 @@ so I'll define a decorator to help me build up a class definition gradually.</p>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">other</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -585,7 +575,7 @@ so I'll define a decorator to help me build up a class definition gradually.</p>
 <span class="n">x_plus_y</span><span class="o">.</span><span class="n">terms</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -595,7 +585,7 @@ so I'll define a decorator to help me build up a class definition gradually.</p>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[13]:</div>
+    <div class="prompt output_prompt">Out[13]:</div>
 
 
 
@@ -620,7 +610,7 @@ so I'll define a decorator to help me build up a class definition gradually.</p>
 <span class="nb">print</span><span class="p">(</span><span class="n">five_x_ysq</span><span class="o">.</span><span class="n">data</span><span class="p">,</span> <span class="n">five_x_ysq</span><span class="o">.</span><span class="n">coefficient</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -630,7 +620,7 @@ so I'll define a decorator to help me build up a class definition gradually.</p>
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -644,8 +634,7 @@ so I'll define a decorator to help me build up a class definition gradually.</p>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>This is called operator overloading. We can define what add and multiply mean when applied to our class.</p>
 <p>Note that this only works so far if we multiply on the right-hand-side!
@@ -665,14 +654,13 @@ However, we can define a multiplication that works backwards, which is used as a
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="fm">__add__</span><span class="p">(</span><span class="n">other</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 
 </div>
@@ -692,14 +680,13 @@ However, we can define a multiplication that works backwards, which is used as a
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="fm">__add__</span><span class="p">(</span><span class="n">other</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 
 </div>
@@ -713,7 +700,7 @@ However, we can define a multiplication that works backwards, which is used as a
 <div class=" highlight hl-ipython3"><pre><span></span><span class="mi">5</span><span class="o">*</span><span class="n">Term</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -723,13 +710,13 @@ However, we can define a multiplication that works backwards, which is used as a
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[17]:</div>
+    <div class="prompt output_prompt">Out[17]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;__main__.Term at 0x2b559d690710&gt;</pre>
+<pre>&lt;__main__.Term at 0x2af5fca86320&gt;</pre>
 </div>
 
 </div>
@@ -739,8 +726,7 @@ However, we can define a multiplication that works backwards, which is used as a
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>It's not easy at the moment to see if these things are working!</p>
 
@@ -756,7 +742,7 @@ However, we can define a multiplication that works backwards, which is used as a
 <span class="n">fivex</span><span class="o">.</span><span class="n">data</span><span class="p">,</span> <span class="n">fivex</span><span class="o">.</span><span class="n">coefficient</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -766,7 +752,7 @@ However, we can define a multiplication that works backwards, which is used as a
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[18]:</div>
+    <div class="prompt output_prompt">Out[18]:</div>
 
 
 
@@ -782,8 +768,7 @@ However, we can define a multiplication that works backwards, which is used as a
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>We can add another operator method <code>__str__</code>, which defines what happens if we try to print our class:</p>
 
@@ -817,7 +802,7 @@ However, we can define a multiplication that works backwards, which is used as a
             <span class="k">return</span> <span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">coefficient</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39;*&#39;</span><span class="o">+</span><span class="n">prod</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -833,14 +818,13 @@ However, we can define a multiplication that works backwards, which is used as a
         <span class="k">return</span> <span class="s1">&#39;+&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">str</span><span class="p">,</span><span class="bp">self</span><span class="o">.</span><span class="n">terms</span><span class="p">))</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 
 </div>
@@ -857,7 +841,7 @@ However, we can define a multiplication that works backwards, which is used as a
 <span class="n">expr</span><span class="o">=</span><span class="n">first</span><span class="o">+</span><span class="n">second</span><span class="o">+</span><span class="n">third</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -870,7 +854,7 @@ However, we can define a multiplication that works backwards, which is used as a
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">expr</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -880,7 +864,7 @@ However, we can define a multiplication that works backwards, which is used as a
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -894,8 +878,7 @@ However, we can define a multiplication that works backwards, which is used as a
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>We can add lots more operators to classes. <code>__eq__</code> to determine if objects are
 equal. <code>__getitem__</code> to apply [1] to your object. Probably the most exciting
@@ -922,7 +905,7 @@ functions</em>! We call these callables.</p>
 <span class="n">greeter_instance</span><span class="p">(</span><span class="s2">&quot;James&quot;</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -932,7 +915,7 @@ functions</em>! We call these callables.</p>
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -946,8 +929,7 @@ functions</em>! We call these callables.</p>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>We've now come full circle in the blurring of the distinction between functions and objects! The full power of functional programming is really remarkable.</p>
 <p>If you want to know more about the topics in this lecture, using a different
@@ -1009,7 +991,7 @@ equivalent of the Feynman Lectures!</p>
       <li class="footer__item text-muted small">University College London,&nbsp;Gower Street,&nbsp;London,&nbsp;WC1E 6BT&nbsp;Tel:&nbsp;+44&nbsp;(0)&nbsp;20 7679 2000</li>
     </ul>
     <ul class="list-inline footer__list list-unstyled list-inline--divided">
-      <li class="text-muted small">Copyright © 2018-06-01 11:04:20 +0000 UCL</li>
+      <li class="text-muted small">Copyright © 2018-09-25 16:44:08 +0000 UCL</li>
       <li class="text-muted small"><a href="#">Disclaimer</a>
       </li>
       <li class="text-muted small"><a href="#">Freedom of Information</a>

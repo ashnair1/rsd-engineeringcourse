@@ -221,16 +221,14 @@
           
 
     <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Metaprogramming">Metaprogramming<a class="anchor-link" href="#Metaprogramming">&#182;</a></h2>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Warning: Advanced topic!</p>
 
@@ -238,16 +236,14 @@
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Metaprogramming-globals">Metaprogramming globals<a class="anchor-link" href="#Metaprogramming-globals">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Consider a bunch of variables, each of which need initialising and incrementing:</p>
 
@@ -267,14 +263,13 @@
 <span class="n">oranges</span><span class="o">+=</span><span class="mi">1</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>The right hand side of these assignments doesn't respect the DRY principle. We
 could of course define a variable for our initial value:</p>
@@ -293,14 +288,13 @@ could of course define a variable for our initial value:</p>
 <span class="n">oranges</span><span class="o">=</span><span class="n">initial_fruit_count</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>However, this is still not as DRY as it could be: what if we wanted to replace
 the assignment with, say, a class constructor and a buy operation:</p>
@@ -327,14 +321,13 @@ the assignment with, say, a class constructor and a buy operation:</p>
 <span class="n">oranges</span><span class="o">.</span><span class="n">buy</span><span class="p">()</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>We had to make the change in three places. Whenever you see a situation where a
 refactoring or change of design might require you to change the code in
@@ -354,14 +347,13 @@ just a loop over all the variables we want to initialise:</p>
 <span class="k">for</span> <span class="n">basket</span> <span class="ow">in</span> <span class="n">baskets</span><span class="p">:</span> <span class="n">basket</span><span class="o">.</span><span class="n">buy</span><span class="p">()</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>However, this trick <strong>doesn't</strong> work for initialising a new variable:</p>
 
@@ -378,14 +370,13 @@ just a loop over all the variables we want to initialise:</p>
     <span class="n">baskets</span><span class="o">=</span><span class="p">[</span><span class="n">bananas</span><span class="p">,</span> <span class="n">apples</span><span class="p">,</span> <span class="n">oranges</span><span class="p">,</span> <span class="n">kiwis</span><span class="p">]</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>So can we declare a new variable programmatically? Given a list of the
 <strong>names</strong> of fruit baskets we want, initialise a variable with that name?</p>
@@ -403,7 +394,7 @@ just a loop over all the variables we want to initialise:</p>
 <span class="nb">globals</span><span class="p">()[</span><span class="s1">&#39;apples&#39;</span><span class="p">]</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -413,13 +404,13 @@ just a loop over all the variables we want to initialise:</p>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[6]:</div>
+    <div class="prompt output_prompt">Out[6]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;__main__.Basket at 0x2ba8cdd8aa20&gt;</pre>
+<pre>&lt;__main__.Basket at 0x2b3b67f23320&gt;</pre>
 </div>
 
 </div>
@@ -429,8 +420,7 @@ just a loop over all the variables we want to initialise:</p>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Wow, we can! Every module or class in Python, is, under the hood, a special
 dictionary, storing the values in its <strong>namespace</strong>. So we can create new
@@ -452,7 +442,7 @@ attribute dictionary for the current module</p>
 <span class="n">kiwis</span><span class="o">.</span><span class="n">count</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -462,7 +452,7 @@ attribute dictionary for the current module</p>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[7]:</div>
+    <div class="prompt output_prompt">Out[7]:</div>
 
 
 
@@ -478,8 +468,7 @@ attribute dictionary for the current module</p>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>This is <strong>metaprogramming</strong>.</p>
 <p>I would NOT recommend using it for an example as trivial as the one above. 
@@ -500,7 +489,7 @@ A better, more Pythonic choice here would be to use a data structure to manage y
 <span class="n">baskets</span><span class="p">[</span><span class="s1">&#39;kiwis&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">count</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -510,7 +499,7 @@ A better, more Pythonic choice here would be to use a data structure to manage y
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[8]:</div>
+    <div class="prompt output_prompt">Out[8]:</div>
 
 
 
@@ -526,8 +515,7 @@ A better, more Pythonic choice here would be to use a data structure to manage y
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Or even, using a dictionary comprehension:</p>
 
@@ -543,7 +531,7 @@ A better, more Pythonic choice here would be to use a data structure to manage y
 <span class="n">baskets</span><span class="p">[</span><span class="s1">&#39;kiwis&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">count</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -553,7 +541,7 @@ A better, more Pythonic choice here would be to use a data structure to manage y
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[9]:</div>
+    <div class="prompt output_prompt">Out[9]:</div>
 
 
 
@@ -569,8 +557,7 @@ A better, more Pythonic choice here would be to use a data structure to manage y
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Which is the nicest way to do this, I think. Code which feels like
 metaprogramming is needed to make it less repetitive can often instead be DRYed
@@ -581,16 +568,14 @@ to understand. Nevertheless, metaprogramming is worth knowing.</p>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Metaprogramming-class-attributes">Metaprogramming class attributes<a class="anchor-link" href="#Metaprogramming-class-attributes">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>We can metaprogram the attributes of a <strong>module</strong> using the globals() function.</p>
 <p>We will also want to be able to metaprogram a class, by accessing its attribute dictionary.</p>
@@ -608,14 +593,13 @@ to understand. Nevertheless, metaprogramming is worth knowing.</p>
     <span class="k">pass</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>If we are adding our own attributes, we can just do so directly:</p>
 
@@ -632,7 +616,7 @@ to understand. Nevertheless, metaprogramming is worth knowing.</p>
 <span class="n">x</span><span class="o">.</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;James&quot;</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -645,7 +629,7 @@ to understand. Nevertheless, metaprogramming is worth knowing.</p>
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span><span class="o">.</span><span class="n">name</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -655,7 +639,7 @@ to understand. Nevertheless, metaprogramming is worth knowing.</p>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[12]:</div>
+    <div class="prompt output_prompt">Out[12]:</div>
 
 
 
@@ -671,8 +655,7 @@ to understand. Nevertheless, metaprogramming is worth knowing.</p>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>And these turn up, as expected, in an attribute dictionary for the class:</p>
 
@@ -687,7 +670,7 @@ to understand. Nevertheless, metaprogramming is worth knowing.</p>
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span><span class="o">.</span><span class="vm">__dict__</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -697,7 +680,7 @@ to understand. Nevertheless, metaprogramming is worth knowing.</p>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[13]:</div>
+    <div class="prompt output_prompt">Out[13]:</div>
 
 
 
@@ -713,8 +696,7 @@ to understand. Nevertheless, metaprogramming is worth knowing.</p>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>We can use <code>getattr</code> to access this special dictionary:</p>
 
@@ -729,7 +711,7 @@ to understand. Nevertheless, metaprogramming is worth knowing.</p>
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">getattr</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="s1">&#39;name&#39;</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -739,7 +721,7 @@ to understand. Nevertheless, metaprogramming is worth knowing.</p>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[14]:</div>
+    <div class="prompt output_prompt">Out[14]:</div>
 
 
 
@@ -755,8 +737,7 @@ to understand. Nevertheless, metaprogramming is worth knowing.</p>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>If we want to add an attribute given it's name as a string, we can use setattr:</p>
 
@@ -773,7 +754,7 @@ to understand. Nevertheless, metaprogramming is worth knowing.</p>
 <span class="n">x</span><span class="o">.</span><span class="n">age</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -783,7 +764,7 @@ to understand. Nevertheless, metaprogramming is worth knowing.</p>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[15]:</div>
+    <div class="prompt output_prompt">Out[15]:</div>
 
 
 
@@ -799,8 +780,7 @@ to understand. Nevertheless, metaprogramming is worth knowing.</p>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>And we could do this in a loop to programmatically add many attributes.</p>
 
@@ -808,8 +788,7 @@ to understand. Nevertheless, metaprogramming is worth knowing.</p>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>The real power of accessing the attribute dictionary comes when we realise that
 there is <em>very little difference</em> between member data and member functions.</p>
@@ -818,8 +797,7 @@ there is <em>very little difference</em> between member data and member function
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Now that we know, from our functional programming, that <strong>a function is just a
 variable that can be <em>called</em> with <code>()</code></strong>, we can set an attribute to a function,
@@ -837,7 +815,7 @@ it becomes a member function!</p>
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">setattr</span><span class="p">(</span><span class="n">Boring</span><span class="p">,</span> <span class="s1">&#39;describe&#39;</span><span class="p">,</span> <span class="k">lambda</span> <span class="bp">self</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="o">+</span> <span class="s2">&quot; is &quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">age</span><span class="p">))</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -850,7 +828,7 @@ it becomes a member function!</p>
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -860,7 +838,7 @@ it becomes a member function!</p>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[17]:</div>
+    <div class="prompt output_prompt">Out[17]:</div>
 
 
 
@@ -883,7 +861,7 @@ it becomes a member function!</p>
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span><span class="o">.</span><span class="n">describe</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -893,13 +871,13 @@ it becomes a member function!</p>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[18]:</div>
+    <div class="prompt output_prompt">Out[18]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;bound method Boring.&lt;lambda&gt; of &lt;__main__.Boring object at 0x2ba8ce942b38&gt;&gt;</pre>
+<pre>&lt;bound method &lt;lambda&gt; of &lt;__main__.Boring object at 0x2b3b7c6d5588&gt;&gt;</pre>
 </div>
 
 </div>
@@ -916,7 +894,7 @@ it becomes a member function!</p>
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">Boring</span><span class="o">.</span><span class="n">describe</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -926,7 +904,7 @@ it becomes a member function!</p>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[19]:</div>
+    <div class="prompt output_prompt">Out[19]:</div>
 
 
 
@@ -942,8 +920,7 @@ it becomes a member function!</p>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Note that we set this method as an attribute of the class, not the instance, so it is available to other instances of <code>Boring</code>:</p>
 
@@ -960,7 +937,7 @@ it becomes a member function!</p>
 <span class="n">y</span><span class="o">.</span><span class="n">age</span>  <span class="o">=</span> <span class="mi">99</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -973,7 +950,7 @@ it becomes a member function!</p>
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">y</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -983,7 +960,7 @@ it becomes a member function!</p>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[21]:</div>
+    <div class="prompt output_prompt">Out[21]:</div>
 
 
 
@@ -999,8 +976,7 @@ it becomes a member function!</p>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>We can define a standalone function, and then <strong>bind</strong> it to the class. It's first argument automagically becomes
 <code>self</code>.</p>
@@ -1019,7 +995,7 @@ it becomes a member function!</p>
     <span class="k">return</span> <span class="n">current</span><span class="o">-</span><span class="n">b_instance</span><span class="o">.</span><span class="n">age</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1032,7 +1008,7 @@ it becomes a member function!</p>
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">Boring</span><span class="o">.</span><span class="n">birth_year</span><span class="o">=</span><span class="n">broken_birth_year</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1045,7 +1021,7 @@ it becomes a member function!</p>
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span><span class="o">.</span><span class="n">birth_year</span><span class="p">()</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1055,7 +1031,7 @@ it becomes a member function!</p>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[24]:</div>
+    <div class="prompt output_prompt">Out[24]:</div>
 
 
 
@@ -1078,7 +1054,7 @@ it becomes a member function!</p>
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span><span class="o">.</span><span class="n">birth_year</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1088,13 +1064,13 @@ it becomes a member function!</p>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[25]:</div>
+    <div class="prompt output_prompt">Out[25]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;bound method Boring.broken_birth_year of &lt;__main__.Boring object at 0x2ba8ce942b38&gt;&gt;</pre>
+<pre>&lt;bound method broken_birth_year of &lt;__main__.Boring object at 0x2b3b7c6d5588&gt;&gt;</pre>
 </div>
 
 </div>
@@ -1111,7 +1087,7 @@ it becomes a member function!</p>
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span><span class="o">.</span><span class="n">birth_year</span><span class="o">.</span><span class="vm">__name__</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1121,7 +1097,7 @@ it becomes a member function!</p>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[26]:</div>
+    <div class="prompt output_prompt">Out[26]:</div>
 
 
 
@@ -1137,16 +1113,14 @@ it becomes a member function!</p>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Metaprogramming-function-locals">Metaprogramming function locals<a class="anchor-link" href="#Metaprogramming-function-locals">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>We can access the attribute dictionary for the local namespace inside a
 function with <code>locals()</code> but this <em>cannot be written to</em>.</p>
@@ -1169,7 +1143,7 @@ programmatic creation of function-local variables is a flaw in Python.</p>
             <span class="nb">setattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1182,7 +1156,7 @@ programmatic creation of function-local variables is a flaw in Python.</p>
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">me</span><span class="o">=</span><span class="n">Person</span><span class="p">(</span><span class="s2">&quot;James&quot;</span><span class="p">,</span> <span class="mi">38</span><span class="p">,</span> <span class="s2">&quot;Scientific Programmer&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1192,13 +1166,13 @@ programmatic creation of function-local variables is a flaw in Python.</p>
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Setting self. job  to  Scientific Programmer
+<pre>Setting self. children_count  to  0
+Setting self. job  to  Scientific Programmer
 Setting self. age  to  38
-Setting self. children_count  to  0
 Setting self. name  to  James
 </pre>
 </div>
@@ -1216,7 +1190,7 @@ Setting self. name  to  James
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">me</span><span class="o">.</span><span class="n">name</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1226,7 +1200,7 @@ Setting self. name  to  James
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[29]:</div>
+    <div class="prompt output_prompt">Out[29]:</div>
 
 
 
@@ -1242,16 +1216,14 @@ Setting self. name  to  James
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Metaprogramming-warning!">Metaprogramming warning!<a class="anchor-link" href="#Metaprogramming-warning!">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Use this stuff <strong>sparingly</strong>!</p>
 <p>The above example worked, but it produced Python code which is not particularly understandable.
@@ -1274,14 +1246,13 @@ Remember, your objective when programming is to produce code which is <strong>de
        <span class="bp">self</span><span class="o">.</span><span class="n">children_count</span><span class="o">=</span><span class="n">children_count</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Sometimes, metaprogramming will be <strong>really</strong> helpful in making non-repetitive
 code, and you should have it in your toolbox, which is why I'm teaching you it.
@@ -1346,7 +1317,7 @@ probably <em>doing it wrong</em>. Code should be about clarity, not showing off.
       <li class="footer__item text-muted small">University College London,&nbsp;Gower Street,&nbsp;London,&nbsp;WC1E 6BT&nbsp;Tel:&nbsp;+44&nbsp;(0)&nbsp;20 7679 2000</li>
     </ul>
     <ul class="list-inline footer__list list-unstyled list-inline--divided">
-      <li class="text-muted small">Copyright © 2018-06-01 11:04:20 +0000 UCL</li>
+      <li class="text-muted small">Copyright © 2018-09-25 16:44:08 +0000 UCL</li>
       <li class="text-muted small"><a href="#">Disclaimer</a>
       </li>
       <li class="text-muted small"><a href="#">Freedom of Information</a>

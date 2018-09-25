@@ -221,16 +221,14 @@
           
 
     <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Git-Stash">Git Stash<a class="anchor-link" href="#Git-Stash">&#182;</a></h2>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>If you find you want to pull, but you're not ready to commit,
 you can use</p>
@@ -250,7 +248,7 @@ you can use</p>
 <span class="n">os</span><span class="o">.</span><span class="n">chdir</span><span class="p">(</span><span class="n">working_dir</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -272,7 +270,7 @@ Mountains In Wales
 * Cadair Idris
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -282,7 +280,7 @@ Mountains In Wales
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -305,7 +303,7 @@ git stash
 git pull
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -315,23 +313,26 @@ git pull
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Saved working directory and index state WIP on master: e9a1851 Commit Aonach onto master branch
-Already up to date.
+<pre>Saved working directory and index state WIP on master: f4e2992 Merge branch &#39;experiment&#39;
 </pre>
 </div>
 </div>
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stderr output_text">
-<pre>Warning: Permanently added the RSA host key for IP address &#39;192.30.255.113&#39; to the list of known hosts.
+<pre>Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
 </pre>
 </div>
 </div>
@@ -349,7 +350,7 @@ Already up to date.
 git stash apply
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -359,14 +360,11 @@ git stash apply
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>On branch master
-Your branch is ahead of &#39;origin/master&#39; by 1 commit.
-  (use &#34;git push&#34; to publish your local commits)
-
 Changes not staged for commit:
   (use &#34;git add &lt;file&gt;...&#34; to update what will be committed)
   (use &#34;git checkout -- &lt;file&gt;...&#34; to discard changes in working directory)
@@ -389,8 +387,7 @@ no changes added to commit (use &#34;git add&#34; and/or &#34;git commit -a&#34;
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>The "Stash" is a way of temporarily saving your working area, and can help out in a pinch.</p>
 
@@ -398,8 +395,7 @@ no changes added to commit (use &#34;git add&#34; and/or &#34;git commit -a&#34;
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Tagging">Tagging<a class="anchor-link" href="#Tagging">&#182;</a></h2><p>Tags are easy to read labels for revisions, and can be used anywhere we would name a commit.</p>
 <p>Produce real results <em>only</em> with tagged revisions</p>
@@ -417,7 +413,7 @@ git tag -a v1.0 -m <span class="s2">&quot;Release 1.0&quot;</span>
 git push --tags
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -427,14 +423,15 @@ git push --tags
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stderr output_text">
-<pre>To github.com:UCL/github-example.git
- ! [rejected]        v1.0 -&gt; v1.0 (already exists)
-error: failed to push some refs to &#39;git@github.com:UCL/github-example.git&#39;
-hint: Updates were rejected because the tag already exists in the remote.
+<pre>Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
 </pre>
 </div>
 </div>
@@ -456,7 +453,7 @@ Mountains In the Pennines
 * Cross Fell
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -466,7 +463,7 @@ Mountains In the Pennines
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -489,7 +486,7 @@ git add Pennines.md
 git commit -am <span class="s2">&quot;Add Pennines&quot;</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -499,11 +496,11 @@ git commit -am <span class="s2">&quot;Add Pennines&quot;</span>
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[master c367e41] Add Pennines
+<pre>[master 981b57e] Add Pennines
  2 files changed, 7 insertions(+), 1 deletion(-)
  create mode 100644 Pennines.md
 </pre>
@@ -523,7 +520,7 @@ git commit -am <span class="s2">&quot;Add Pennines&quot;</span>
 git log v1.0.. --graph --oneline
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -533,11 +530,11 @@ git log v1.0.. --graph --oneline
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>* c367e41 Add Pennines
+<pre>* 981b57e Add Pennines
 </pre>
 </div>
 </div>
@@ -547,8 +544,7 @@ git log v1.0.. --graph --oneline
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>If .. is used without a following commit name, HEAD is assumed.</p>
 
@@ -556,16 +552,14 @@ git log v1.0.. --graph --oneline
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Working-with-generated-files:-gitignore">Working with generated files: gitignore<a class="anchor-link" href="#Working-with-generated-files:-gitignore">&#182;</a></h2>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>We often end up with files that are generated by our program. It is bad practice to keep these in Git; just keep the sources.</p>
 
@@ -573,8 +567,7 @@ git log v1.0.. --graph --oneline
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Examples include <code>.o</code> and <code>.x</code> files for compiled languages, <code>.pyc</code> files in Python.</p>
 
@@ -582,8 +575,7 @@ git log v1.0.. --graph --oneline
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>In our example, we might want to make our .md files into a PDF with pandoc:</p>
 
@@ -606,7 +598,7 @@ default: $(PDFS)
 	pandoc $&lt; -o $@
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -616,7 +608,7 @@ default: $(PDFS)
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -638,7 +630,7 @@ default: $(PDFS)
 make
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -648,7 +640,7 @@ make
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -661,7 +653,7 @@ make[1]: Leaving directory `/home/travis/build/UCL/rsd-engineeringcourse/ch02git
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stderr output_text">
@@ -687,8 +679,7 @@ make[1]: *** [index.pdf] Error 43
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>We now have a bunch of output .pdf files corresponding to each Markdown file.</p>
 
@@ -696,8 +687,7 @@ make[1]: *** [index.pdf] Error 43
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>But we don't want those to show up in git:</p>
 
@@ -713,7 +703,7 @@ make[1]: *** [index.pdf] Error 43
 git status
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -723,14 +713,11 @@ git status
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>On branch master
-Your branch is ahead of &#39;origin/master&#39; by 2 commits.
-  (use &#34;git push&#34; to publish your local commits)
-
 Untracked files:
   (use &#34;git add &lt;file&gt;...&#34; to include in what will be committed)
 
@@ -748,8 +735,7 @@ nothing added to commit but untracked files present (use &#34;git add&#34; to tr
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Use .gitignore files to tell Git not to pay attention to files with certain paths:</p>
 
@@ -765,7 +751,7 @@ nothing added to commit but untracked files present (use &#34;git add&#34; to tr
 *.pdf
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -775,7 +761,7 @@ nothing added to commit but untracked files present (use &#34;git add&#34; to tr
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -797,7 +783,7 @@ nothing added to commit but untracked files present (use &#34;git add&#34; to tr
 git status
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -807,14 +793,11 @@ git status
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>On branch master
-Your branch is ahead of &#39;origin/master&#39; by 2 commits.
-  (use &#34;git push&#34; to publish your local commits)
-
 Untracked files:
   (use &#34;git add &lt;file&gt;...&#34; to include in what will be committed)
 
@@ -844,7 +827,7 @@ git commit -am <span class="s2">&quot;Add a makefile and ignore generated files&
 git push
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -854,11 +837,11 @@ git push
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[master 381e9f6] Add a makefile and ignore generated files
+<pre>[master b9cbd86] Add a makefile and ignore generated files
  2 files changed, 9 insertions(+)
  create mode 100644 .gitignore
  create mode 100644 Makefile
@@ -868,12 +851,15 @@ git push
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stderr output_text">
-<pre>To github.com:UCL/github-example.git
-   df920af..381e9f6  master -&gt; master
+<pre>fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
 </pre>
 </div>
 </div>
@@ -883,8 +869,7 @@ git push
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Git-clean">Git clean<a class="anchor-link" href="#Git-clean">&#182;</a></h2>
 </div>
@@ -899,7 +884,7 @@ git push
 git clean -fX
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -913,7 +898,7 @@ git clean -fX
 ls
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -923,7 +908,7 @@ ls
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -944,8 +929,7 @@ wsd.py
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
 <li>With -f: don't prompt</li>
@@ -958,8 +942,7 @@ wsd.py
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Hunks">Hunks<a class="anchor-link" href="#Hunks">&#182;</a></h2><h3 id="Git-Hunks">Git Hunks<a class="anchor-link" href="#Git-Hunks">&#182;</a></h3><p>A "Hunk" is one git change. This changeset has three hunks:</p>
 
@@ -967,8 +950,7 @@ wsd.py
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <div class="highlight"><pre><span></span><span class="o">+</span><span class="kn">import</span> <span class="nn">matplotlib</span>
 <span class="o">+</span><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
@@ -991,8 +973,7 @@ wsd.py
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Interactive-add">Interactive add<a class="anchor-link" href="#Interactive-add">&#182;</a></h3><p><code>git add</code> and <code>git reset</code> can be used to stage/unstage a whole file,
 but you can use interactive mode to stage by hunk, choosing
@@ -1002,8 +983,7 @@ yes or no for each hunk.</p>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <div class="highlight"><pre><span></span>git add -p myfile.py
 </pre></div>
@@ -1012,8 +992,7 @@ yes or no for each hunk.</p>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <div class="highlight"><pre><span></span><span class="o">+</span><span class="kn">import</span> <span class="nn">matplotlib</span>
 <span class="o">+</span><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
@@ -1024,8 +1003,7 @@ yes or no for each hunk.</p>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="GitHub-pages">GitHub pages<a class="anchor-link" href="#GitHub-pages">&#182;</a></h2><h3 id="Yaml-Frontmatter">Yaml Frontmatter<a class="anchor-link" href="#Yaml-Frontmatter">&#182;</a></h3><p>GitHub will publish repositories containing markdown as web pages, automatically.</p>
 <p>You'll need to add this content:</p>
@@ -1055,7 +1033,7 @@ Engerland is not very mountainous.
 But has some tall hills, and maybe a mountain or two depending on your definition.
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1065,7 +1043,7 @@ But has some tall hills, and maybe a mountain or two depending on your definitio
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -1087,7 +1065,7 @@ But has some tall hills, and maybe a mountain or two depending on your definitio
 git commit -am <span class="s2">&quot;Add github pages YAML frontmatter&quot;</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1097,11 +1075,11 @@ git commit -am <span class="s2">&quot;Add github pages YAML frontmatter&quot;</s
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[master c845a02] Add github pages YAML frontmatter
+<pre>[master ea89fbc] Add github pages YAML frontmatter
  1 file changed, 7 insertions(+), 4 deletions(-)
 </pre>
 </div>
@@ -1112,8 +1090,7 @@ git commit -am <span class="s2">&quot;Add github pages YAML frontmatter&quot;</s
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="The-gh-pages-branch">The gh-pages branch<a class="anchor-link" href="#The-gh-pages-branch">&#182;</a></h3><p>GitHub creates github pages when you use a special named branch.</p>
 <p>This is best used to create documentation for a program you write, but you can use it for anything.</p>
@@ -1129,7 +1106,7 @@ git commit -am <span class="s2">&quot;Add github pages YAML frontmatter&quot;</s
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">os</span><span class="o">.</span><span class="n">chdir</span><span class="p">(</span><span class="n">working_dir</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1145,7 +1122,7 @@ git checkout -b gh-pages
 git push -uf origin gh-pages
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1155,24 +1132,16 @@ git push -uf origin gh-pages
 
 <div class="output_area">
 
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Branch &#39;gh-pages&#39; set up to track remote branch &#39;gh-pages&#39; from &#39;origin&#39;.
-</pre>
-</div>
-</div>
-
-<div class="output_area">
-
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stderr output_text">
 <pre>Switched to a new branch &#39;gh-pages&#39;
-To github.com:UCL/github-example.git
- + 594309e...c845a02 gh-pages -&gt; gh-pages (forced update)
+Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
 </pre>
 </div>
 </div>
@@ -1182,8 +1151,7 @@ To github.com:UCL/github-example.git
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>The first time you do this, GitHub takes a few minutes to generate your pages.</p>
 <p>The website will appear at <code>http://username.github.io/repositoryname</code>, for example:</p>
@@ -1193,8 +1161,7 @@ To github.com:UCL/github-example.git
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="UCL-layout-for-GitHub-pages">UCL layout for GitHub pages<a class="anchor-link" href="#UCL-layout-for-GitHub-pages">&#182;</a></h3><p>You can use GitHub pages to make HTML layouts, here's an <a href="http://github.com/UCL/ucl-github-pages-example">example of how to do it</a>, 
 and <a href="http://ucl.github.com/ucl-github-pages-example">how it looks</a>. We won't go into the detail of this now, 
@@ -1254,7 +1221,7 @@ but after the class, you might want to try this.</p>
       <li class="footer__item text-muted small">University College London,&nbsp;Gower Street,&nbsp;London,&nbsp;WC1E 6BT&nbsp;Tel:&nbsp;+44&nbsp;(0)&nbsp;20 7679 2000</li>
     </ul>
     <ul class="list-inline footer__list list-unstyled list-inline--divided">
-      <li class="text-muted small">Copyright © 2018-06-01 11:04:20 +0000 UCL</li>
+      <li class="text-muted small">Copyright © 2018-09-25 16:44:08 +0000 UCL</li>
       <li class="text-muted small"><a href="#">Disclaimer</a>
       </li>
       <li class="text-muted small"><a href="#">Freedom of Information</a>

@@ -221,16 +221,14 @@
           
 
     <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Fixing-mistakes">Fixing mistakes<a class="anchor-link" href="#Fixing-mistakes">&#182;</a></h2>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>We're still in our git working directory:</p>
 
@@ -250,7 +248,7 @@
 <span class="n">working_dir</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -260,7 +258,7 @@
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[1]:</div>
+    <div class="prompt output_prompt">Out[1]:</div>
 
 
 
@@ -276,8 +274,7 @@
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Referring-to-changes-with-HEAD-and-^">Referring to changes with HEAD and ^<a class="anchor-link" href="#Referring-to-changes-with-HEAD-and-^">&#182;</a></h3><p>The commit we want to revert to is the one before the latest.</p>
 <p><code>HEAD^</code> refers to the commit before the "head", which is the latest change. That is, we want to go back to the change before the current one.</p>
@@ -287,8 +284,7 @@
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Reverting">Reverting<a class="anchor-link" href="#Reverting">&#182;</a></h3><p>Ok, so now we'd like to undo the nasty commit with the lie about Mount Fictional.</p>
 
@@ -304,7 +300,7 @@
 git revert HEAD^
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -314,11 +310,11 @@ git revert HEAD^
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[master b591cef] Revert &#34;Add a lie about a mountain&#34;
+<pre>[master 68a27c0] Revert &#34;Add a lie about a mountain&#34;
  1 file changed, 1 insertion(+), 3 deletions(-)
 </pre>
 </div>
@@ -329,8 +325,7 @@ git revert HEAD^
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>A commit may pop up, with some default text which you can accept and save.</p>
 
@@ -338,8 +333,7 @@ git revert HEAD^
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Conflicted-reverts">Conflicted reverts<a class="anchor-link" href="#Conflicted-reverts">&#182;</a></h3><p>You may, depending on the changes you've tried to make, get an error message here.</p>
 <p>If this happens, it is because git could not automagically decide how to combine the change you made after the change you want to revert, with the attempt to revert the change: this could happen, for example, if they both touch the same line.</p>
@@ -349,8 +343,7 @@ git revert HEAD^
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Review-of-changes">Review of changes<a class="anchor-link" href="#Review-of-changes">&#182;</a></h3><p>The file should now contain the change to the title, but not the extra line with the lie. Note the log:</p>
 
@@ -366,7 +359,7 @@ git revert HEAD^
 git log --date<span class="o">=</span>short
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -376,33 +369,33 @@ git log --date<span class="o">=</span>short
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>commit b591cef2453bfbd8154e5f2cdcc8b999c3a56a00
+<pre>commit 68a27c0cbcf61c7251125df022e8e6ad24fd6c5c
 Author: James Hetherington &lt;jamespjh@gmail.com&gt;
-Date:   2018-06-01
+Date:   2018-09-25
 
     Revert &#34;Add a lie about a mountain&#34;
     
-    This reverts commit 0a9e42c1a6141549f4001ca4a54b0727f7abd080.
+    This reverts commit 160797a6c68aa73235b55d6036a483b8a3ee3be7.
 
-commit 39c864aa9acc16ba3cefe993984a79a345523c4b
+commit 7b64138181fbd40d6a673da130af54c569d7fd6c
 Author: James Hetherington &lt;jamespjh@gmail.com&gt;
-Date:   2018-06-01
+Date:   2018-09-25
 
     Change title
 
-commit 0a9e42c1a6141549f4001ca4a54b0727f7abd080
+commit 160797a6c68aa73235b55d6036a483b8a3ee3be7
 Author: James Hetherington &lt;jamespjh@gmail.com&gt;
-Date:   2018-06-01
+Date:   2018-09-25
 
     Add a lie about a mountain
 
-commit 7b5a621e3a5b533e587bc2d463f8eafc9d6f963b
+commit 6e6393c54a0ca7ff79e2f821b1b7a8fbacb1031a
 Author: James Hetherington &lt;jamespjh@gmail.com&gt;
-Date:   2018-06-01
+Date:   2018-09-25
 
     First commit of discourse on UK topography
 </pre>
@@ -414,8 +407,7 @@ Date:   2018-06-01
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Antipatch">Antipatch<a class="anchor-link" href="#Antipatch">&#182;</a></h3><p>Notice how the mistake has stayed in the history.</p>
 <p>There is a new commit which undoes the change: this is colloquially called an "antipatch". 
@@ -425,8 +417,7 @@ This is nice: you have a record of the full story, including the mistake and its
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Rewriting-history">Rewriting history<a class="anchor-link" href="#Rewriting-history">&#182;</a></h3><p>It is possible, in git, to remove the most recent change altogether, "rewriting history". Let's make another bad change, and see how to do this.</p>
 
@@ -434,8 +425,7 @@ This is nice: you have a record of the full story, including the mistake and its
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="A-new-lie">A new lie<a class="anchor-link" href="#A-new-lie">&#182;</a></h3>
 </div>
@@ -454,7 +444,7 @@ But has some tall hills, and maybe a
 mountain or two depending on your definition.
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -464,7 +454,7 @@ mountain or two depending on your definition.
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -486,7 +476,7 @@ mountain or two depending on your definition.
 cat index.md
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -496,7 +486,7 @@ cat index.md
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -521,7 +511,7 @@ mountain or two depending on your definition.</pre>
 git diff
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -531,7 +521,7 @@ git diff
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -566,7 +556,7 @@ index bb12a24..6f211e7 100644
 git commit -am <span class="s2">&quot;Add a silly spelling&quot;</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -576,11 +566,11 @@ git commit -am <span class="s2">&quot;Add a silly spelling&quot;</span>
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[master 9b26bda] Add a silly spelling
+<pre>[master 897578b] Add a silly spelling
  1 file changed, 3 insertions(+), 2 deletions(-)
 </pre>
 </div>
@@ -599,7 +589,7 @@ git commit -am <span class="s2">&quot;Add a silly spelling&quot;</span>
 git log --date<span class="o">=</span>short
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -609,39 +599,39 @@ git log --date<span class="o">=</span>short
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>commit 9b26bda30248d65c60fc62b6d6bc29f28569e14e
+<pre>commit 897578b0dc99d53f4c97ae9388f7d14ea03cf133
 Author: James Hetherington &lt;jamespjh@gmail.com&gt;
-Date:   2018-06-01
+Date:   2018-09-25
 
     Add a silly spelling
 
-commit b591cef2453bfbd8154e5f2cdcc8b999c3a56a00
+commit 68a27c0cbcf61c7251125df022e8e6ad24fd6c5c
 Author: James Hetherington &lt;jamespjh@gmail.com&gt;
-Date:   2018-06-01
+Date:   2018-09-25
 
     Revert &#34;Add a lie about a mountain&#34;
     
-    This reverts commit 0a9e42c1a6141549f4001ca4a54b0727f7abd080.
+    This reverts commit 160797a6c68aa73235b55d6036a483b8a3ee3be7.
 
-commit 39c864aa9acc16ba3cefe993984a79a345523c4b
+commit 7b64138181fbd40d6a673da130af54c569d7fd6c
 Author: James Hetherington &lt;jamespjh@gmail.com&gt;
-Date:   2018-06-01
+Date:   2018-09-25
 
     Change title
 
-commit 0a9e42c1a6141549f4001ca4a54b0727f7abd080
+commit 160797a6c68aa73235b55d6036a483b8a3ee3be7
 Author: James Hetherington &lt;jamespjh@gmail.com&gt;
-Date:   2018-06-01
+Date:   2018-09-25
 
     Add a lie about a mountain
 
-commit 7b5a621e3a5b533e587bc2d463f8eafc9d6f963b
+commit 6e6393c54a0ca7ff79e2f821b1b7a8fbacb1031a
 Author: James Hetherington &lt;jamespjh@gmail.com&gt;
-Date:   2018-06-01
+Date:   2018-09-25
 
     First commit of discourse on UK topography
 </pre>
@@ -653,8 +643,7 @@ Date:   2018-06-01
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Using-reset-to-rewrite-history">Using reset to rewrite history<a class="anchor-link" href="#Using-reset-to-rewrite-history">&#182;</a></h3>
 </div>
@@ -669,7 +658,7 @@ Date:   2018-06-01
 git reset HEAD^
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -679,7 +668,7 @@ git reset HEAD^
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -702,7 +691,7 @@ M	index.md
 git log --date<span class="o">=</span>short
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -712,33 +701,33 @@ git log --date<span class="o">=</span>short
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>commit b591cef2453bfbd8154e5f2cdcc8b999c3a56a00
+<pre>commit 68a27c0cbcf61c7251125df022e8e6ad24fd6c5c
 Author: James Hetherington &lt;jamespjh@gmail.com&gt;
-Date:   2018-06-01
+Date:   2018-09-25
 
     Revert &#34;Add a lie about a mountain&#34;
     
-    This reverts commit 0a9e42c1a6141549f4001ca4a54b0727f7abd080.
+    This reverts commit 160797a6c68aa73235b55d6036a483b8a3ee3be7.
 
-commit 39c864aa9acc16ba3cefe993984a79a345523c4b
+commit 7b64138181fbd40d6a673da130af54c569d7fd6c
 Author: James Hetherington &lt;jamespjh@gmail.com&gt;
-Date:   2018-06-01
+Date:   2018-09-25
 
     Change title
 
-commit 0a9e42c1a6141549f4001ca4a54b0727f7abd080
+commit 160797a6c68aa73235b55d6036a483b8a3ee3be7
 Author: James Hetherington &lt;jamespjh@gmail.com&gt;
-Date:   2018-06-01
+Date:   2018-09-25
 
     Add a lie about a mountain
 
-commit 7b5a621e3a5b533e587bc2d463f8eafc9d6f963b
+commit 6e6393c54a0ca7ff79e2f821b1b7a8fbacb1031a
 Author: James Hetherington &lt;jamespjh@gmail.com&gt;
-Date:   2018-06-01
+Date:   2018-09-25
 
     First commit of discourse on UK topography
 </pre>
@@ -750,8 +739,7 @@ Date:   2018-06-01
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Covering-your-tracks">Covering your tracks<a class="anchor-link" href="#Covering-your-tracks">&#182;</a></h3><p>The silly spelling is gone, and <em>it isn't even in the log</em>. This approach to fixing mistakes, "rewriting history" with <code>reset</code>, instead of adding an antipatch with <code>revert</code> is dangerous, and we don't recommend it. But you may want to do it for small silly mistakes, such as to correct a commit message.</p>
 
@@ -759,8 +747,7 @@ Date:   2018-06-01
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Resetting-the-working-area">Resetting the working area<a class="anchor-link" href="#Resetting-the-working-area">&#182;</a></h3><p>When git reset removes commits, it leaves your working directory unchanged -- so you can keep the work in the bad change if you want.</p>
 
@@ -776,7 +763,7 @@ Date:   2018-06-01
 cat index.md
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -786,7 +773,7 @@ cat index.md
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -803,8 +790,7 @@ mountain or two depending on your definition.</pre>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>If you want to lose the change from the working directory as well, you can do <code>git reset --hard</code>.</p>
 <p>I'm going to get rid of the silly spelling, and I didn't do <code>--hard</code>, so I'll reset the file from the working directory to be the same as in the index:</p>
@@ -821,7 +807,7 @@ mountain or two depending on your definition.</pre>
 git checkout index.md
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -835,7 +821,7 @@ git checkout index.md
 cat index.md
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -845,7 +831,7 @@ cat index.md
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -861,8 +847,7 @@ But has some tall hills, and maybe a mountain or two depending on your definitio
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>We can add this to our diagram:</p>
 
@@ -887,7 +872,7 @@ But has some tall hills, and maybe a mountain or two depending on your definitio
 <span class="n">wsd</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -897,7 +882,7 @@ But has some tall hills, and maybe a mountain or two depending on your definitio
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[14]:</div>
+    <div class="prompt output_prompt">Out[14]:</div>
 
 
 
@@ -915,8 +900,7 @@ But has some tall hills, and maybe a mountain or two depending on your definitio
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>We can add it to Jim's story:</p>
 
@@ -960,7 +944,7 @@ But has some tall hills, and maybe a mountain or two depending on your definitio
 <span class="n">wsd</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -970,7 +954,7 @@ But has some tall hills, and maybe a mountain or two depending on your definitio
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[15]:</div>
+    <div class="prompt output_prompt">Out[15]:</div>
 
 
 
@@ -1038,7 +1022,7 @@ But has some tall hills, and maybe a mountain or two depending on your definitio
       <li class="footer__item text-muted small">University College London,&nbsp;Gower Street,&nbsp;London,&nbsp;WC1E 6BT&nbsp;Tel:&nbsp;+44&nbsp;(0)&nbsp;20 7679 2000</li>
     </ul>
     <ul class="list-inline footer__list list-unstyled list-inline--divided">
-      <li class="text-muted small">Copyright © 2018-06-01 11:04:20 +0000 UCL</li>
+      <li class="text-muted small">Copyright © 2018-09-25 16:44:08 +0000 UCL</li>
       <li class="text-muted small"><a href="#">Disclaimer</a>
       </li>
       <li class="text-muted small"><a href="#">Freedom of Information</a>

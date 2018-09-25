@@ -221,8 +221,7 @@
           
 
     <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Branches">Branches<a class="anchor-link" href="#Branches">&#182;</a></h2><p>Branches are increadibly important to why <code>git</code> is cool and powerful.</p>
 <p>They are an easy and cheap way of making a second version of your software, which you work on in parallel,
@@ -243,7 +242,7 @@ and pull in your changes when you are ready.</p>
 <span class="n">os</span><span class="o">.</span><span class="n">chdir</span><span class="p">(</span><span class="n">working_dir</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -257,7 +256,7 @@ and pull in your changes when you are ready.</p>
 git branch <span class="c1"># Tell me what branches exist</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -267,7 +266,7 @@ git branch <span class="c1"># Tell me what branches exist</span>
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -289,7 +288,7 @@ git branch <span class="c1"># Tell me what branches exist</span>
 git checkout -b experiment <span class="c1"># Make a new branch</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -299,7 +298,18 @@ git checkout -b experiment <span class="c1"># Make a new branch</span>
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>M	Wales.md
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stderr output_text">
@@ -321,7 +331,7 @@ git checkout -b experiment <span class="c1"># Make a new branch</span>
 git branch
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -331,7 +341,7 @@ git branch
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -354,7 +364,7 @@ git branch
 git commit -am <span class="s2">&quot;Add Cadair Idris&quot;</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -364,16 +374,12 @@ git commit -am <span class="s2">&quot;Add Cadair Idris&quot;</span>
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>On branch experiment
-Untracked files:
-	__pycache__/
-	wsd.py
-
-nothing added to commit but untracked files present
+<pre>[experiment 570d2ba] Add Cadair Idris
+ 1 file changed, 2 insertions(+), 1 deletion(-)
 </pre>
 </div>
 </div>
@@ -391,7 +397,7 @@ nothing added to commit but untracked files present
 git checkout master <span class="c1"># Switch to an existing branch</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -401,18 +407,7 @@ git checkout master <span class="c1"># Switch to an existing branch</span>
 
 <div class="output_area">
 
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Your branch is up to date with &#39;origin/master&#39;.
-</pre>
-</div>
-</div>
-
-<div class="output_area">
-
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stderr output_text">
@@ -434,7 +429,7 @@ git checkout master <span class="c1"># Switch to an existing branch</span>
 cat Wales.md
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -444,7 +439,7 @@ cat Wales.md
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -454,8 +449,7 @@ cat Wales.md
 * Pen y Fan
 * Tryfan
 * Snowdon
-* Glyder Fawr
-* Fan y Big</pre>
+* Glyder Fawr</pre>
 </div>
 </div>
 
@@ -472,7 +466,7 @@ cat Wales.md
 git checkout experiment
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -482,7 +476,7 @@ git checkout experiment
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stderr output_text">
@@ -503,7 +497,7 @@ git checkout experiment
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">cat</span> <span class="n">Wales</span><span class="o">.</span><span class="n">md</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -513,7 +507,7 @@ git checkout experiment
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -533,8 +527,7 @@ git checkout experiment
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Publishing-branches">Publishing branches<a class="anchor-link" href="#Publishing-branches">&#182;</a></h3><p>To let the server know there's a new branch use:</p>
 
@@ -550,7 +543,7 @@ git checkout experiment
 git push -u origin experiment
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -560,23 +553,15 @@ git push -u origin experiment
 
 <div class="output_area">
 
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Branch &#39;experiment&#39; set up to track remote branch &#39;experiment&#39; from &#39;origin&#39;.
-</pre>
-</div>
-</div>
-
-<div class="output_area">
-
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stderr output_text">
-<pre>To github.com:UCL/github-example.git
- * [new branch]      experiment -&gt; experiment
+<pre>Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
 </pre>
 </div>
 </div>
@@ -586,8 +571,7 @@ git push -u origin experiment
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>We use <code>--set-upstream origin</code> (Abbreviation <code>-u</code>) to tell git that this branch should be pushed to and pulled from origin per default.</p>
 <p>If you are following along, you should be able to see your branch in the list of branches in GitHub.</p>
@@ -596,8 +580,7 @@ git push -u origin experiment
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Once you've used <code>git push -u</code> once, you can push new changes to the branch with just a git push.</p>
 
@@ -605,8 +588,7 @@ git push -u origin experiment
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>If others checkout your repository, they will be able to do <code>git checkout experiment</code> to see your branch content,
 and collaborate with you <strong>in the branch</strong>.</p>
@@ -623,34 +605,13 @@ and collaborate with you <strong>in the branch</strong>.</p>
 git branch -r
 </pre></div>
 
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>  origin/experiment
-  origin/gh-pages
-  origin/master
-</pre>
-</div>
-</div>
-
+    </div>
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Local branches can be, but do not have to be, connected to remote branches
 They are said to "track" remote branches. <code>push -u</code> sets up the tracking relationship.</p>
@@ -667,7 +628,7 @@ They are said to "track" remote branches. <code>push -u</code> sets up the track
 git branch -vv
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -677,12 +638,12 @@ git branch -vv
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>* experiment df920af [origin/experiment] Merge branch &#39;master&#39; of github.com:UCL/github-example
-  master     df920af [origin/master] Merge branch &#39;master&#39; of github.com:UCL/github-example
+<pre>* experiment 570d2ba Add Cadair Idris
+  master     c730120 Add Glyder
 </pre>
 </div>
 </div>
@@ -692,8 +653,7 @@ git branch -vv
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Find-out-what-is-on-a-branch">Find out what is on a branch<a class="anchor-link" href="#Find-out-what-is-on-a-branch">&#182;</a></h3><p>In addition to using <code>git diff</code> to compare to the state of a branch,
 you can use <code>git log</code> to look at lists of commits which are in a branch
@@ -711,14 +671,35 @@ and haven't been merged yet.</p>
 git log master..experiment
 </pre></div>
 
+    </div>
 </div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>commit 570d2ba5ffe7d2168ebb81c885c3e0350a513eef
+Author: James Hetherington &lt;jamespjh@gmail.com&gt;
+Date:   Tue Sep 25 16:35:41 2018 +0000
+
+    Add Cadair Idris
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Git uses various symbols to refer to sets of commits.
 The double dot <code>A..B</code> means "ancestor of B and not ancestor of A"</p>
@@ -736,7 +717,7 @@ The double dot <code>A..B</code> means "ancestor of B and not ancestor of A"</p>
 git log --graph --oneline HEAD~9..HEAD~5
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -746,14 +727,14 @@ git log --graph --oneline HEAD~9..HEAD~5
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>* 0039830 Add wales
-* 4834ec8 Add Helvellyn
-* bc8a2b1 Include lakes in the scope
-* 35b9df7 Add lakeland
+<pre>* 3a3b56d Add Scotland
+* b6298ee Add wales
+* fbbe6e7 Add Helvellyn
+* f8108c5 Include lakes in the scope
 </pre>
 </div>
 </div>
@@ -763,8 +744,7 @@ git log --graph --oneline HEAD~9..HEAD~5
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>But in cases where a history has branches,
 the definition in terms of ancestors is important.</p>
@@ -781,7 +761,7 @@ the definition in terms of ancestors is important.</p>
 git log --graph --oneline HEAD~5..HEAD
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -791,22 +771,15 @@ git log --graph --oneline HEAD~5..HEAD
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>*   df920af Merge branch &#39;master&#39; of github.com:UCL/github-example
-|\  
-| * e4328a9 Add another Beacon
-* | bc29730 Add Glyder
-|/  
-*   cb65ccc Merge branch &#39;master&#39; of github.com:UCL/github-example
-|\  
-| * cb7c4c8 Add a beacon
-* | fa3b5ab Translating from the Welsh
-|/  
-* 5e97866 Merge branch &#39;master&#39; of github.com:UCL/github-example
-* 8fb4e77 Add Scotland
+<pre>* 570d2ba Add Cadair Idris
+* c730120 Add Glyder
+* 01c8330 Add another Beacon
+* d51abef Add a beacon
+* daafc6b Translating from the Welsh
 </pre>
 </div>
 </div>
@@ -816,8 +789,7 @@ git log --graph --oneline HEAD~5..HEAD
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>If there are changes on both sides, like this:</p>
 
@@ -833,7 +805,7 @@ git log --graph --oneline HEAD~5..HEAD
 git checkout master
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -843,18 +815,7 @@ git checkout master
 
 <div class="output_area">
 
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Your branch is up to date with &#39;origin/master&#39;.
-</pre>
-</div>
-</div>
-
-<div class="output_area">
-
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stderr output_text">
@@ -881,7 +842,7 @@ Mountains In Scotland
 * Aonach Eagach
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -891,7 +852,7 @@ Mountains In Scotland
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -913,7 +874,7 @@ Mountains In Scotland
 git diff Scotland.md
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -923,7 +884,7 @@ git diff Scotland.md
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -957,7 +918,7 @@ index 36f83a1..44eb7ea 100644
 git commit -am <span class="s2">&quot;Commit Aonach onto master branch&quot;</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -967,11 +928,11 @@ git commit -am <span class="s2">&quot;Commit Aonach onto master branch&quot;</sp
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[master e9a1851] Commit Aonach onto master branch
+<pre>[master d36fac0] Commit Aonach onto master branch
  1 file changed, 2 insertions(+), 1 deletion(-)
 </pre>
 </div>
@@ -982,8 +943,7 @@ git commit -am <span class="s2">&quot;Commit Aonach onto master branch&quot;</sp
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Then this notation is useful to show the content of what's on what branch:</p>
 
@@ -999,7 +959,7 @@ git commit -am <span class="s2">&quot;Commit Aonach onto master branch&quot;</sp
 git log --left-right --oneline master...experiment
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1009,11 +969,12 @@ git log --left-right --oneline master...experiment
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>&lt; e9a1851 Commit Aonach onto master branch
+<pre>&lt; d36fac0 Commit Aonach onto master branch
+&gt; 570d2ba Add Cadair Idris
 </pre>
 </div>
 </div>
@@ -1023,8 +984,7 @@ git log --left-right --oneline master...experiment
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Three dots means "everything which is not a common ancestor" of the two commits, i.e. the differences between them.</p>
 
@@ -1032,16 +992,14 @@ git log --left-right --oneline master...experiment
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Merging-branches">Merging branches<a class="anchor-link" href="#Merging-branches">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>We can merge branches, and just as we would pull in remote changes, there may or may not be conflicts.</p>
 
@@ -1058,7 +1016,7 @@ git branch
 git merge experiment
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1068,13 +1026,15 @@ git merge experiment
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>  experiment
 * master
-Already up to date.
+Merge made by the &#39;recursive&#39; strategy.
+ Wales.md | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
 </pre>
 </div>
 </div>
@@ -1092,7 +1052,7 @@ Already up to date.
 git log --graph --oneline HEAD~3..HEAD
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1102,15 +1062,16 @@ git log --graph --oneline HEAD~3..HEAD
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>* e9a1851 Commit Aonach onto master branch
-*   df920af Merge branch &#39;master&#39; of github.com:UCL/github-example
+<pre>*   f4e2992 Merge branch &#39;experiment&#39;
 |\  
-| * e4328a9 Add another Beacon
-* bc29730 Add Glyder
+| * 570d2ba Add Cadair Idris
+* | d36fac0 Commit Aonach onto master branch
+|/  
+* c730120 Add Glyder
 </pre>
 </div>
 </div>
@@ -1120,8 +1081,7 @@ git log --graph --oneline HEAD~3..HEAD
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Cleaning-up-after-a-branch">Cleaning up after a branch<a class="anchor-link" href="#Cleaning-up-after-a-branch">&#182;</a></h3>
 </div>
@@ -1136,7 +1096,7 @@ git log --graph --oneline HEAD~3..HEAD
 git branch
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1146,7 +1106,7 @@ git branch
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -1169,7 +1129,7 @@ git branch
 git branch -d experiment
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1179,11 +1139,11 @@ git branch -d experiment
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Deleted branch experiment (was df920af).
+<pre>Deleted branch experiment (was 570d2ba).
 </pre>
 </div>
 </div>
@@ -1201,7 +1161,7 @@ git branch -d experiment
 git branch
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1211,7 +1171,7 @@ git branch
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -1233,27 +1193,7 @@ git branch
 git branch --remote
 </pre></div>
 
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>  origin/experiment
-  origin/gh-pages
-  origin/master
-</pre>
-</div>
-</div>
-
+    </div>
 </div>
 </div>
 
@@ -1269,7 +1209,7 @@ git push --delete origin experiment
 <span class="c1"># - also can use github interface</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1279,12 +1219,15 @@ git push --delete origin experiment
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stderr output_text">
-<pre>To github.com:UCL/github-example.git
- - [deleted]         experiment
+<pre>Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
 </pre>
 </div>
 </div>
@@ -1302,33 +1245,13 @@ git push --delete origin experiment
 git branch --remote
 </pre></div>
 
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>  origin/gh-pages
-  origin/master
-</pre>
-</div>
-</div>
-
+    </div>
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="A-good-branch-strategy">A good branch strategy<a class="anchor-link" href="#A-good-branch-strategy">&#182;</a></h3><ul>
 <li>A <code>production</code> branch: code used for active work</li>
@@ -1344,8 +1267,7 @@ git branch --remote
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Grab-changes-from-a-branch">Grab changes from a branch<a class="anchor-link" href="#Grab-changes-from-a-branch">&#182;</a></h3><p>Make some changes on one branch, switch back to another, and use:</p>
 
@@ -1353,8 +1275,7 @@ git branch --remote
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <div class="highlight"><pre><span></span>git checkout &lt;branch&gt; &lt;path&gt;
 </pre></div>
@@ -1363,8 +1284,7 @@ git branch --remote
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>To quickly grab a file from one branch into another.</p>
 <p>Using <code>git checkout</code> with a path takes the content of files.
@@ -1375,8 +1295,7 @@ and apply it as a patch to your branch, use:</p>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <div class="highlight"><pre><span></span>git cherry-pick &lt;commit&gt;
 </pre></div>
@@ -1435,7 +1354,7 @@ and apply it as a patch to your branch, use:</p>
       <li class="footer__item text-muted small">University College London,&nbsp;Gower Street,&nbsp;London,&nbsp;WC1E 6BT&nbsp;Tel:&nbsp;+44&nbsp;(0)&nbsp;20 7679 2000</li>
     </ul>
     <ul class="list-inline footer__list list-unstyled list-inline--divided">
-      <li class="text-muted small">Copyright © 2018-06-01 11:04:20 +0000 UCL</li>
+      <li class="text-muted small">Copyright © 2018-09-25 16:44:08 +0000 UCL</li>
       <li class="text-muted small"><a href="#">Disclaimer</a>
       </li>
       <li class="text-muted small"><a href="#">Freedom of Information</a>

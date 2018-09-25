@@ -221,16 +221,14 @@
           
 
     <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Collaboration">Collaboration<a class="anchor-link" href="#Collaboration">&#182;</a></h2><h3 id="Form-a-team">Form a team<a class="anchor-link" href="#Form-a-team">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Now we're going to get to the most important question of all with Git and GitHub: working with others.</p>
 <p>Organise into pairs. You're going to be working on the website of one of the two of you, together, so decide who is going to be the leader, and who the collaborator.</p>
@@ -239,8 +237,7 @@
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Giving-permission">Giving permission<a class="anchor-link" href="#Giving-permission">&#182;</a></h3><p>The leader needs to let the collaborator have the right to make changes to his code.</p>
 <p>In GitHub, go to <code>settings</code> on the right, then <code>collaborators</code> on the left.</p>
@@ -250,8 +247,7 @@
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Obtaining-a-colleague's-code">Obtaining a colleague's code<a class="anchor-link" href="#Obtaining-a-colleague's-code">&#182;</a></h3><p>Next, the collaborator needs to get a copy of the leader's code. For this example notebook,
 I'm going to be collaborating with myself, swapping between my two repositories.
@@ -272,7 +268,7 @@ Make yourself a space to put it your work. (I will have two)</p>
 <span class="n">os</span><span class="o">.</span><span class="n">chdir</span><span class="p">(</span><span class="n">git_dir</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -288,7 +284,7 @@ rm -rf github-example <span class="c1"># cleanup after previous example</span>
 rm -rf partner_dir <span class="c1"># cleanup after previous example</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -298,7 +294,7 @@ rm -rf partner_dir <span class="c1"># cleanup after previous example</span>
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -312,8 +308,7 @@ rm -rf partner_dir <span class="c1"># cleanup after previous example</span>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Next, the collaborator needs to find out the URL of the repository: they should go to the leader's repository's GitHub page, and note the URL on the top of the screen. Make sure the "ssh" button is pushed, the URL should begin with <code>git@github.com</code>.</p>
 <p>Copy the URL into your clipboard by clicking on the icon to the right of the URL, and then:</p>
@@ -332,7 +327,7 @@ git clone git@github.com:UCL/github-example.git
 mv github-example partner_dir
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -342,7 +337,7 @@ mv github-example partner_dir
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -353,11 +348,17 @@ mv github-example partner_dir
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stderr output_text">
 <pre>Cloning into &#39;github-example&#39;...
+Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+mv: cannot stat ‘github-example’: No such file or directory
 </pre>
 </div>
 </div>
@@ -375,7 +376,31 @@ mv github-example partner_dir
 <span class="n">os</span><span class="o">.</span><span class="n">chdir</span><span class="p">(</span><span class="n">partner_dir</span><span class="p">)</span>
 </pre></div>
 
+    </div>
 </div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">FileNotFoundError</span>                         Traceback (most recent call last)
+<span class="ansi-green-fg">&lt;ipython-input-4-861f5dd2a986&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">      1</span> partner_dir<span class="ansi-blue-fg">=</span>os<span class="ansi-blue-fg">.</span>path<span class="ansi-blue-fg">.</span>join<span class="ansi-blue-fg">(</span>git_dir<span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">&#39;partner_dir&#39;</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-fg">----&gt; 2</span><span class="ansi-red-fg"> </span>os<span class="ansi-blue-fg">.</span>chdir<span class="ansi-blue-fg">(</span>partner_dir<span class="ansi-blue-fg">)</span>
+
+<span class="ansi-red-fg">FileNotFoundError</span>: [Errno 2] No such file or directory: &#39;/home/travis/build/UCL/rsd-engineeringcourse/ch02git/learning_git/partner_dir&#39;</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -390,7 +415,7 @@ mv github-example partner_dir
 ls
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -400,13 +425,12 @@ ls
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>/home/travis/build/UCL/rsd-engineeringcourse/ch02git/learning_git/partner_dir
-index.md
-lakeland.md
+<pre>/home/travis/build/UCL/rsd-engineeringcourse/ch02git/learning_git
+git_example
 </pre>
 </div>
 </div>
@@ -416,8 +440,7 @@ lakeland.md
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Note that your partner's files are now present on your disk:</p>
 
@@ -433,7 +456,7 @@ lakeland.md
 cat lakeland.md
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -443,17 +466,12 @@ cat lakeland.md
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Lakeland  
-========   
-  
-Cumbria has some pretty hills, and lakes too
-
-Mountains:
-* Helvellyn</pre>
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>cat: lakeland.md: No such file or directory
+</pre>
 </div>
 </div>
 
@@ -462,8 +480,7 @@ Mountains:
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Nonconflicting-changes">Nonconflicting changes<a class="anchor-link" href="#Nonconflicting-changes">&#182;</a></h3><p>Now, both of you should make some changes. To start with, make changes to <em>different</em> files. This will mean your work doesn't "conflict". Later, we'll see how to deal with changes to a shared file.</p>
 
@@ -471,8 +488,7 @@ Mountains:
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Both of you should commit, but not push, your changes to your respective files:</p>
 
@@ -480,8 +496,7 @@ Mountains:
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>E.g., the leader:</p>
 
@@ -496,7 +511,7 @@ Mountains:
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">os</span><span class="o">.</span><span class="n">chdir</span><span class="p">(</span><span class="n">working_dir</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -514,7 +529,7 @@ Mountains In Wales
 * Yr Wyddfa
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -524,7 +539,7 @@ Mountains In Wales
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -546,7 +561,7 @@ Mountains In Wales
 ls
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -556,7 +571,7 @@ ls
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -583,7 +598,7 @@ git add Wales.md
 git commit -m <span class="s2">&quot;Add wales&quot;</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -593,11 +608,11 @@ git commit -m <span class="s2">&quot;Add wales&quot;</span>
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[master 0039830] Add wales
+<pre>[master b6298ee] Add wales
  1 file changed, 5 insertions(+)
  create mode 100644 Wales.md
 </pre>
@@ -609,8 +624,7 @@ git commit -m <span class="s2">&quot;Add wales&quot;</span>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>And the partner:</p>
 
@@ -625,7 +639,30 @@ git commit -m <span class="s2">&quot;Add wales&quot;</span>
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">os</span><span class="o">.</span><span class="n">chdir</span><span class="p">(</span><span class="n">partner_dir</span><span class="p">)</span>
 </pre></div>
 
+    </div>
 </div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">FileNotFoundError</span>                         Traceback (most recent call last)
+<span class="ansi-green-fg">&lt;ipython-input-11-3475f3cce89a&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-fg">----&gt; 1</span><span class="ansi-red-fg"> </span>os<span class="ansi-blue-fg">.</span>chdir<span class="ansi-blue-fg">(</span>partner_dir<span class="ansi-blue-fg">)</span>
+
+<span class="ansi-red-fg">FileNotFoundError</span>: [Errno 2] No such file or directory: &#39;/home/travis/build/UCL/rsd-engineeringcourse/ch02git/learning_git/partner_dir&#39;</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -643,7 +680,7 @@ Mountains In Scotland
 * Cairngorm
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -653,7 +690,7 @@ Mountains In Scotland
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -675,7 +712,7 @@ Mountains In Scotland
 ls
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -685,13 +722,16 @@ ls
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>index.md
 lakeland.md
+__pycache__
 Scotland.md
+Wales.md
+wsd.py
 </pre>
 </div>
 </div>
@@ -710,7 +750,7 @@ git add Scotland.md
 git commit -m <span class="s2">&quot;Add Scotland&quot;</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -720,11 +760,11 @@ git commit -m <span class="s2">&quot;Add Scotland&quot;</span>
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[master 8fb4e77] Add Scotland
+<pre>[master 3a3b56d] Add Scotland
  1 file changed, 5 insertions(+)
  create mode 100644 Scotland.md
 </pre>
@@ -736,8 +776,7 @@ git commit -m <span class="s2">&quot;Add Scotland&quot;</span>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>One of you should now push with <code>git push</code>:</p>
 
@@ -753,7 +792,7 @@ git commit -m <span class="s2">&quot;Add Scotland&quot;</span>
 git push
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -763,12 +802,15 @@ git push
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stderr output_text">
-<pre>To github.com:UCL/github-example.git
-   4834ec8..8fb4e77  master -&gt; master
+<pre>fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
 </pre>
 </div>
 </div>
@@ -778,16 +820,14 @@ git push
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Rejected-push">Rejected push<a class="anchor-link" href="#Rejected-push">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>The other should then push, but should receive an error message:</p>
 
@@ -802,7 +842,7 @@ git push
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">os</span><span class="o">.</span><span class="n">chdir</span><span class="p">(</span><span class="n">working_dir</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -816,7 +856,7 @@ git push
 git push
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -826,18 +866,15 @@ git push
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stderr output_text">
-<pre>To github.com:UCL/github-example.git
- ! [rejected]        master -&gt; master (fetch first)
-error: failed to push some refs to &#39;git@github.com:UCL/github-example.git&#39;
-hint: Updates were rejected because the remote contains work that you do
-hint: not have locally. This is usually caused by another repository pushing
-hint: to the same ref. You may want to first integrate the remote changes
-hint: (e.g., &#39;git pull ...&#39;) before pushing again.
-hint: See the &#39;Note about fast-forwards&#39; in &#39;git push --help&#39; for details.
+<pre>fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
 </pre>
 </div>
 </div>
@@ -847,8 +884,7 @@ hint: See the &#39;Note about fast-forwards&#39; in &#39;git push --help&#39; fo
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Do as it suggests:</p>
 
@@ -864,7 +900,7 @@ hint: See the &#39;Note about fast-forwards&#39; in &#39;git push --help&#39; fo
 git pull
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -874,27 +910,15 @@ git pull
 
 <div class="output_area">
 
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Merge made by the &#39;recursive&#39; strategy.
- Scotland.md | 5 +++++
- 1 file changed, 5 insertions(+)
- create mode 100644 Scotland.md
-</pre>
-</div>
-</div>
-
-<div class="output_area">
-
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stderr output_text">
-<pre>From github.com:UCL/github-example
-   4834ec8..8fb4e77  master     -&gt; origin/master
- * [new branch]      gh-pages   -&gt; origin/gh-pages
+<pre>Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
 </pre>
 </div>
 </div>
@@ -904,8 +928,7 @@ git pull
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Merge-commits">Merge commits<a class="anchor-link" href="#Merge-commits">&#182;</a></h3><p>A window may pop up with a suggested default commit message. This commit is special: it is a <em>merge</em> commit. It is a commit which combines your collaborator's work with your own.</p>
 
@@ -913,8 +936,7 @@ git pull
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Now, push again with <code>git push</code>. This time it works. If you look on GitHub, you'll now see that it contains both sets of changes.</p>
 
@@ -930,7 +952,7 @@ git pull
 git push
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -940,12 +962,15 @@ git push
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stderr output_text">
-<pre>To github.com:UCL/github-example.git
-   8fb4e77..5e97866  master -&gt; master
+<pre>fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
 </pre>
 </div>
 </div>
@@ -955,8 +980,7 @@ git push
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>The partner now needs to pull down that commit:</p>
 
@@ -971,7 +995,30 @@ git push
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">os</span><span class="o">.</span><span class="n">chdir</span><span class="p">(</span><span class="n">partner_dir</span><span class="p">)</span>
 </pre></div>
 
+    </div>
 </div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">FileNotFoundError</span>                         Traceback (most recent call last)
+<span class="ansi-green-fg">&lt;ipython-input-20-3475f3cce89a&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-fg">----&gt; 1</span><span class="ansi-red-fg"> </span>os<span class="ansi-blue-fg">.</span>chdir<span class="ansi-blue-fg">(</span>partner_dir<span class="ansi-blue-fg">)</span>
+
+<span class="ansi-red-fg">FileNotFoundError</span>: [Errno 2] No such file or directory: &#39;/home/travis/build/UCL/rsd-engineeringcourse/ch02git/learning_git/partner_dir&#39;</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -985,7 +1032,7 @@ git push
 git pull
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -995,27 +1042,15 @@ git pull
 
 <div class="output_area">
 
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Updating 8fb4e77..5e97866
-Fast-forward
- Wales.md | 5 +++++
- 1 file changed, 5 insertions(+)
- create mode 100644 Wales.md
-</pre>
-</div>
-</div>
-
-<div class="output_area">
-
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stderr output_text">
-<pre>From github.com:UCL/github-example
-   8fb4e77..5e97866  master     -&gt; origin/master
+<pre>Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
 </pre>
 </div>
 </div>
@@ -1033,7 +1068,7 @@ Fast-forward
 ls
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1043,14 +1078,16 @@ ls
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>index.md
 lakeland.md
+__pycache__
 Scotland.md
 Wales.md
+wsd.py
 </pre>
 </div>
 </div>
@@ -1060,8 +1097,7 @@ Wales.md
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Nonconflicted-commits-to-the-same-file">Nonconflicted commits to the same file<a class="anchor-link" href="#Nonconflicted-commits-to-the-same-file">&#182;</a></h3><p>Go through the whole process again, but this time, both of you should make changes to a single file, but make sure that you don't touch the same <em>line</em>. Again, the merge should work as before:</p>
 
@@ -1081,7 +1117,7 @@ Mountains In Wales
 * Snowdon
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1091,7 +1127,7 @@ Mountains In Wales
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -1113,7 +1149,7 @@ Mountains In Wales
 git diff
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1123,7 +1159,7 @@ git diff
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -1156,7 +1192,7 @@ index 3809c69..e2ca555 100644
 git commit -am <span class="s2">&quot;Translating from the Welsh&quot;</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1166,11 +1202,11 @@ git commit -am <span class="s2">&quot;Translating from the Welsh&quot;</span>
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[master fa3b5ab] Translating from the Welsh
+<pre>[master daafc6b] Translating from the Welsh
  1 file changed, 1 insertion(+), 1 deletion(-)
 </pre>
 </div>
@@ -1189,7 +1225,7 @@ git commit -am <span class="s2">&quot;Translating from the Welsh&quot;</span>
 git log --oneline
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1199,21 +1235,20 @@ git log --oneline
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>fa3b5ab Translating from the Welsh
-5e97866 Merge branch &#39;master&#39; of github.com:UCL/github-example
-0039830 Add wales
-8fb4e77 Add Scotland
-4834ec8 Add Helvellyn
-bc8a2b1 Include lakes in the scope
-35b9df7 Add lakeland
-b591cef Revert &#34;Add a lie about a mountain&#34;
-39c864a Change title
-0a9e42c Add a lie about a mountain
-7b5a621 First commit of discourse on UK topography
+<pre>daafc6b Translating from the Welsh
+3a3b56d Add Scotland
+b6298ee Add wales
+fbbe6e7 Add Helvellyn
+f8108c5 Include lakes in the scope
+b4043da Add lakeland
+68a27c0 Revert &#34;Add a lie about a mountain&#34;
+7b64138 Change title
+160797a Add a lie about a mountain
+6e6393c First commit of discourse on UK topography
 </pre>
 </div>
 </div>
@@ -1230,7 +1265,7 @@ b591cef Revert &#34;Add a lie about a mountain&#34;
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">os</span><span class="o">.</span><span class="n">chdir</span><span class="p">(</span><span class="n">working_dir</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1249,7 +1284,7 @@ Mountains In Wales
 * Snowdon
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1259,7 +1294,7 @@ Mountains In Wales
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -1281,7 +1316,7 @@ Mountains In Wales
 git commit -am <span class="s2">&quot;Add a beacon&quot;</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1291,12 +1326,12 @@ git commit -am <span class="s2">&quot;Add a beacon&quot;</span>
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[master cb7c4c8] Add a beacon
- 1 file changed, 2 insertions(+), 1 deletion(-)
+<pre>[master d51abef] Add a beacon
+ 1 file changed, 1 insertion(+)
 </pre>
 </div>
 </div>
@@ -1314,7 +1349,7 @@ git commit -am <span class="s2">&quot;Add a beacon&quot;</span>
 git log --oneline
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1324,21 +1359,21 @@ git log --oneline
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>cb7c4c8 Add a beacon
-5e97866 Merge branch &#39;master&#39; of github.com:UCL/github-example
-0039830 Add wales
-8fb4e77 Add Scotland
-4834ec8 Add Helvellyn
-bc8a2b1 Include lakes in the scope
-35b9df7 Add lakeland
-b591cef Revert &#34;Add a lie about a mountain&#34;
-39c864a Change title
-0a9e42c Add a lie about a mountain
-7b5a621 First commit of discourse on UK topography
+<pre>d51abef Add a beacon
+daafc6b Translating from the Welsh
+3a3b56d Add Scotland
+b6298ee Add wales
+fbbe6e7 Add Helvellyn
+f8108c5 Include lakes in the scope
+b4043da Add lakeland
+68a27c0 Revert &#34;Add a lie about a mountain&#34;
+7b64138 Change title
+160797a Add a lie about a mountain
+6e6393c First commit of discourse on UK topography
 </pre>
 </div>
 </div>
@@ -1356,7 +1391,7 @@ b591cef Revert &#34;Add a lie about a mountain&#34;
 git push
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1366,12 +1401,15 @@ git push
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stderr output_text">
-<pre>To github.com:UCL/github-example.git
-   5e97866..cb7c4c8  master -&gt; master
+<pre>fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
 </pre>
 </div>
 </div>
@@ -1381,8 +1419,7 @@ git push
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Switching back to the other partner...</p>
 
@@ -1397,7 +1434,30 @@ git push
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">os</span><span class="o">.</span><span class="n">chdir</span><span class="p">(</span><span class="n">partner_dir</span><span class="p">)</span>
 </pre></div>
 
+    </div>
 </div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">FileNotFoundError</span>                         Traceback (most recent call last)
+<span class="ansi-green-fg">&lt;ipython-input-32-3475f3cce89a&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-fg">----&gt; 1</span><span class="ansi-red-fg"> </span>os<span class="ansi-blue-fg">.</span>chdir<span class="ansi-blue-fg">(</span>partner_dir<span class="ansi-blue-fg">)</span>
+
+<span class="ansi-red-fg">FileNotFoundError</span>: [Errno 2] No such file or directory: &#39;/home/travis/build/UCL/rsd-engineeringcourse/ch02git/learning_git/partner_dir&#39;</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -1411,7 +1471,7 @@ git push
 git push
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1421,18 +1481,15 @@ git push
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stderr output_text">
-<pre>To github.com:UCL/github-example.git
- ! [rejected]        master -&gt; master (fetch first)
-error: failed to push some refs to &#39;git@github.com:UCL/github-example.git&#39;
-hint: Updates were rejected because the remote contains work that you do
-hint: not have locally. This is usually caused by another repository pushing
-hint: to the same ref. You may want to first integrate the remote changes
-hint: (e.g., &#39;git pull ...&#39;) before pushing again.
-hint: See the &#39;Note about fast-forwards&#39; in &#39;git push --help&#39; for details.
+<pre>fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
 </pre>
 </div>
 </div>
@@ -1450,7 +1507,7 @@ hint: See the &#39;Note about fast-forwards&#39; in &#39;git push --help&#39; fo
 git pull
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1460,26 +1517,15 @@ git pull
 
 <div class="output_area">
 
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Auto-merging Wales.md
-Merge made by the &#39;recursive&#39; strategy.
- Wales.md | 1 +
- 1 file changed, 1 insertion(+)
-</pre>
-</div>
-</div>
-
-<div class="output_area">
-
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stderr output_text">
-<pre>From github.com:UCL/github-example
-   5e97866..cb7c4c8  master     -&gt; origin/master
+<pre>Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
 </pre>
 </div>
 </div>
@@ -1497,7 +1543,7 @@ Merge made by the &#39;recursive&#39; strategy.
 git push
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1507,12 +1553,15 @@ git push
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stderr output_text">
-<pre>To github.com:UCL/github-example.git
-   cb7c4c8..cb65ccc  master -&gt; master
+<pre>fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
 </pre>
 </div>
 </div>
@@ -1530,7 +1579,7 @@ git push
 git log --oneline --graph
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1540,27 +1589,21 @@ git log --oneline --graph
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>*   cb65ccc Merge branch &#39;master&#39; of github.com:UCL/github-example
-|\  
-| * cb7c4c8 Add a beacon
-* | fa3b5ab Translating from the Welsh
-|/  
-*   5e97866 Merge branch &#39;master&#39; of github.com:UCL/github-example
-|\  
-| * 8fb4e77 Add Scotland
-* | 0039830 Add wales
-|/  
-* 4834ec8 Add Helvellyn
-* bc8a2b1 Include lakes in the scope
-* 35b9df7 Add lakeland
-* b591cef Revert &#34;Add a lie about a mountain&#34;
-* 39c864a Change title
-* 0a9e42c Add a lie about a mountain
-* 7b5a621 First commit of discourse on UK topography
+<pre>* d51abef Add a beacon
+* daafc6b Translating from the Welsh
+* 3a3b56d Add Scotland
+* b6298ee Add wales
+* fbbe6e7 Add Helvellyn
+* f8108c5 Include lakes in the scope
+* b4043da Add lakeland
+* 68a27c0 Revert &#34;Add a lie about a mountain&#34;
+* 7b64138 Change title
+* 160797a Add a lie about a mountain
+* 6e6393c First commit of discourse on UK topography
 </pre>
 </div>
 </div>
@@ -1577,7 +1620,7 @@ git log --oneline --graph
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">os</span><span class="o">.</span><span class="n">chdir</span><span class="p">(</span><span class="n">working_dir</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1591,7 +1634,7 @@ git log --oneline --graph
 git pull
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1601,24 +1644,15 @@ git pull
 
 <div class="output_area">
 
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Updating cb7c4c8..cb65ccc
-Fast-forward
-</pre>
-</div>
-</div>
-
-<div class="output_area">
-
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stderr output_text">
-<pre>From github.com:UCL/github-example
-   cb7c4c8..cb65ccc  master     -&gt; origin/master
+<pre>Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
 </pre>
 </div>
 </div>
@@ -1636,7 +1670,7 @@ Fast-forward
 git log --graph --oneline
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1646,27 +1680,21 @@ git log --graph --oneline
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>*   cb65ccc Merge branch &#39;master&#39; of github.com:UCL/github-example
-|\  
-| * cb7c4c8 Add a beacon
-* | fa3b5ab Translating from the Welsh
-|/  
-*   5e97866 Merge branch &#39;master&#39; of github.com:UCL/github-example
-|\  
-| * 8fb4e77 Add Scotland
-* | 0039830 Add wales
-|/  
-* 4834ec8 Add Helvellyn
-* bc8a2b1 Include lakes in the scope
-* 35b9df7 Add lakeland
-* b591cef Revert &#34;Add a lie about a mountain&#34;
-* 39c864a Change title
-* 0a9e42c Add a lie about a mountain
-* 7b5a621 First commit of discourse on UK topography
+<pre>* d51abef Add a beacon
+* daafc6b Translating from the Welsh
+* 3a3b56d Add Scotland
+* b6298ee Add wales
+* fbbe6e7 Add Helvellyn
+* f8108c5 Include lakes in the scope
+* b4043da Add lakeland
+* 68a27c0 Revert &#34;Add a lie about a mountain&#34;
+* 7b64138 Change title
+* 160797a Add a lie about a mountain
+* 6e6393c First commit of discourse on UK topography
 </pre>
 </div>
 </div>
@@ -1719,7 +1747,7 @@ git log --graph --oneline
 <span class="n">wsd</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1729,7 +1757,7 @@ git log --graph --oneline
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[40]:</div>
+    <div class="prompt output_prompt">Out[40]:</div>
 
 
 
@@ -1747,8 +1775,7 @@ git log --graph --oneline
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Conflicting-commits">Conflicting commits<a class="anchor-link" href="#Conflicting-commits">&#182;</a></h3><p>Finally, go through the process again, but this time, make changes which touch the same line.</p>
 
@@ -1770,7 +1797,7 @@ Mountains In Wales
 * Fan y Big
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1780,7 +1807,7 @@ Mountains In Wales
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -1803,7 +1830,7 @@ git commit -am <span class="s2">&quot;Add another Beacon&quot;</span>
 git push
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1813,11 +1840,11 @@ git push
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[master e4328a9] Add another Beacon
+<pre>[master 01c8330] Add another Beacon
  1 file changed, 2 insertions(+), 1 deletion(-)
 </pre>
 </div>
@@ -1825,12 +1852,15 @@ git push
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stderr output_text">
-<pre>To github.com:UCL/github-example.git
-   cb65ccc..e4328a9  master -&gt; master
+<pre>fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
 </pre>
 </div>
 </div>
@@ -1847,7 +1877,30 @@ git push
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">os</span><span class="o">.</span><span class="n">chdir</span><span class="p">(</span><span class="n">partner_dir</span><span class="p">)</span>
 </pre></div>
 
+    </div>
 </div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">FileNotFoundError</span>                         Traceback (most recent call last)
+<span class="ansi-green-fg">&lt;ipython-input-43-3475f3cce89a&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-fg">----&gt; 1</span><span class="ansi-red-fg"> </span>os<span class="ansi-blue-fg">.</span>chdir<span class="ansi-blue-fg">(</span>partner_dir<span class="ansi-blue-fg">)</span>
+
+<span class="ansi-red-fg">FileNotFoundError</span>: [Errno 2] No such file or directory: &#39;/home/travis/build/UCL/rsd-engineeringcourse/ch02git/learning_git/partner_dir&#39;</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -1867,7 +1920,7 @@ Mountains In Wales
 * Glyder Fawr
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1877,7 +1930,7 @@ Mountains In Wales
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -1900,7 +1953,7 @@ git commit -am <span class="s2">&quot;Add Glyder&quot;</span>
 git push
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1910,30 +1963,27 @@ git push
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[master bc29730] Add Glyder
- 1 file changed, 2 insertions(+), 1 deletion(-)
+<pre>[master c730120] Add Glyder
+ 1 file changed, 1 insertion(+), 1 deletion(-)
 </pre>
 </div>
 </div>
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stderr output_text">
-<pre>To github.com:UCL/github-example.git
- ! [rejected]        master -&gt; master (fetch first)
-error: failed to push some refs to &#39;git@github.com:UCL/github-example.git&#39;
-hint: Updates were rejected because the remote contains work that you do
-hint: not have locally. This is usually caused by another repository pushing
-hint: to the same ref. You may want to first integrate the remote changes
-hint: (e.g., &#39;git pull ...&#39;) before pushing again.
-hint: See the &#39;Note about fast-forwards&#39; in &#39;git push --help&#39; for details.
+<pre>fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
 </pre>
 </div>
 </div>
@@ -1943,8 +1993,7 @@ hint: See the &#39;Note about fast-forwards&#39; in &#39;git push --help&#39; fo
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>When you pull, instead of offering an automatic merge commit message, it says:</p>
 
@@ -1960,7 +2009,7 @@ hint: See the &#39;Note about fast-forwards&#39; in &#39;git push --help&#39; fo
 git pull
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1970,25 +2019,15 @@ git pull
 
 <div class="output_area">
 
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Auto-merging Wales.md
-CONFLICT (content): Merge conflict in Wales.md
-Automatic merge failed; fix conflicts and then commit the result.
-</pre>
-</div>
-</div>
-
-<div class="output_area">
-
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stderr output_text">
-<pre>From github.com:UCL/github-example
-   cb65ccc..e4328a9  master     -&gt; origin/master
+<pre>Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
 </pre>
 </div>
 </div>
@@ -1998,8 +2037,7 @@ Automatic merge failed; fix conflicts and then commit the result.
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Resolving-conflicts">Resolving conflicts<a class="anchor-link" href="#Resolving-conflicts">&#182;</a></h3><p>Git couldn't work out how to merge the two different sets of changes.</p>
 <p>You now need to manually resolve the conflict.</p>
@@ -2017,7 +2055,7 @@ Automatic merge failed; fix conflicts and then commit the result.
 cat Wales.md
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -2027,7 +2065,7 @@ cat Wales.md
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -2037,12 +2075,7 @@ cat Wales.md
 * Pen y Fan
 * Tryfan
 * Snowdon
-&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
-* Glyder Fawr
-=======
-* Fan y Big
-&gt;&gt;&gt;&gt;&gt;&gt;&gt; e4328a9188699c7641d274eda3cefd4751ec9695
-</pre>
+* Glyder Fawr</pre>
 </div>
 </div>
 
@@ -2051,8 +2084,7 @@ cat Wales.md
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Manually edit the file, to combine the changes as seems sensible and get rid of the symbols:</p>
 
@@ -2075,7 +2107,7 @@ Mountains In Wales
 * Fan y Big
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -2085,7 +2117,7 @@ Mountains In Wales
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -2099,8 +2131,7 @@ Mountains In Wales
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Commit-the-resolved-file">Commit the resolved file<a class="anchor-link" href="#Commit-the-resolved-file">&#182;</a></h3><p>Now commit the merged result:</p>
 
@@ -2116,7 +2147,7 @@ Mountains In Wales
 git commit -a --no-edit <span class="c1"># I added a No-edit for this non-interactive session. You can edit the commit if you like.</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -2126,11 +2157,11 @@ git commit -a --no-edit <span class="c1"># I added a No-edit for this non-intera
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>[master df920af] Merge branch &#39;master&#39; of github.com:UCL/github-example
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>Aborting commit due to empty commit message.
 </pre>
 </div>
 </div>
@@ -2148,7 +2179,7 @@ git commit -a --no-edit <span class="c1"># I added a No-edit for this non-intera
 git push
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -2158,12 +2189,15 @@ git push
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stderr output_text">
-<pre>To github.com:UCL/github-example.git
-   e4328a9..df920af  master -&gt; master
+<pre>fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
 </pre>
 </div>
 </div>
@@ -2180,7 +2214,7 @@ git push
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">os</span><span class="o">.</span><span class="n">chdir</span><span class="p">(</span><span class="n">working_dir</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -2194,7 +2228,7 @@ git push
 git pull
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -2204,26 +2238,15 @@ git pull
 
 <div class="output_area">
 
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Updating e4328a9..df920af
-Fast-forward
- Wales.md | 1 +
- 1 file changed, 1 insertion(+)
-</pre>
-</div>
-</div>
-
-<div class="output_area">
-
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stderr output_text">
-<pre>From github.com:UCL/github-example
-   e4328a9..df920af  master     -&gt; origin/master
+<pre>Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
 </pre>
 </div>
 </div>
@@ -2241,7 +2264,7 @@ Fast-forward
 cat Wales.md
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -2251,7 +2274,7 @@ cat Wales.md
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -2279,7 +2302,7 @@ cat Wales.md
 git log --oneline --graph
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -2289,32 +2312,23 @@ git log --oneline --graph
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>*   df920af Merge branch &#39;master&#39; of github.com:UCL/github-example
-|\  
-| * e4328a9 Add another Beacon
-* | bc29730 Add Glyder
-|/  
-*   cb65ccc Merge branch &#39;master&#39; of github.com:UCL/github-example
-|\  
-| * cb7c4c8 Add a beacon
-* | fa3b5ab Translating from the Welsh
-|/  
-*   5e97866 Merge branch &#39;master&#39; of github.com:UCL/github-example
-|\  
-| * 8fb4e77 Add Scotland
-* | 0039830 Add wales
-|/  
-* 4834ec8 Add Helvellyn
-* bc8a2b1 Include lakes in the scope
-* 35b9df7 Add lakeland
-* b591cef Revert &#34;Add a lie about a mountain&#34;
-* 39c864a Change title
-* 0a9e42c Add a lie about a mountain
-* 7b5a621 First commit of discourse on UK topography
+<pre>* c730120 Add Glyder
+* 01c8330 Add another Beacon
+* d51abef Add a beacon
+* daafc6b Translating from the Welsh
+* 3a3b56d Add Scotland
+* b6298ee Add wales
+* fbbe6e7 Add Helvellyn
+* f8108c5 Include lakes in the scope
+* b4043da Add lakeland
+* 68a27c0 Revert &#34;Add a lie about a mountain&#34;
+* 7b64138 Change title
+* 160797a Add a lie about a mountain
+* 6e6393c First commit of discourse on UK topography
 </pre>
 </div>
 </div>
@@ -2324,8 +2338,7 @@ git log --oneline --graph
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Distributed-VCS-in-teams-with-conflicts">Distributed VCS in teams with conflicts<a class="anchor-link" href="#Distributed-VCS-in-teams-with-conflicts">&#182;</a></h3>
 </div>
@@ -2377,7 +2390,7 @@ git log --oneline --graph
 <span class="n">wsd</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -2387,7 +2400,7 @@ git log --oneline --graph
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[55]:</div>
+    <div class="prompt output_prompt">Out[55]:</div>
 
 
 
@@ -2405,8 +2418,7 @@ git log --oneline --graph
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="The-Levels-of-Git">The Levels of Git<a class="anchor-link" href="#The-Levels-of-Git">&#182;</a></h3>
 </div>
@@ -2433,7 +2445,7 @@ git log --oneline --graph
 <span class="n">wsd</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -2443,7 +2455,7 @@ git log --oneline --graph
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[56]:</div>
+    <div class="prompt output_prompt">Out[56]:</div>
 
 
 
@@ -2461,8 +2473,7 @@ git log --oneline --graph
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Editing-directly-on-GitHub">Editing directly on GitHub<a class="anchor-link" href="#Editing-directly-on-GitHub">&#182;</a></h2><h3 id="Editing-directly-on-GitHub">Editing directly on GitHub<a class="anchor-link" href="#Editing-directly-on-GitHub">&#182;</a></h3><p>Note that you can also make changes in the GitHub website itself. Visit one of your files, and hit "edit".</p>
 <p>Make a change in the edit window, and add an appropriate commit message.</p>
@@ -2472,8 +2483,7 @@ git log --oneline --graph
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Now pull, and check the change is now present on your local version.</p>
 
@@ -2481,8 +2491,7 @@ git log --oneline --graph
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Social-Coding">Social Coding<a class="anchor-link" href="#Social-Coding">&#182;</a></h2><h3 id="GitHub-as-a-social-network">GitHub as a social network<a class="anchor-link" href="#GitHub-as-a-social-network">&#182;</a></h3><p>In addition to being a repository for code, and a way to publish code, GitHub is a social network.</p>
 <p>You can follow the public work of other coders: go to the profile of your collaborator in your browser, and hit the "follow" button.</p>
@@ -2543,7 +2552,7 @@ git log --oneline --graph
       <li class="footer__item text-muted small">University College London,&nbsp;Gower Street,&nbsp;London,&nbsp;WC1E 6BT&nbsp;Tel:&nbsp;+44&nbsp;(0)&nbsp;20 7679 2000</li>
     </ul>
     <ul class="list-inline footer__list list-unstyled list-inline--divided">
-      <li class="text-muted small">Copyright © 2018-06-01 11:04:20 +0000 UCL</li>
+      <li class="text-muted small">Copyright © 2018-09-25 16:44:08 +0000 UCL</li>
       <li class="text-muted small"><a href="#">Disclaimer</a>
       </li>
       <li class="text-muted small"><a href="#">Freedom of Information</a>

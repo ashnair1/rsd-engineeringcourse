@@ -221,8 +221,7 @@
           
 
     <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Using-a-debugger">Using a debugger<a class="anchor-link" href="#Using-a-debugger">&#182;</a></h2><h3 id="Stepping-through-the-code">Stepping through the code<a class="anchor-link" href="#Stepping-through-the-code">&#182;</a></h3><p>Debuggers are programs that can be used to test other programs. They allow programmers to suspend execution of the target program and inspect variables at that point.</p>
 <ul>
@@ -244,16 +243,14 @@ eclipse are GUIs for gdb)</li>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Using-the-python-debugger">Using the python debugger<a class="anchor-link" href="#Using-the-python-debugger">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Unfortunately this doesn't work nicely in the notebook. But from the command line, you can run a python program with:</p>
 
@@ -261,8 +258,7 @@ eclipse are GUIs for gdb)</li>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <div class="highlight"><pre><span></span>python -m pdb my_program.py
 </pre></div>
@@ -271,8 +267,7 @@ eclipse are GUIs for gdb)</li>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Basic-navigation:">Basic navigation:<a class="anchor-link" href="#Basic-navigation:">&#182;</a></h3><p>Basic command to navigate the code and the python debugger:</p>
 <ul>
@@ -306,7 +301,7 @@ from diffusion.model import energy
 print(energy([5, 6, 7, 8, 0, 1]))
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -316,7 +311,7 @@ print(energy([5, 6, 7, 8, 0, 1]))
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -330,8 +325,7 @@ print(energy([5, 6, 7, 8, 0, 1]))
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>The debugger is, of course, most used interactively, but here I'm showing a prewritten debugger script:</p>
 
@@ -351,7 +345,7 @@ c        # continue program until break point is reached
 print density # We are now &quot;inside&quot; the energy function and can print any variable.
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -361,7 +355,7 @@ print density # We are now &quot;inside&quot; the energy function and can print 
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -383,7 +377,7 @@ print density # We are now &quot;inside&quot; the energy function and can print 
 python -m pdb energy_example.py &lt; commands
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -393,7 +387,7 @@ python -m pdb energy_example.py &lt; commands
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -408,7 +402,7 @@ python -m pdb energy_example.py &lt; commands
 (Pdb) Breakpoint 1 at /home/travis/build/UCL/rsd-engineeringcourse/ch03tests/diffusion/model.py:3
 (Pdb) &gt; /home/travis/build/UCL/rsd-engineeringcourse/ch03tests/diffusion/model.py(9)energy()
 -&gt; from numpy import array, any, sum
-(Pdb) *** SyntaxError: Missing parentheses in call to &#39;print&#39;
+(Pdb) *** SyntaxError: Missing parentheses in call to &#39;print&#39;. Did you mean print(density # We are now &#34;inside&#34; the energy function and can print any variable.)?
 (Pdb) 
 </pre>
 </div>
@@ -419,8 +413,7 @@ python -m pdb energy_example.py &lt; commands
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Alternatively, break-points can be set on files: <code>b file.py:20</code> will stop on line 20 of <code>file.py</code>.</p>
 
@@ -428,8 +421,7 @@ python -m pdb energy_example.py &lt; commands
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Post-mortem">Post-mortem<a class="anchor-link" href="#Post-mortem">&#182;</a></h3><p>Debugging when something goes wrong:</p>
 <ol>
@@ -447,8 +439,7 @@ python -m pdb energy_example.py &lt; commands
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>This <strong>does</strong> work in the notebook.</p>
 
@@ -456,8 +447,7 @@ python -m pdb energy_example.py &lt; commands
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 
 <pre><code>%pdb on
@@ -518,7 +508,7 @@ partial_derivative(energy,[5,6,7,8,0,1],5)</code></pre>
       <li class="footer__item text-muted small">University College London,&nbsp;Gower Street,&nbsp;London,&nbsp;WC1E 6BT&nbsp;Tel:&nbsp;+44&nbsp;(0)&nbsp;20 7679 2000</li>
     </ul>
     <ul class="list-inline footer__list list-unstyled list-inline--divided">
-      <li class="text-muted small">Copyright © 2018-06-01 11:04:20 +0000 UCL</li>
+      <li class="text-muted small">Copyright © 2018-09-25 16:44:08 +0000 UCL</li>
       <li class="text-muted small"><a href="#">Disclaimer</a>
       </li>
       <li class="text-muted small"><a href="#">Freedom of Information</a>

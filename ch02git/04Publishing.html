@@ -221,16 +221,14 @@
           
 
     <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Publishing">Publishing<a class="anchor-link" href="#Publishing">&#182;</a></h2>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>We're still in our working directory:</p>
 
@@ -250,7 +248,7 @@
 <span class="n">working_dir</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -260,7 +258,7 @@
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[1]:</div>
+    <div class="prompt output_prompt">Out[1]:</div>
 
 
 
@@ -276,16 +274,14 @@
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Sharing-your-work">Sharing your work<a class="anchor-link" href="#Sharing-your-work">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>So far, all our work has been on our own computer. But a big part of the point of version control is keeping your work safe, on remote servers. Another part is making it easy to share your work with the world In this example, we'll be using the "GitHub" cloud repository to store and publish our work.</p>
 <p>If you have not done so already, you should create an account on GitHub: go to <a href="https://github.com/">https://github.com/</a>, fill in a username and password, and click on "sign up for free".</p>
@@ -294,8 +290,7 @@
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Creating-a-repository">Creating a repository<a class="anchor-link" href="#Creating-a-repository">&#182;</a></h3><p>Ok, let's create a repository to store our work. Hit "new repository" on the right of the github home screen, or click <a href="https://github.com/new">here</a>.</p>
 <p>Fill in a short name, and a description. Choose a "public" repository. Don't choose to add a Readme.</p>
@@ -304,8 +299,7 @@
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Paying-for-GitHub">Paying for GitHub<a class="anchor-link" href="#Paying-for-GitHub">&#182;</a></h3><p>For this software carpentry course, you should use public repositories in your personal account for your example work: it's good to share! GitHub is free for open source, but in general, charges a fee if you want to keep your work private.</p>
 <p>In the future, you might want to keep your work on GitHub private.</p>
@@ -316,8 +310,7 @@
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Adding-a-new-remote-to-your-repository">Adding a new remote to your repository<a class="anchor-link" href="#Adding-a-new-remote-to-your-repository">&#182;</a></h3><p>Instructions will appear, once you've created the repository, as to how to add this new "remote" server to your repository, in the lower box on the screen. Mine say:</p>
 
@@ -333,7 +326,7 @@
 git remote add origin git@github.com:UCL/github-example.git
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -348,7 +341,7 @@ git push -uf origin master <span class="c1"># I have an extra `f` switch here.</
       <span class="c1">#You should copy the instructions from YOUR repository.</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -358,24 +351,16 @@ git push -uf origin master <span class="c1"># I have an extra `f` switch here.</
 
 <div class="output_area">
 
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Branch &#39;master&#39; set up to track remote branch &#39;master&#39; from &#39;origin&#39;.
-</pre>
-</div>
-</div>
-
-<div class="output_area">
-
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stderr output_text">
-<pre>Warning: Permanently added the RSA host key for IP address &#39;192.30.253.113&#39; to the list of known hosts.
-To github.com:UCL/github-example.git
- + 9d8c0af...b591cef master -&gt; master (forced update)
+<pre>Warning: Permanently added the RSA host key for IP address &#39;192.30.253.112&#39; to the list of known hosts.
+Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
 </pre>
 </div>
 </div>
@@ -385,8 +370,7 @@ To github.com:UCL/github-example.git
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Remotes">Remotes<a class="anchor-link" href="#Remotes">&#182;</a></h3><p>The first command sets up the server as a new <code>remote</code>, called <code>origin</code>.</p>
 <p>Git, unlike some earlier version control systems is a "distributed" version control system, which means you can work with multiple remote servers.</p>
@@ -397,8 +381,7 @@ To github.com:UCL/github-example.git
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Let's add these commands to our diagram:</p>
 
@@ -424,7 +407,7 @@ To github.com:UCL/github-example.git
 <span class="n">wsd</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -434,7 +417,7 @@ To github.com:UCL/github-example.git
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[4]:</div>
+    <div class="prompt output_prompt">Out[4]:</div>
 
 
 
@@ -452,8 +435,7 @@ To github.com:UCL/github-example.git
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Playing-with-GitHub">Playing with GitHub<a class="anchor-link" href="#Playing-with-GitHub">&#182;</a></h3><p>Take a few moments to click around and work your way through the GitHub interface. Try clicking on 'index.md' to see the content of the file: notice how the markdown renders prettily.</p>
 <p>Click on "commits" near the top of the screen, to see all the changes you've made. Click on the commit number next to the right of a change, to see what changes it includes: removals are shown in red, and additions in green.</p>
@@ -462,16 +444,14 @@ To github.com:UCL/github-example.git
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Working-with-multiple-files">Working with multiple files<a class="anchor-link" href="#Working-with-multiple-files">&#182;</a></h2>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Some-new-content">Some new content<a class="anchor-link" href="#Some-new-content">&#182;</a></h3><p>So far, we've only worked with one file. Let's add another:</p>
 
@@ -479,8 +459,7 @@ To github.com:UCL/github-example.git
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <div class="highlight"><pre><span></span>vim lakeland.md
 </pre></div>
@@ -500,7 +479,7 @@ Lakeland
 Cumbria has some pretty hills, and lakes too.  
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -510,7 +489,7 @@ Cumbria has some pretty hills, and lakes too.
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -531,7 +510,7 @@ Cumbria has some pretty hills, and lakes too.
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">cat</span> <span class="n">lakeland</span><span class="o">.</span><span class="n">md</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -541,7 +520,7 @@ Cumbria has some pretty hills, and lakes too.
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -557,8 +536,7 @@ Cumbria has some pretty hills, and lakes too.  </pre>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Git-will-not-by-default-commit-your-new-file">Git will not by default commit your new file<a class="anchor-link" href="#Git-will-not-by-default-commit-your-new-file">&#182;</a></h3>
 </div>
@@ -573,7 +551,7 @@ Cumbria has some pretty hills, and lakes too.  </pre>
 git commit -am <span class="s2">&quot;Try to add Lakeland&quot;</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -583,13 +561,11 @@ git commit -am <span class="s2">&quot;Try to add Lakeland&quot;</span>
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>On branch master
-Your branch is up to date with &#39;origin/master&#39;.
-
 Untracked files:
 	__pycache__/
 	lakeland.md
@@ -605,8 +581,7 @@ nothing added to commit but untracked files present
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>This didn't do anything, because we've not told git to track the new file yet.</p>
 
@@ -614,8 +589,7 @@ nothing added to commit but untracked files present
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Tell-git-about-the-new-file">Tell git about the new file<a class="anchor-link" href="#Tell-git-about-the-new-file">&#182;</a></h3>
 </div>
@@ -631,7 +605,7 @@ git add lakeland.md
 git commit -am <span class="s2">&quot;Add lakeland&quot;</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -641,11 +615,11 @@ git commit -am <span class="s2">&quot;Add lakeland&quot;</span>
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[master 35b9df7] Add lakeland
+<pre>[master b4043da] Add lakeland
  1 file changed, 4 insertions(+)
  create mode 100644 lakeland.md
 </pre>
@@ -657,8 +631,7 @@ git commit -am <span class="s2">&quot;Add lakeland&quot;</span>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Ok, now we have added the change about Cumbria to the file. Let's publish it to the origin repository.</p>
 
@@ -674,7 +647,7 @@ git commit -am <span class="s2">&quot;Add lakeland&quot;</span>
 git push
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -684,12 +657,15 @@ git push
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stderr output_text">
-<pre>To github.com:UCL/github-example.git
-   b591cef..35b9df7  master -&gt; master
+<pre>fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
 </pre>
 </div>
 </div>
@@ -699,8 +675,7 @@ git push
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Visit GitHub, and notice this change is on your repository on the server. We could have said <code>git push origin</code> to specify the remote to use, but origin is the default.</p>
 
@@ -708,16 +683,14 @@ git push
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Changing-two-files-at-once">Changing two files at once<a class="anchor-link" href="#Changing-two-files-at-once">&#182;</a></h2>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>What if we change both files?</p>
 
@@ -739,7 +712,7 @@ Mountains:
 * Helvellyn
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -749,7 +722,7 @@ Mountains:
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -775,7 +748,7 @@ But has some tall hills, and maybe a
 mountain or two depending on your definition.
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -785,7 +758,7 @@ mountain or two depending on your definition.
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -807,7 +780,7 @@ mountain or two depending on your definition.
 git status
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -817,13 +790,11 @@ git status
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>On branch master
-Your branch is up to date with &#39;origin/master&#39;.
-
 Changes not staged for commit:
   (use &#34;git add &lt;file&gt;...&#34; to update what will be committed)
   (use &#34;git checkout -- &lt;file&gt;...&#34; to discard changes in working directory)
@@ -847,8 +818,7 @@ no changes added to commit (use &#34;git add&#34; and/or &#34;git commit -a&#34;
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>These changes should really be separate commits. We can do this with careful use of git add, to <strong>stage</strong> first one commit, then the other.</p>
 
@@ -865,7 +835,7 @@ git add index.md
 git commit -m <span class="s2">&quot;Include lakes in the scope&quot;</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -875,11 +845,11 @@ git commit -m <span class="s2">&quot;Include lakes in the scope&quot;</span>
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[master bc8a2b1] Include lakes in the scope
+<pre>[master f8108c5] Include lakes in the scope
  1 file changed, 4 insertions(+), 3 deletions(-)
 </pre>
 </div>
@@ -890,8 +860,7 @@ git commit -m <span class="s2">&quot;Include lakes in the scope&quot;</span>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Because we "staged" only index.md, the changes to lakeland.md were not included in that commit.</p>
 
@@ -907,7 +876,7 @@ git commit -m <span class="s2">&quot;Include lakes in the scope&quot;</span>
 git commit -am <span class="s2">&quot;Add Helvellyn&quot;</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -917,11 +886,11 @@ git commit -am <span class="s2">&quot;Add Helvellyn&quot;</span>
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[master 4834ec8] Add Helvellyn
+<pre>[master fbbe6e7] Add Helvellyn
  1 file changed, 4 insertions(+), 1 deletion(-)
 </pre>
 </div>
@@ -940,7 +909,7 @@ git commit -am <span class="s2">&quot;Add Helvellyn&quot;</span>
 git log --oneline
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -950,17 +919,17 @@ git log --oneline
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>4834ec8 Add Helvellyn
-bc8a2b1 Include lakes in the scope
-35b9df7 Add lakeland
-b591cef Revert &#34;Add a lie about a mountain&#34;
-39c864a Change title
-0a9e42c Add a lie about a mountain
-7b5a621 First commit of discourse on UK topography
+<pre>fbbe6e7 Add Helvellyn
+f8108c5 Include lakes in the scope
+b4043da Add lakeland
+68a27c0 Revert &#34;Add a lie about a mountain&#34;
+7b64138 Change title
+160797a Add a lie about a mountain
+6e6393c First commit of discourse on UK topography
 </pre>
 </div>
 </div>
@@ -978,7 +947,7 @@ b591cef Revert &#34;Add a lie about a mountain&#34;
 git push
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -988,12 +957,15 @@ git push
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stderr output_text">
-<pre>To github.com:UCL/github-example.git
-   35b9df7..4834ec8  master -&gt; master
+<pre>fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
 </pre>
 </div>
 </div>
@@ -1032,7 +1004,7 @@ git push
 <span class="n">wsd</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1042,7 +1014,7 @@ git push
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[17]:</div>
+    <div class="prompt output_prompt">Out[17]:</div>
 
 
 
@@ -1110,7 +1082,7 @@ git push
       <li class="footer__item text-muted small">University College London,&nbsp;Gower Street,&nbsp;London,&nbsp;WC1E 6BT&nbsp;Tel:&nbsp;+44&nbsp;(0)&nbsp;20 7679 2000</li>
     </ul>
     <ul class="list-inline footer__list list-unstyled list-inline--divided">
-      <li class="text-muted small">Copyright © 2018-06-01 11:04:20 +0000 UCL</li>
+      <li class="text-muted small">Copyright © 2018-09-25 16:44:08 +0000 UCL</li>
       <li class="text-muted small"><a href="#">Disclaimer</a>
       </li>
       <li class="text-muted small"><a href="#">Freedom of Information</a>

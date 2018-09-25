@@ -221,16 +221,14 @@
           
 
     <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Testing-frameworks">Testing frameworks<a class="anchor-link" href="#Testing-frameworks">&#182;</a></h2><h3 id="Why-use-testing-frameworks?">Why use testing frameworks?<a class="anchor-link" href="#Why-use-testing-frameworks?">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Frameworks should simplify our lives:</p>
 <ul>
@@ -252,16 +250,14 @@
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Common-testing-frameworks">Common testing frameworks<a class="anchor-link" href="#Common-testing-frameworks">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
 <li><p>Language agnostic: <a href="http://www.cmake.org/cmake/help/v2.8.12/ctest.html">CTest</a></p>
@@ -311,8 +307,7 @@
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="py.test-framework:-usage">py.test framework: usage<a class="anchor-link" href="#py.test-framework:-usage">&#182;</a></h3><p><a href="https://docs.pytest.org/en/latest/">py.test</a> is a recommended python testing framework.</p>
 
@@ -320,8 +315,7 @@
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>We can use its tools in the notebook for on-the-fly tests in the notebook. This, happily, includes the negative-tests example we were looking for a moment ago.</p>
 
@@ -341,7 +335,7 @@
     <span class="c1"># Do something</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -354,7 +348,7 @@
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">pytest</span> <span class="k">import</span> <span class="n">raises</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -368,14 +362,13 @@
     <span class="n">I_only_accept_positive_numbers</span><span class="p">(</span><span class="o">-</span><span class="mi">5</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>but the real power comes when we write a test file alongside our code files in our homemade packages:</p>
 
@@ -392,7 +385,7 @@ mkdir -p saskatchewan
 touch saskatchewan/__init__.py
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -418,7 +411,7 @@ def overlap(field1, field2):
     return overlap_height*overlap_width
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -428,7 +421,7 @@ def overlap(field1, field2):
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -459,7 +452,7 @@ def test_no_overlap():
     assert overlap((1,1,4,4),(4.5,4.5,5,5)) == 0.0
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -469,7 +462,7 @@ def test_no_overlap():
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -492,7 +485,7 @@ def test_no_overlap():
 py.test
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -502,17 +495,17 @@ py.test
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>============================= test session starts ==============================
-platform linux -- Python 3.4.6, pytest-3.0.7, py-1.4.33, pluggy-0.4.0
+platform linux -- Python 3.6.3, pytest-3.3.0, py-1.5.2, pluggy-0.6.0
 rootdir: /home/travis/build/UCL/rsd-engineeringcourse/ch03tests/saskatchewan, inifile:
-plugins: cov-2.5.1
+plugins: cov-2.6.0
 collected 3 items
 
-test_overlap.py ..F
+test_overlap.py ..F                                                      [100%]
 
 =================================== FAILURES ===================================
 _______________________________ test_no_overlap ________________________________
@@ -523,7 +516,7 @@ E       assert 0.25 == 0.0
 E        +  where 0.25 = overlap((1, 1, 4, 4), (4.5, 4.5, 5, 5))
 
 test_overlap.py:10: AssertionError
-====================== 1 failed, 2 passed in 0.03 seconds ======================
+====================== 1 failed, 2 passed in 0.04 seconds ======================
 </pre>
 </div>
 </div>
@@ -533,8 +526,7 @@ test_overlap.py:10: AssertionError
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Note that it reported <strong>which</strong> test had failed, how many tests ran, and how many failed.</p>
 
@@ -542,8 +534,7 @@ test_overlap.py:10: AssertionError
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>The symbol <code>..F</code> means there were three tests, of which the third one failed.</p>
 
@@ -551,8 +542,7 @@ test_overlap.py:10: AssertionError
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Pytest will:</p>
 <ul>
@@ -565,8 +555,7 @@ test_overlap.py:10: AssertionError
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Some options:</p>
 <ul>
@@ -578,8 +567,7 @@ test_overlap.py:10: AssertionError
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Testing-with-floating-points">Testing with floating points<a class="anchor-link" href="#Testing-with-floating-points">&#182;</a></h2><h3 id="Floating-points-are-not-reals">Floating points are not reals<a class="anchor-link" href="#Floating-points-are-not-reals">&#182;</a></h3><p>Floating points are inaccurate representations of real numbers:</p>
 <p><code>1.0 == 0.99999999999999999</code> is true to the last bit.</p>
@@ -588,8 +576,7 @@ test_overlap.py:10: AssertionError
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>This can lead to numerical errors during calculations: $1000 (a - b) \neq 1000a - 1000b$</p>
 
@@ -604,7 +591,7 @@ test_overlap.py:10: AssertionError
 <div class=" highlight hl-ipython3"><pre><span></span><span class="mf">1000.0</span> <span class="o">*</span> <span class="mf">1.0</span> <span class="o">-</span> <span class="mf">1000.0</span> <span class="o">*</span> <span class="mf">0.9999999999999998</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -614,7 +601,7 @@ test_overlap.py:10: AssertionError
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[8]:</div>
+    <div class="prompt output_prompt">Out[8]:</div>
 
 
 
@@ -637,7 +624,7 @@ test_overlap.py:10: AssertionError
 <div class=" highlight hl-ipython3"><pre><span></span><span class="mf">1000.0</span> <span class="o">*</span> <span class="p">(</span><span class="mf">1.0</span> <span class="o">-</span> <span class="mf">0.9999999999999998</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -647,7 +634,7 @@ test_overlap.py:10: AssertionError
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[9]:</div>
+    <div class="prompt output_prompt">Out[9]:</div>
 
 
 
@@ -663,8 +650,7 @@ test_overlap.py:10: AssertionError
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><em>Both</em> results are wrong: <code>2e-13</code> is the correct answer.</p>
 <p>The size of the error will depend on the magnitude of the floating points:</p>
@@ -680,7 +666,7 @@ test_overlap.py:10: AssertionError
 <div class=" highlight hl-ipython3"><pre><span></span><span class="mf">1000.0</span> <span class="o">*</span> <span class="mf">1e5</span> <span class="o">-</span> <span class="mf">1000.0</span> <span class="o">*</span> <span class="mf">0.9999999999999998e5</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -690,7 +676,7 @@ test_overlap.py:10: AssertionError
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[10]:</div>
+    <div class="prompt output_prompt">Out[10]:</div>
 
 
 
@@ -706,8 +692,7 @@ test_overlap.py:10: AssertionError
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>The result should be <code>2e-8</code>.</p>
 
@@ -715,8 +700,7 @@ test_overlap.py:10: AssertionError
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Comparing-floating-points">Comparing floating points<a class="anchor-link" href="#Comparing-floating-points">&#182;</a></h3><p>Use the "approx", for a default of a relative tolerance of $10^{-6}$</p>
 
@@ -732,14 +716,13 @@ test_overlap.py:10: AssertionError
 <span class="k">assert</span>  <span class="mf">0.7</span> <span class="o">==</span> <span class="n">approx</span><span class="p">(</span><span class="mf">0.7</span> <span class="o">+</span> <span class="mf">1e-7</span><span class="p">)</span> 
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Or be more explicit:</p>
 
@@ -755,14 +738,13 @@ test_overlap.py:10: AssertionError
 <span class="k">assert</span> <span class="mf">0.7</span> <span class="o">==</span> <span class="n">approx</span><span class="p">(</span><span class="mf">0.701</span> <span class="p">,</span> <span class="n">rel</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span> <span class="nb">abs</span><span class="o">=</span><span class="mf">0.1</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Choosing tolerances is a big area of debate: <a href="https://software-carpentry.org/blog/2014/10/why-we-dont-teach-testing.html">https://software-carpentry.org/blog/2014/10/why-we-dont-teach-testing.html</a></p>
 
@@ -770,8 +752,7 @@ test_overlap.py:10: AssertionError
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Comparing-vectors-of-floating-points">Comparing vectors of floating points<a class="anchor-link" href="#Comparing-vectors-of-floating-points">&#182;</a></h3><p>Numerical vectors are best represented using <a href="http://www.numpy.org/">numpy</a>.</p>
 
@@ -788,14 +769,13 @@ test_overlap.py:10: AssertionError
 <span class="n">vector_of_reals</span> <span class="o">=</span> <span class="n">array</span><span class="p">([</span><span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">,</span> <span class="mf">0.4</span><span class="p">])</span> <span class="o">*</span> <span class="n">pi</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Numpy ships with a number of assertions (in <code>numpy.testing</code>) to make
 comparison easy:</p>
@@ -817,14 +797,13 @@ comparison easy:</p>
 <span class="n">assert_allclose</span><span class="p">(</span><span class="n">actual</span><span class="p">,</span> <span class="n">expected</span><span class="p">,</span> <span class="n">rtol</span><span class="o">=</span><span class="mf">1e-5</span><span class="p">,</span> <span class="n">atol</span><span class="o">=</span><span class="mf">1e-8</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>It compares the difference between <code>actual</code> and <code>expected</code> to <code>atol + rtol * abs(expected)</code>.</p>
 
@@ -882,7 +861,7 @@ comparison easy:</p>
       <li class="footer__item text-muted small">University College London,&nbsp;Gower Street,&nbsp;London,&nbsp;WC1E 6BT&nbsp;Tel:&nbsp;+44&nbsp;(0)&nbsp;20 7679 2000</li>
     </ul>
     <ul class="list-inline footer__list list-unstyled list-inline--divided">
-      <li class="text-muted small">Copyright © 2018-06-01 11:04:20 +0000 UCL</li>
+      <li class="text-muted small">Copyright © 2018-09-25 16:44:08 +0000 UCL</li>
       <li class="text-muted small"><a href="#">Disclaimer</a>
       </li>
       <li class="text-muted small"><a href="#">Freedom of Information</a>

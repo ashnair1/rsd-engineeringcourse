@@ -221,24 +221,21 @@
           
 
     <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Packaging">Packaging<a class="anchor-link" href="#Packaging">&#182;</a></h2>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Packaging">Packaging<a class="anchor-link" href="#Packaging">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Once we've made a working program, we'd like to be able to share it with others.</p>
 <p>A good cross-platform build tool is the most important thing: you can always
@@ -248,16 +245,14 @@ have collaborators build from source.</p>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Distribution-tools">Distribution tools<a class="anchor-link" href="#Distribution-tools">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Distribution tools allow one to obtain a working copy of someone else's package.</p>
 <p>Language-specific tools: PyPI, Ruby Gems, CPAN, CRAN
@@ -269,16 +264,14 @@ You had to build an 'installer', but now there is <a href="https://chocolatey.or
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Laying-out-a-project">Laying out a project<a class="anchor-link" href="#Laying-out-a-project">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>When planning to package a project for distribution, defining a suitable
 project layout is essential.</p>
@@ -295,7 +288,7 @@ project layout is essential.</p>
 tree --charset ascii greetings -I <span class="s2">&quot;doc|build|Greetings.egg-info|dist|*.pyc&quot;</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -305,7 +298,7 @@ tree --charset ascii greetings -I <span class="s2">&quot;doc|build|Greetings.egg
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -336,8 +329,7 @@ tree --charset ascii greetings -I <span class="s2">&quot;doc|build|Greetings.egg
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>We can start by making our directory structure</p>
 
@@ -354,22 +346,20 @@ mkdir -p greetings/greetings/test/fixtures
 mkdir -p greetings/scripts
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Using-setuptools">Using setuptools<a class="anchor-link" href="#Using-setuptools">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>To make python code into a package, we have to write a <code>setupfile</code>:</p>
 
@@ -392,7 +382,7 @@ setup(
 )
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -402,7 +392,7 @@ setup(
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -416,8 +406,7 @@ setup(
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>We can now install this code with</p>
 
@@ -425,8 +414,7 @@ setup(
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 
 <pre><code>python setup.py install</code></pre>
@@ -435,8 +423,7 @@ setup(
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>And the package will be then available to use everywhere on the system.</p>
 
@@ -452,7 +439,7 @@ setup(
 <span class="n">greet</span><span class="p">(</span><span class="s2">&quot;James&quot;</span><span class="p">,</span><span class="s2">&quot;Hetherington&quot;</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -462,7 +449,7 @@ setup(
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[4]:</div>
+    <div class="prompt output_prompt">Out[4]:</div>
 
 
 
@@ -478,8 +465,7 @@ setup(
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>And the scripts are now available as command line commands:</p>
 
@@ -495,7 +481,7 @@ setup(
 greet --help
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -505,14 +491,14 @@ greet --help
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stderr output_text">
 <pre>Traceback (most recent call last):
-  File &#34;/home/travis/virtualenv/python3.4.6/bin/greet&#34;, line 2, in &lt;module&gt;
+  File &#34;/home/travis/virtualenv/python3.6.3/bin/greet&#34;, line 2, in &lt;module&gt;
     from greetings.command import process
-  File &#34;/home/travis/virtualenv/python3.4.6/lib/python3.4/site-packages/greetings/command.py&#34;, line 14
+  File &#34;/home/travis/virtualenv/python3.6.3/lib/python3.6/site-packages/greetings/command.py&#34;, line 14
     print greet(arguments.personal, arguments.family, 
               ^
 SyntaxError: invalid syntax
@@ -535,7 +521,7 @@ greet --polite James Hetherington
 greet James Hetherington --title Dr
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -545,28 +531,28 @@ greet James Hetherington --title Dr
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stderr output_text">
 <pre>Traceback (most recent call last):
-  File &#34;/home/travis/virtualenv/python3.4.6/bin/greet&#34;, line 2, in &lt;module&gt;
+  File &#34;/home/travis/virtualenv/python3.6.3/bin/greet&#34;, line 2, in &lt;module&gt;
     from greetings.command import process
-  File &#34;/home/travis/virtualenv/python3.4.6/lib/python3.4/site-packages/greetings/command.py&#34;, line 14
+  File &#34;/home/travis/virtualenv/python3.6.3/lib/python3.6/site-packages/greetings/command.py&#34;, line 14
     print greet(arguments.personal, arguments.family, 
               ^
 SyntaxError: invalid syntax
 Traceback (most recent call last):
-  File &#34;/home/travis/virtualenv/python3.4.6/bin/greet&#34;, line 2, in &lt;module&gt;
+  File &#34;/home/travis/virtualenv/python3.6.3/bin/greet&#34;, line 2, in &lt;module&gt;
     from greetings.command import process
-  File &#34;/home/travis/virtualenv/python3.4.6/lib/python3.4/site-packages/greetings/command.py&#34;, line 14
+  File &#34;/home/travis/virtualenv/python3.6.3/lib/python3.6/site-packages/greetings/command.py&#34;, line 14
     print greet(arguments.personal, arguments.family, 
               ^
 SyntaxError: invalid syntax
 Traceback (most recent call last):
-  File &#34;/home/travis/virtualenv/python3.4.6/bin/greet&#34;, line 2, in &lt;module&gt;
+  File &#34;/home/travis/virtualenv/python3.6.3/bin/greet&#34;, line 2, in &lt;module&gt;
     from greetings.command import process
-  File &#34;/home/travis/virtualenv/python3.4.6/lib/python3.4/site-packages/greetings/command.py&#34;, line 14
+  File &#34;/home/travis/virtualenv/python3.6.3/lib/python3.6/site-packages/greetings/command.py&#34;, line 14
     print greet(arguments.personal, arguments.family, 
               ^
 SyntaxError: invalid syntax
@@ -579,16 +565,14 @@ SyntaxError: invalid syntax
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Installing-from-GitHub">Installing from GitHub<a class="anchor-link" href="#Installing-from-GitHub">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>We could now submit "greeter" to PyPI for approval, so everyone could <code>pip install</code> it.</p>
 <p>However, when using git, we don't even need to do that: we can install directly from any git URL:</p>
@@ -597,8 +581,7 @@ SyntaxError: invalid syntax
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 
 <pre><code>pip install git+git://github.com/jamespjh/greeter</code></pre>
@@ -615,7 +598,7 @@ SyntaxError: invalid syntax
 greet Humphry Appleby --title Sir
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -625,14 +608,14 @@ greet Humphry Appleby --title Sir
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stderr output_text">
 <pre>Traceback (most recent call last):
-  File &#34;/home/travis/virtualenv/python3.4.6/bin/greet&#34;, line 2, in &lt;module&gt;
+  File &#34;/home/travis/virtualenv/python3.6.3/bin/greet&#34;, line 2, in &lt;module&gt;
     from greetings.command import process
-  File &#34;/home/travis/virtualenv/python3.4.6/lib/python3.4/site-packages/greetings/command.py&#34;, line 14
+  File &#34;/home/travis/virtualenv/python3.6.3/lib/python3.6/site-packages/greetings/command.py&#34;, line 14
     print greet(arguments.personal, arguments.family, 
               ^
 SyntaxError: invalid syntax
@@ -645,16 +628,14 @@ SyntaxError: invalid syntax
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Convert-the-script-to-a-module">Convert the script to a module<a class="anchor-link" href="#Convert-the-script-to-a-module">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Of course, there's more to do when taking code from a quick script and turning it into a proper module:</p>
 
@@ -697,7 +678,7 @@ def greet(personal, family, title=&quot;&quot;, polite=False):
     return greeting
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -707,7 +688,7 @@ def greet(personal, family, title=&quot;&quot;, polite=False):
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -729,7 +710,7 @@ def greet(personal, family, title=&quot;&quot;, polite=False):
 <span class="n">help</span><span class="p">(</span><span class="n">greetings</span><span class="o">.</span><span class="n">greeter</span><span class="o">.</span><span class="n">greet</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -739,7 +720,7 @@ def greet(personal, family, title=&quot;&quot;, polite=False):
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -773,8 +754,7 @@ greet(personal, family, title=&#39;&#39;, polite=False)
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>The documentation string explains how to use the function; don't worry about this for now, we'll consider
 this next time.</p>
@@ -783,16 +763,14 @@ this next time.</p>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Write-an-executable-script">Write an executable script<a class="anchor-link" href="#Write-an-executable-script">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 
 </div>
@@ -824,7 +802,7 @@ if __name__ == &quot;__main__&quot;:
     process()
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -834,7 +812,7 @@ if __name__ == &quot;__main__&quot;:
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -848,8 +826,7 @@ if __name__ == &quot;__main__&quot;:
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 
 </div>
@@ -863,14 +840,13 @@ if __name__ == &quot;__main__&quot;:
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">### Specify dependencies</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>We use the setup.py file to specify the packages we depend on:</p>
 
@@ -878,8 +854,7 @@ if __name__ == &quot;__main__&quot;:
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 
 <pre><code>setup(
@@ -893,16 +868,14 @@ if __name__ == &quot;__main__&quot;:
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Specify-entry-point">Specify entry point<a class="anchor-link" href="#Specify-entry-point">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 
 </div>
@@ -928,7 +901,7 @@ setup(
         ]})
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -938,7 +911,7 @@ setup(
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -952,24 +925,21 @@ setup(
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Write-a-readme-file">Write a readme file<a class="anchor-link" href="#Write-a-readme-file">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>e.g.:</p>
 
@@ -994,7 +964,7 @@ Usage:
 Invoke the tool with greet &lt;FirstName&gt; &lt;Secondname&gt;
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1004,7 +974,7 @@ Invoke the tool with greet &lt;FirstName&gt; &lt;Secondname&gt;
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -1018,16 +988,14 @@ Invoke the tool with greet &lt;FirstName&gt; &lt;Secondname&gt;
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Write-a-license-file">Write a license file<a class="anchor-link" href="#Write-a-license-file">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>e.g.:</p>
 
@@ -1046,7 +1014,7 @@ Invoke the tool with greet &lt;FirstName&gt; &lt;Secondname&gt;
 This &quot;greetings&quot; example package is granted into the public domain.
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1056,7 +1024,7 @@ This &quot;greetings&quot; example package is granted into the public domain.
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -1070,16 +1038,14 @@ This &quot;greetings&quot; example package is granted into the public domain.
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Write-a-citation-file">Write a citation file<a class="anchor-link" href="#Write-a-citation-file">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>e.g.:</p>
 
@@ -1100,7 +1066,7 @@ Portions of the material are taken from Software Carpentry
 http://swcarpentry.org
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1110,7 +1076,7 @@ http://swcarpentry.org
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -1124,8 +1090,7 @@ http://swcarpentry.org
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>You may well want to formalise this using the <a href="https://codemeta.github.io/">codemeta.json</a> standard - this doesn't have wide adoption yet, but we recommend it.</p>
 
@@ -1133,8 +1098,7 @@ http://swcarpentry.org
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Define-packages-and-executables">Define packages and executables<a class="anchor-link" href="#Define-packages-and-executables">&#182;</a></h3>
 </div>
@@ -1150,22 +1114,20 @@ touch greetings/greetings/test/__init__.py
 touch greetings/greetings/__init__.py
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Write-some-unit-tests">Write some unit tests<a class="anchor-link" href="#Write-some-unit-tests">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Separating the script from the logical module made this possible:</p>
 
@@ -1191,7 +1153,7 @@ def test_greeter():
             assert greet(**fixture) == answer
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1201,7 +1163,7 @@ def test_greeter():
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -1215,8 +1177,7 @@ def test_greeter():
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Add a fixtures file:</p>
 
@@ -1242,7 +1203,7 @@ def test_greeter():
   answer: &quot;Hey, Dr James Hetherington.&quot;
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1252,7 +1213,7 @@ def test_greeter():
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -1274,7 +1235,7 @@ def test_greeter():
 py.test
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1284,17 +1245,17 @@ py.test
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>============================= test session starts ==============================
-platform linux -- Python 3.4.6, pytest-3.0.7, py-1.4.33, pluggy-0.4.0
+platform linux -- Python 3.6.3, pytest-3.3.0, py-1.5.2, pluggy-0.6.0
 rootdir: /home/travis/build/UCL/rsd-engineeringcourse/ch04packaging, inifile:
-plugins: cov-2.5.1
-collected 1 items
+plugins: cov-2.6.0
+collected 1 item
 
-greetings/greetings/test/test_greeter.py .
+greetings/greetings/test/test_greeter.py .                               [100%]
 
 =========================== 1 passed in 0.04 seconds ===========================
 </pre>
@@ -1306,16 +1267,14 @@ greetings/greetings/test/test_greeter.py .
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Developer-Install">Developer Install<a class="anchor-link" href="#Developer-Install">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>If you modify your source files, you would now find it appeared as if the program doesn't change.</p>
 <p>That's because pip install <strong>copies</strong> the file.</p>
@@ -1327,8 +1286,7 @@ system dependent.)</p>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 
 <pre><code>python setup.py develop</code></pre>
@@ -1337,16 +1295,14 @@ system dependent.)</p>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Distributing-compiled-code">Distributing compiled code<a class="anchor-link" href="#Distributing-compiled-code">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>If you're working in C++ or Fortran, there is no language specific repository.
 You'll need to write platform installers for as many platforms as you want to
@@ -1363,16 +1319,14 @@ support.</p>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Homebrew">Homebrew<a class="anchor-link" href="#Homebrew">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Homebrew: A ruby DSL, you host off your own webpage</p>
 <p>See my <a href="http://github.com/jamespjh/homebrew-reactor">installer for the cppcourse example</a></p>
@@ -1382,8 +1336,7 @@ support.</p>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 
 <pre><code>brew tap jamespjh/homebrew-reactor
@@ -1443,7 +1396,7 @@ brew install reactor</code></pre>
       <li class="footer__item text-muted small">University College London,&nbsp;Gower Street,&nbsp;London,&nbsp;WC1E 6BT&nbsp;Tel:&nbsp;+44&nbsp;(0)&nbsp;20 7679 2000</li>
     </ul>
     <ul class="list-inline footer__list list-unstyled list-inline--divided">
-      <li class="text-muted small">Copyright © 2018-06-01 11:04:20 +0000 UCL</li>
+      <li class="text-muted small">Copyright © 2018-09-25 16:44:08 +0000 UCL</li>
       <li class="text-muted small"><a href="#">Disclaimer</a>
       </li>
       <li class="text-muted small"><a href="#">Freedom of Information</a>

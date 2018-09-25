@@ -221,16 +221,14 @@
           
 
     <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Recap:-Understanding-the-&quot;Greengraph&quot;-Example">Recap: Understanding the "Greengraph" Example<a class="anchor-link" href="#Recap:-Understanding-the-&quot;Greengraph&quot;-Example">&#182;</a></h2>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>We now know enough to understand everything we did in the initial example chapter on the "Greengraph". Go back to that part of the notes, and re-read the code.</p>
 
@@ -238,8 +236,7 @@
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Now, we can even write it up into a class, and save it as a module.</p>
 
@@ -247,8 +244,7 @@
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Classes-for-Greengraph">Classes for Greengraph<a class="anchor-link" href="#Classes-for-Greengraph">&#182;</a></h3>
 </div>
@@ -263,7 +259,7 @@
 mkdir -p greengraph <span class="c1"># Create the folder for the module (on mac or linux)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -300,7 +296,7 @@ class Greengraph(object):
                     steps)]
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -310,7 +306,7 @@ class Greengraph(object):
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -374,7 +370,7 @@ class Map(object):
         return buffer.getvalue()
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -384,7 +380,7 @@ class Map(object):
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -406,7 +402,7 @@ class Map(object):
 from .graph import Greengraph
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -416,7 +412,7 @@ from .graph import Greengraph
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -430,8 +426,7 @@ from .graph import Greengraph
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Invoking-our-code-and-making-a-plot">Invoking our code and making a plot<a class="anchor-link" href="#Invoking-our-code-and-making-a-plot">&#182;</a></h3>
 </div>
@@ -450,7 +445,79 @@ from .graph import Greengraph
 <span class="n">data</span> <span class="o">=</span> <span class="n">mygraph</span><span class="o">.</span><span class="n">green_between</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>
 </pre></div>
 
+    </div>
 </div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>/home/travis/virtualenv/python3.6.3/lib/python3.6/site-packages/geopy/geocoders/googlev3.py:122: UserWarning: Since July 2018 Google requires each request to have an API key. Pass a valid `api_key` to GoogleV3 geocoder to hide this warning. See https://developers.google.com/maps/documentation/geocoding/usage-and-billing
+  UserWarning
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">GeocoderQuotaExceeded</span>                     Traceback (most recent call last)
+<span class="ansi-green-fg">&lt;ipython-input-5-8fe4e54613d0&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">      4</span> 
+<span class="ansi-green-intense-fg ansi-bold">      5</span> mygraph<span class="ansi-blue-fg">=</span>Greengraph<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#39;New York&#39;</span><span class="ansi-blue-fg">,</span><span class="ansi-blue-fg">&#39;Chicago&#39;</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-fg">----&gt; 6</span><span class="ansi-red-fg"> </span>data <span class="ansi-blue-fg">=</span> mygraph<span class="ansi-blue-fg">.</span>green_between<span class="ansi-blue-fg">(</span><span class="ansi-cyan-fg">20</span><span class="ansi-blue-fg">)</span>
+
+<span class="ansi-green-fg">~/build/UCL/rsd-engineeringcourse/ch01data/greengraph/graph.py</span> in <span class="ansi-cyan-fg">green_between</span><span class="ansi-blue-fg">(self, steps)</span>
+<span class="ansi-green-intense-fg ansi-bold">     20</span>         return [Map(*location).count_green()
+<span class="ansi-green-intense-fg ansi-bold">     21</span>                 for location in self.location_sequence(
+<span class="ansi-green-fg">---&gt; 22</span><span class="ansi-red-fg">                     </span>self<span class="ansi-blue-fg">.</span>geolocate<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">.</span>start<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">,</span>
+<span class="ansi-green-intense-fg ansi-bold">     23</span>                     self<span class="ansi-blue-fg">.</span>geolocate<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">.</span>end<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">,</span>
+<span class="ansi-green-intense-fg ansi-bold">     24</span>                     steps)]
+
+<span class="ansi-green-fg">~/build/UCL/rsd-engineeringcourse/ch01data/greengraph/graph.py</span> in <span class="ansi-cyan-fg">geolocate</span><span class="ansi-blue-fg">(self, place)</span>
+<span class="ansi-green-intense-fg ansi-bold">     10</span> 
+<span class="ansi-green-intense-fg ansi-bold">     11</span>     <span class="ansi-green-fg">def</span> geolocate<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">,</span> place<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-fg">---&gt; 12</span><span class="ansi-red-fg">         </span><span class="ansi-green-fg">return</span> self<span class="ansi-blue-fg">.</span>geocoder<span class="ansi-blue-fg">.</span>geocode<span class="ansi-blue-fg">(</span>place<span class="ansi-blue-fg">,</span> exactly_one<span class="ansi-blue-fg">=</span><span class="ansi-green-fg">False</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">[</span><span class="ansi-cyan-fg">0</span><span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">[</span><span class="ansi-cyan-fg">1</span><span class="ansi-blue-fg">]</span>
+<span class="ansi-green-intense-fg ansi-bold">     13</span> 
+<span class="ansi-green-intense-fg ansi-bold">     14</span>     <span class="ansi-green-fg">def</span> location_sequence<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">,</span> start<span class="ansi-blue-fg">,</span>end<span class="ansi-blue-fg">,</span>steps<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
+
+<span class="ansi-green-fg">~/virtualenv/python3.6.3/lib/python3.6/site-packages/geopy/geocoders/googlev3.py</span> in <span class="ansi-cyan-fg">geocode</span><span class="ansi-blue-fg">(self, query, exactly_one, timeout, bounds, region, components, language, sensor)</span>
+<span class="ansi-green-intense-fg ansi-bold">    260</span>         logger<span class="ansi-blue-fg">.</span>debug<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#34;%s.geocode: %s&#34;</span><span class="ansi-blue-fg">,</span> self<span class="ansi-blue-fg">.</span>__class__<span class="ansi-blue-fg">.</span>__name__<span class="ansi-blue-fg">,</span> url<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    261</span>         return self._parse_json(
+<span class="ansi-green-fg">--&gt; 262</span><span class="ansi-red-fg">             </span>self<span class="ansi-blue-fg">.</span>_call_geocoder<span class="ansi-blue-fg">(</span>url<span class="ansi-blue-fg">,</span> timeout<span class="ansi-blue-fg">=</span>timeout<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">,</span> exactly_one
+<span class="ansi-green-intense-fg ansi-bold">    263</span>         )
+<span class="ansi-green-intense-fg ansi-bold">    264</span> 
+
+<span class="ansi-green-fg">~/virtualenv/python3.6.3/lib/python3.6/site-packages/geopy/geocoders/googlev3.py</span> in <span class="ansi-cyan-fg">_parse_json</span><span class="ansi-blue-fg">(self, page, exactly_one)</span>
+<span class="ansi-green-intense-fg ansi-bold">    402</span>         places <span class="ansi-blue-fg">=</span> page<span class="ansi-blue-fg">.</span>get<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#39;results&#39;</span><span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">[</span><span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    403</span>         <span class="ansi-green-fg">if</span> <span class="ansi-green-fg">not</span> len<span class="ansi-blue-fg">(</span>places<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-fg">--&gt; 404</span><span class="ansi-red-fg">             </span>self<span class="ansi-blue-fg">.</span>_check_status<span class="ansi-blue-fg">(</span>page<span class="ansi-blue-fg">.</span>get<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#39;status&#39;</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    405</span>             <span class="ansi-green-fg">return</span> <span class="ansi-green-fg">None</span>
+<span class="ansi-green-intense-fg ansi-bold">    406</span> 
+
+<span class="ansi-green-fg">~/virtualenv/python3.6.3/lib/python3.6/site-packages/geopy/geocoders/googlev3.py</span> in <span class="ansi-cyan-fg">_check_status</span><span class="ansi-blue-fg">(status)</span>
+<span class="ansi-green-intense-fg ansi-bold">    427</span>         <span class="ansi-green-fg">if</span> status <span class="ansi-blue-fg">==</span> <span class="ansi-blue-fg">&#39;OVER_QUERY_LIMIT&#39;</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-intense-fg ansi-bold">    428</span>             raise GeocoderQuotaExceeded(
+<span class="ansi-green-fg">--&gt; 429</span><span class="ansi-red-fg">                 </span><span class="ansi-blue-fg">&#39;The given key has gone over the requests limit in the 24&#39;</span>
+<span class="ansi-green-intense-fg ansi-bold">    430</span>                 <span class="ansi-blue-fg">&#39; hour period or has submitted too many requests in too&#39;</span>
+<span class="ansi-green-intense-fg ansi-bold">    431</span>                 <span class="ansi-blue-fg">&#39; short a period of time.&#39;</span>
+
+<span class="ansi-red-fg">GeocoderQuotaExceeded</span>: The given key has gone over the requests limit in the 24 hour period or has submitted too many requests in too short a period of time.</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -463,7 +530,7 @@ from .graph import Greengraph
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -473,30 +540,18 @@ from .graph import Greengraph
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[6]:</div>
+    <div class="prompt"></div>
 
 
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
+<span class="ansi-green-fg">&lt;ipython-input-6-727d88478626&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-fg">----&gt; 1</span><span class="ansi-red-fg"> </span>plt<span class="ansi-blue-fg">.</span>plot<span class="ansi-blue-fg">(</span>data<span class="ansi-blue-fg">)</span>
 
-
-<div class="output_text output_subarea output_execute_result">
-<pre>[&lt;matplotlib.lines.Line2D at 0x2ba5ad0eb320&gt;]</pre>
+<span class="ansi-red-fg">NameError</span>: name &#39;data&#39; is not defined</pre>
 </div>
-
-</div>
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-
-
-<div class="output_png output_subarea ">
-<img src="data:image/png;base64,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
-"
->
-</div>
-
 </div>
 
 </div>
@@ -554,7 +609,7 @@ from .graph import Greengraph
       <li class="footer__item text-muted small">University College London,&nbsp;Gower Street,&nbsp;London,&nbsp;WC1E 6BT&nbsp;Tel:&nbsp;+44&nbsp;(0)&nbsp;20 7679 2000</li>
     </ul>
     <ul class="list-inline footer__list list-unstyled list-inline--divided">
-      <li class="text-muted small">Copyright © 2018-06-01 11:04:20 +0000 UCL</li>
+      <li class="text-muted small">Copyright © 2018-09-25 16:44:08 +0000 UCL</li>
       <li class="text-muted small"><a href="#">Disclaimer</a>
       </li>
       <li class="text-muted small"><a href="#">Freedom of Information</a>

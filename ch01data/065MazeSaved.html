@@ -260,14 +260,13 @@
 <span class="p">}</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Save the maze with json:</p>
 
@@ -282,7 +281,7 @@
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">json</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -296,14 +295,13 @@
     <span class="n">json_maze_out</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">house</span><span class="p">))</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Consider the file on the disk:</p>
 
@@ -319,7 +317,7 @@
 cat <span class="s1">&#39;maze.json&#39;</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -329,11 +327,11 @@ cat <span class="s1">&#39;maze.json&#39;</span>
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>{&#34;living&#34;: {&#34;capacity&#34;: 2, &#34;people&#34;: [&#34;James&#34;], &#34;exits&#34;: {&#34;upstairs&#34;: &#34;bedroom&#34;, &#34;outside&#34;: &#34;garden&#34;, &#34;north&#34;: &#34;kitchen&#34;}}, &#34;garden&#34;: {&#34;capacity&#34;: 3, &#34;people&#34;: [&#34;Sue&#34;], &#34;exits&#34;: {&#34;inside&#34;: &#34;living&#34;}}, &#34;bedroom&#34;: {&#34;capacity&#34;: 1, &#34;people&#34;: [], &#34;exits&#34;: {&#34;downstairs&#34;: &#34;living&#34;, &#34;jump&#34;: &#34;garden&#34;}}, &#34;kitchen&#34;: {&#34;capacity&#34;: 1, &#34;people&#34;: [], &#34;exits&#34;: {&#34;south&#34;: &#34;living&#34;}}}</pre>
+<pre>{&#34;living&#34;: {&#34;exits&#34;: {&#34;north&#34;: &#34;kitchen&#34;, &#34;outside&#34;: &#34;garden&#34;, &#34;upstairs&#34;: &#34;bedroom&#34;}, &#34;people&#34;: [&#34;James&#34;], &#34;capacity&#34;: 2}, &#34;kitchen&#34;: {&#34;exits&#34;: {&#34;south&#34;: &#34;living&#34;}, &#34;people&#34;: [], &#34;capacity&#34;: 1}, &#34;garden&#34;: {&#34;exits&#34;: {&#34;inside&#34;: &#34;living&#34;}, &#34;people&#34;: [&#34;Sue&#34;], &#34;capacity&#34;: 3}, &#34;bedroom&#34;: {&#34;exits&#34;: {&#34;downstairs&#34;: &#34;living&#34;, &#34;jump&#34;: &#34;garden&#34;}, &#34;people&#34;: [], &#34;capacity&#34;: 1}}</pre>
 </div>
 </div>
 
@@ -342,8 +340,7 @@ cat <span class="s1">&#39;maze.json&#39;</span>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>and now load it into a different variable:</p>
 
@@ -359,7 +356,7 @@ cat <span class="s1">&#39;maze.json&#39;</span>
     <span class="n">maze_again</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">json_maze_in</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -372,7 +369,7 @@ cat <span class="s1">&#39;maze.json&#39;</span>
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">maze_again</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -382,20 +379,22 @@ cat <span class="s1">&#39;maze.json&#39;</span>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[6]:</div>
+    <div class="prompt output_prompt">Out[6]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>{&#39;bedroom&#39;: {&#39;capacity&#39;: 1,
-  &#39;exits&#39;: {&#39;downstairs&#39;: &#39;living&#39;, &#39;jump&#39;: &#39;garden&#39;},
-  &#39;people&#39;: []},
- &#39;garden&#39;: {&#39;capacity&#39;: 3, &#39;exits&#39;: {&#39;inside&#39;: &#39;living&#39;}, &#39;people&#39;: [&#39;Sue&#39;]},
- &#39;kitchen&#39;: {&#39;capacity&#39;: 1, &#39;exits&#39;: {&#39;south&#39;: &#39;living&#39;}, &#39;people&#39;: []},
- &#39;living&#39;: {&#39;capacity&#39;: 2,
-  &#39;exits&#39;: {&#39;north&#39;: &#39;kitchen&#39;, &#39;outside&#39;: &#39;garden&#39;, &#39;upstairs&#39;: &#39;bedroom&#39;},
-  &#39;people&#39;: [&#39;James&#39;]}}</pre>
+<pre>{&#39;living&#39;: {&#39;exits&#39;: {&#39;north&#39;: &#39;kitchen&#39;,
+   &#39;outside&#39;: &#39;garden&#39;,
+   &#39;upstairs&#39;: &#39;bedroom&#39;},
+  &#39;people&#39;: [&#39;James&#39;],
+  &#39;capacity&#39;: 2},
+ &#39;kitchen&#39;: {&#39;exits&#39;: {&#39;south&#39;: &#39;living&#39;}, &#39;people&#39;: [], &#39;capacity&#39;: 1},
+ &#39;garden&#39;: {&#39;exits&#39;: {&#39;inside&#39;: &#39;living&#39;}, &#39;people&#39;: [&#39;Sue&#39;], &#39;capacity&#39;: 3},
+ &#39;bedroom&#39;: {&#39;exits&#39;: {&#39;downstairs&#39;: &#39;living&#39;, &#39;jump&#39;: &#39;garden&#39;},
+  &#39;people&#39;: [],
+  &#39;capacity&#39;: 1}}</pre>
 </div>
 
 </div>
@@ -405,8 +404,7 @@ cat <span class="s1">&#39;maze.json&#39;</span>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Or with YAML:</p>
 
@@ -421,7 +419,7 @@ cat <span class="s1">&#39;maze.json&#39;</span>
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">yaml</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -435,7 +433,7 @@ cat <span class="s1">&#39;maze.json&#39;</span>
     <span class="n">yaml_maze_out</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">yaml</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">house</span><span class="p">))</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -449,7 +447,7 @@ cat <span class="s1">&#39;maze.json&#39;</span>
 cat <span class="s1">&#39;maze.yaml&#39;</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -459,7 +457,7 @@ cat <span class="s1">&#39;maze.yaml&#39;</span>
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -496,7 +494,7 @@ living:
     <span class="n">maze_again</span> <span class="o">=</span> <span class="n">yaml</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">yaml_maze_in</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -509,7 +507,7 @@ living:
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">maze_again</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -519,7 +517,7 @@ living:
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[11]:</div>
+    <div class="prompt output_prompt">Out[11]:</div>
 
 
 
@@ -592,7 +590,7 @@ living:
       <li class="footer__item text-muted small">University College London,&nbsp;Gower Street,&nbsp;London,&nbsp;WC1E 6BT&nbsp;Tel:&nbsp;+44&nbsp;(0)&nbsp;20 7679 2000</li>
     </ul>
     <ul class="list-inline footer__list list-unstyled list-inline--divided">
-      <li class="text-muted small">Copyright © 2018-06-01 11:04:20 +0000 UCL</li>
+      <li class="text-muted small">Copyright © 2018-09-25 16:44:08 +0000 UCL</li>
       <li class="text-muted small"><a href="#">Disclaimer</a>
       </li>
       <li class="text-muted small"><a href="#">Freedom of Information</a>

@@ -221,16 +221,14 @@
           
 
     <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Python-not-in-the-Notebook">Python not in the Notebook<a class="anchor-link" href="#Python-not-in-the-Notebook">&#182;</a></h2>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>We will often want to save our Python classes, for use in multiple Notebooks.
 We can do this by writing text files with a .py extension, and then <code>importing</code> them.</p>
@@ -239,16 +237,14 @@ We can do this by writing text files with a .py extension, and then <code>import
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Writing-Python-in-Text-Files">Writing Python in Text Files<a class="anchor-link" href="#Writing-Python-in-Text-Files">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>You can use a text editor like <a href="https://atom.io">Atom</a> for Mac or <a href="https://notepad-plus-plus.org">Notepad++</a> for windows to do this. If you create your own Python files ending in .py, then you can import them with <code>import</code> just like external libraries.</p>
 
@@ -256,8 +252,7 @@ We can do this by writing text files with a .py extension, and then <code>import
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>You can also maintain your library code in a Notebook, and use %%writefile to create your library.</p>
 
@@ -265,8 +260,7 @@ We can do this by writing text files with a .py extension, and then <code>import
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Libraries are usually structured with multiple files, one for each class.</p>
 
@@ -274,8 +268,7 @@ We can do this by writing text files with a .py extension, and then <code>import
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>We group our modules into packages, by putting them together into a folder. You can do this with explorer, or using a shell, or even with Python:</p>
 
@@ -292,7 +285,7 @@ We can do this by writing text files with a .py extension, and then <code>import
     <span class="n">os</span><span class="o">.</span><span class="n">mkdir</span><span class="p">(</span><span class="s1">&#39;mazetool&#39;</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -347,7 +340,7 @@ class Maze(object):
             self.step()
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -357,7 +350,7 @@ class Maze(object):
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -403,7 +396,7 @@ class Room(object):
     
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -413,7 +406,7 @@ class Room(object):
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -454,7 +447,7 @@ class Person(object):
         print(self.name, &quot;is in the&quot;, self.room.name)
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -464,7 +457,7 @@ class Person(object):
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -493,7 +486,7 @@ class Exit(object):
         return self.target.has_space()
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -503,7 +496,7 @@ class Exit(object):
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -517,8 +510,7 @@ class Exit(object):
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>In order to tell Python that our "mazetool" folder is a Python package, 
 we have to make a special file called <code>__init__.py</code>. If you import things in there, they are imported as part of the package:</p>
@@ -535,7 +527,7 @@ we have to make a special file called <code>__init__.py</code>. If you import th
 from .maze import Maze # Python 3 relative import
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -545,7 +537,7 @@ from .maze import Maze # Python 3 relative import
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -559,16 +551,14 @@ from .maze import Maze # Python 3 relative import
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Loading-Our-Package">Loading Our Package<a class="anchor-link" href="#Loading-Our-Package">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>We just wrote the files, there is no "Maze" class in this notebook yet:</p>
 
@@ -583,7 +573,7 @@ from .maze import Maze # Python 3 relative import
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">myhouse</span><span class="o">=</span><span class="n">Maze</span><span class="p">(</span><span class="s1">&#39;My New House&#39;</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -593,7 +583,7 @@ from .maze import Maze # Python 3 relative import
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_text output_error">
@@ -612,8 +602,7 @@ from .maze import Maze # Python 3 relative import
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>But now, we can import Maze, (and the other files will get imported via the chained Import statements, starting from the <code>__init__.py</code> file.</p>
 
@@ -628,7 +617,7 @@ from .maze import Maze # Python 3 relative import
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">mazetool</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -641,7 +630,7 @@ from .maze import Maze # Python 3 relative import
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">mazetool</span><span class="o">.</span><span class="n">exit</span><span class="o">.</span><span class="n">Exit</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -651,7 +640,7 @@ from .maze import Maze # Python 3 relative import
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[9]:</div>
+    <div class="prompt output_prompt">Out[9]:</div>
 
 
 
@@ -674,7 +663,7 @@ from .maze import Maze # Python 3 relative import
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">mazetool</span> <span class="k">import</span> <span class="n">Maze</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -688,14 +677,13 @@ from .maze import Maze # Python 3 relative import
 <span class="n">living</span><span class="o">=</span><span class="n">house</span><span class="o">.</span><span class="n">add_room</span><span class="p">(</span><span class="s1">&#39;livingroom&#39;</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Note the files we have created are on the disk in the folder we made:</p>
 
@@ -710,7 +698,7 @@ from .maze import Maze # Python 3 relative import
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -723,7 +711,7 @@ from .maze import Maze # Python 3 relative import
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">getcwd</span><span class="p">(),</span><span class="s1">&#39;mazetool&#39;</span><span class="p">)</span> <span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -733,7 +721,7 @@ from .maze import Maze # Python 3 relative import
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[13]:</div>
+    <div class="prompt output_prompt">Out[13]:</div>
 
 
 
@@ -749,8 +737,7 @@ from .maze import Maze # Python 3 relative import
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><code>.pyc</code> files are "Compiled" temporary python files that the system generates to speed things up. They'll be regenerated
 on the fly when your <code>.py</code> files change.</p>
@@ -759,16 +746,14 @@ on the fly when your <code>.py</code> files change.</p>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="The-Python-Path">The Python Path<a class="anchor-link" href="#The-Python-Path">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>We want to <code>import</code> these from notebooks elsewhere on our computer:
 it would be a bad idea to keep all our Python work in one folder.</p>
@@ -777,8 +762,7 @@ it would be a bad idea to keep all our Python work in one folder.</p>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Supplementary material</strong> The best way to do this is to learn how to make our code
 into a proper module that we can install. We'll see more on that in a few lectures' time.</p>
@@ -787,8 +771,7 @@ into a proper module that we can install. We'll see more on that in a few lectur
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Alternatively, we can add a folder to the "Python Path", where python searches for modules:</p>
 
@@ -806,7 +789,7 @@ into a proper module that we can install. We'll see more on that in a few lectur
 <span class="nb">print</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -816,12 +799,12 @@ into a proper module that we can install. We'll see more on that in a few lectur
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>/home/travis/virtualenv/python3.4.6/lib/python3.4/site-packages
-/home/travis/virtualenv/python3.4.6/lib/python3.4/site-packages/IPython/extensions
+<pre>/home/travis/virtualenv/python3.6.3/lib/python3.6/site-packages
+/home/travis/virtualenv/python3.6.3/lib/python3.6/site-packages/IPython/extensions
 /home/travis/.ipython
 </pre>
 </div>
@@ -839,7 +822,7 @@ into a proper module that we can install. We'll see more on that in a few lectur
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;/home/jamespjh/devel/libraries/python&#39;</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -852,7 +835,7 @@ into a proper module that we can install. We'll see more on that in a few lectur
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -862,7 +845,7 @@ into a proper module that we can install. We'll see more on that in a few lectur
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -876,8 +859,7 @@ into a proper module that we can install. We'll see more on that in a few lectur
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>I've thus added a folder to the list of places searched. If you want to do this permanently, you should set the PYTHONPATH Environment Variable,
 which you can learn about in a shell course, or can read about online for your operating system.</p>
@@ -936,7 +918,7 @@ which you can learn about in a shell course, or can read about online for your o
       <li class="footer__item text-muted small">University College London,&nbsp;Gower Street,&nbsp;London,&nbsp;WC1E 6BT&nbsp;Tel:&nbsp;+44&nbsp;(0)&nbsp;20 7679 2000</li>
     </ul>
     <ul class="list-inline footer__list list-unstyled list-inline--divided">
-      <li class="text-muted small">Copyright © 2018-06-01 11:04:20 +0000 UCL</li>
+      <li class="text-muted small">Copyright © 2018-09-25 16:44:08 +0000 UCL</li>
       <li class="text-muted small"><a href="#">Disclaimer</a>
       </li>
       <li class="text-muted small"><a href="#">Freedom of Information</a>

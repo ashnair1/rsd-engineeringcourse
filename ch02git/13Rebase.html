@@ -221,8 +221,7 @@
           
 
     <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Rebasing">Rebasing<a class="anchor-link" href="#Rebasing">&#182;</a></h2><h3 id="Rebase-vs-merge">Rebase vs merge<a class="anchor-link" href="#Rebase-vs-merge">&#182;</a></h3><p>A git <em>merge</em> is only one of two ways to get someone else's work into yours.
 The other is called a rebase.</p>
@@ -237,8 +236,7 @@ In a rebase, git tries to work out</p>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>The initial state of both collaborators is a text file, wocky.md:</p>
 
@@ -249,8 +247,7 @@ and the slimy monsters</code></pre>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>On the master branch, a second commit ('Dancing') has been added:</p>
 
@@ -258,8 +255,7 @@ and the slimy monsters</code></pre>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 
 <pre><code>It was clear and cold,
@@ -270,8 +266,7 @@ danced and spun in the waves</code></pre>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>On the "Carollian" branch, a commit has been added translating the initial state into Lewis Caroll's language:</p>
 
@@ -282,8 +277,7 @@ and the slithy toves</code></pre>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>So the logs look like this:</p>
 
@@ -291,8 +285,7 @@ and the slithy toves</code></pre>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <div class="highlight"><pre><span></span>git log --oneline --graph master
 </pre></div>
@@ -309,8 +302,7 @@ and the slithy toves</code></pre>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>If we now <strong>merge</strong> carollian into master, the final state will include both changes:</p>
 
@@ -318,8 +310,7 @@ and the slithy toves</code></pre>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 
 <pre><code>'Twas brillig,
@@ -330,8 +321,7 @@ danced and spun in the waves</code></pre>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>But the graph shows a divergence and then a convergence:</p>
 
@@ -339,8 +329,7 @@ danced and spun in the waves</code></pre>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 
 <pre><code>git log --oneline --graph</code></pre>
@@ -356,8 +345,7 @@ danced and spun in the waves</code></pre>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>But if we <strong>rebase</strong>, the final content of the file is still the same, but the graph is different:</p>
 
@@ -365,8 +353,7 @@ danced and spun in the waves</code></pre>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <div class="highlight"><pre><span></span>git log --oneline --graph master_rebase_carollian
 </pre></div>
@@ -379,8 +366,7 @@ danced and spun in the waves</code></pre>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>To trigger the rebase, we did:</p>
 <div class="highlight"><pre><span></span>git checkout master
@@ -394,8 +380,7 @@ git rebase carollian
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Fast-Forwards">Fast Forwards<a class="anchor-link" href="#Fast-Forwards">&#182;</a></h3><p>If we want to continue with the translation, and now want to merge the rebased branch into the carollian branch, 
 we get:</p>
@@ -418,8 +403,7 @@ in interactive mode, to "squash" several commits that should really be one:</p>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <div class="highlight"><pre><span></span>git log
 </pre></div>
@@ -434,16 +418,14 @@ cd27 Initial commit</code></pre>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Using-rebase-to-squash">Using rebase to squash<a class="anchor-link" href="#Using-rebase-to-squash">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>If we type</p>
 <div class="highlight"><pre><span></span>git rebase -i ab11 <span class="c1">#OR HEAD^^</span>
@@ -454,8 +436,7 @@ cd27 Initial commit</code></pre>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 
 <pre><code>pick cd27 Initial commit
@@ -475,8 +456,7 @@ pick ea15 Some good work
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>We can rewrite select commits to be merged, so that the history is neater before we push.
 This is a great idea if you have lots of trivial typo commits.</p>
@@ -485,8 +465,7 @@ This is a great idea if you have lots of trivial typo commits.</p>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 
 <pre><code>pick cd27 Initial commit
@@ -506,8 +485,7 @@ cd27 Initial commit</code></pre>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Note the commit hash codes for 'Some good work' and 'A great piece of work' have changed, 
 as the change they represent has changed.</p>
@@ -566,7 +544,7 @@ as the change they represent has changed.</p>
       <li class="footer__item text-muted small">University College London,&nbsp;Gower Street,&nbsp;London,&nbsp;WC1E 6BT&nbsp;Tel:&nbsp;+44&nbsp;(0)&nbsp;20 7679 2000</li>
     </ul>
     <ul class="list-inline footer__list list-unstyled list-inline--divided">
-      <li class="text-muted small">Copyright © 2018-06-01 11:04:20 +0000 UCL</li>
+      <li class="text-muted small">Copyright © 2018-09-25 16:44:08 +0000 UCL</li>
       <li class="text-muted small"><a href="#">Disclaimer</a>
       </li>
       <li class="text-muted small"><a href="#">Freedom of Information</a>

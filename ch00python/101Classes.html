@@ -221,24 +221,21 @@
           
 
     <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Defining-your-own-classes">Defining your own classes<a class="anchor-link" href="#Defining-your-own-classes">&#182;</a></h2>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="User-Defined-Types">User Defined Types<a class="anchor-link" href="#User-Defined-Types">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>A <strong>class</strong> is a user-programmed Python type (since Python 2.2!)</p>
 
@@ -246,8 +243,7 @@
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>It can be defined like:</p>
 
@@ -263,14 +259,13 @@
     <span class="k">pass</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Or:</p>
 
@@ -286,14 +281,13 @@
     <span class="k">pass</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Or:</p>
 
@@ -309,14 +303,13 @@
     <span class="k">pass</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>What's the difference? Before Python 2.2 a class was distinct from all other Python types, which caused some odd behaviour. To fix this, classes were redefined as user programmed types by extending <code>object</code>, e.g., class <code>room(object)</code>.</p>
 <p>So most Python 2 code will use this syntax as very few people want to use old style python classes. Python 3 has formalised this by removing old-style classes, so they can be defined without extending <code>object</code>, or indeed without braces. But this will make code incompatible with Python 2!</p>
@@ -325,8 +318,7 @@
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Just as with other python types, you use the name of the type as a function to make a variable of that type:</p>
 
@@ -342,7 +334,7 @@
 <span class="nb">type</span><span class="p">(</span><span class="n">zero</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -352,7 +344,7 @@
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[4]:</div>
+    <div class="prompt output_prompt">Out[4]:</div>
 
 
 
@@ -376,7 +368,7 @@
 <span class="nb">type</span><span class="p">(</span><span class="n">myroom</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -386,7 +378,7 @@
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[5]:</div>
+    <div class="prompt output_prompt">Out[5]:</div>
 
 
 
@@ -402,8 +394,7 @@
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>In the jargon, we say that an <strong>object</strong> is an <strong>instance</strong> of a particular <strong>class</strong>.</p>
 
@@ -411,8 +402,7 @@
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Once we have an object with a type of our own devising, we can add properties at will:</p>
 
@@ -427,7 +417,7 @@
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">myroom</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;Living&quot;</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -440,7 +430,7 @@
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">myroom</span><span class="o">.</span><span class="n">name</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -450,7 +440,7 @@
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[7]:</div>
+    <div class="prompt output_prompt">Out[7]:</div>
 
 
 
@@ -466,8 +456,7 @@
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>The most common use of a class is to allow us to group data into an object in a way that is 
 easier to read and understand than organising data into lists and dictionaries.</p>
@@ -484,22 +473,20 @@ easier to read and understand than organising data into lists and dictionaries.<
 <span class="n">myroom</span><span class="o">.</span><span class="n">occupants</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;James&quot;</span><span class="p">,</span> <span class="s2">&quot;Sue&quot;</span><span class="p">]</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Methods">Methods<a class="anchor-link" href="#Methods">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>So far, our class doesn't do much!</p>
 
@@ -507,8 +494,7 @@ easier to read and understand than organising data into lists and dictionaries.<
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>We define functions <strong>inside</strong> the definition of a class, in order to give them capabilities, just like the methods on built-in
 types.</p>
@@ -526,7 +512,7 @@ types.</p>
         <span class="k">return</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">occupants</span><span class="p">)</span> <span class="o">&gt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">capacity</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -541,7 +527,7 @@ types.</p>
 <span class="n">myroom</span><span class="o">.</span><span class="n">occupants</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;James&quot;</span><span class="p">,</span> <span class="s2">&quot;Sue&quot;</span><span class="p">]</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -554,7 +540,7 @@ types.</p>
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">myroom</span><span class="o">.</span><span class="n">overfull</span><span class="p">()</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -564,7 +550,7 @@ types.</p>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[11]:</div>
+    <div class="prompt output_prompt">Out[11]:</div>
 
 
 
@@ -587,7 +573,7 @@ types.</p>
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">myroom</span><span class="o">.</span><span class="n">occupants</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="s1">&#39;Clare&#39;</span><span class="p">])</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -600,7 +586,7 @@ types.</p>
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">myroom</span><span class="o">.</span><span class="n">occupants</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="s1">&#39;Bob&#39;</span><span class="p">])</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -613,7 +599,7 @@ types.</p>
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">myroom</span><span class="o">.</span><span class="n">overfull</span><span class="p">()</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -623,7 +609,7 @@ types.</p>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[14]:</div>
+    <div class="prompt output_prompt">Out[14]:</div>
 
 
 
@@ -639,8 +625,7 @@ types.</p>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>When we write methods, we always write the first function argument as <code>self</code>, to refer to the object instance itself,
 the argument that goes "before the dot".</p>
@@ -649,8 +634,7 @@ the argument that goes "before the dot".</p>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>This is just a convention for this variable name, not a keyword. You could call it something else if you wanted.</p>
 
@@ -658,16 +642,14 @@ the argument that goes "before the dot".</p>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Constructors">Constructors<a class="anchor-link" href="#Constructors">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Normally, though, we don't want to add data to the class attributes on the fly like that. 
 Instead, we define a <strong>constructor</strong> that converts input data into an object.</p>
@@ -690,7 +672,7 @@ Instead, we define a <strong>constructor</strong> that converts input data into 
         <span class="k">return</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">occupants</span><span class="p">)</span> <span class="o">&gt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">capacity</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -703,7 +685,7 @@ Instead, we define a <strong>constructor</strong> that converts input data into 
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">living</span> <span class="o">=</span> <span class="n">Room</span><span class="p">(</span><span class="s2">&quot;Living Room&quot;</span><span class="p">,</span> <span class="p">{</span><span class="s1">&#39;north&#39;</span><span class="p">:</span> <span class="s1">&#39;garden&#39;</span><span class="p">},</span> <span class="mi">3</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -716,7 +698,7 @@ Instead, we define a <strong>constructor</strong> that converts input data into 
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">living</span><span class="o">.</span><span class="n">capacity</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -726,7 +708,7 @@ Instead, we define a <strong>constructor</strong> that converts input data into 
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[17]:</div>
+    <div class="prompt output_prompt">Out[17]:</div>
 
 
 
@@ -742,8 +724,7 @@ Instead, we define a <strong>constructor</strong> that converts input data into 
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Methods which begin and end with <strong>two underscores</strong> in their names fulfil special capabilities in Python, such as
 constructors.</p>
@@ -752,16 +733,14 @@ constructors.</p>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Object-oriented-design">Object-oriented design<a class="anchor-link" href="#Object-oriented-design">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>In building a computer system to model a problem, therefore, we often want to make:</p>
 <ul>
@@ -774,8 +753,7 @@ constructors.</p>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>For example, the below program might describe our "Maze of Rooms" system:</p>
 
@@ -783,8 +761,7 @@ constructors.</p>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>We define a "Maze" class which can hold rooms:</p>
 
@@ -829,14 +806,13 @@ constructors.</p>
             <span class="bp">self</span><span class="o">.</span><span class="n">step</span><span class="p">()</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>And a "Room" class with exits, and people:</p>
 
@@ -884,14 +860,13 @@ constructors.</p>
             <span class="nb">print</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="s2">&quot;: &quot;</span><span class="p">,</span> <span class="s2">&quot; &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">occupants</span><span class="o">.</span><span class="n">keys</span><span class="p">()))</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>We define a "Person" class for room occupants:</p>
 
@@ -919,14 +894,13 @@ constructors.</p>
             <span class="bp">self</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="n">exit</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>And we use these classes to define our people, rooms, and their relationships:</p>
 
@@ -944,7 +918,7 @@ constructors.</p>
 <span class="n">clare</span><span class="o">=</span><span class="n">Person</span><span class="p">(</span><span class="s1">&#39;Clare&#39;</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -960,7 +934,7 @@ constructors.</p>
 <span class="n">bedroom</span><span class="o">=</span><span class="n">Room</span><span class="p">(</span><span class="s1">&#39;bedroom&#39;</span><span class="p">,</span> <span class="p">{</span><span class="s1">&#39;jump&#39;</span><span class="p">:</span><span class="s1">&#39;garden&#39;</span><span class="p">,</span> <span class="s1">&#39;downstairs&#39;</span><span class="p">:</span> <span class="s1">&#39;livingroom&#39;</span><span class="p">},</span> <span class="mi">1</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -973,7 +947,7 @@ constructors.</p>
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">house</span><span class="o">=</span><span class="n">Maze</span><span class="p">(</span><span class="s1">&#39;My House&#39;</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -987,7 +961,7 @@ constructors.</p>
     <span class="n">house</span><span class="o">.</span><span class="n">add_room</span><span class="p">(</span><span class="n">room</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1000,7 +974,7 @@ constructors.</p>
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">living</span><span class="o">.</span><span class="n">add_occupant</span><span class="p">(</span><span class="n">james</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1014,7 +988,7 @@ constructors.</p>
 <span class="n">garden</span><span class="o">.</span><span class="n">add_occupant</span><span class="p">(</span><span class="n">clare</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1027,14 +1001,13 @@ constructors.</p>
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">bedroom</span><span class="o">.</span><span class="n">add_occupant</span><span class="p">(</span><span class="n">bob</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>And we can run a "simulation" of our model:</p>
 
@@ -1049,7 +1022,7 @@ constructors.</p>
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">house</span><span class="o">.</span><span class="n">simulate</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1059,34 +1032,35 @@ constructors.</p>
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>livingroom :  James
-bedroom :  Bob
 garden :  Sue Clare
+bedroom :  Bob
 
 James goes outside to the garden
-Bob goes downstairs to the livingroom
 Sue goes inside to the livingroom
-
-livingroom :  Bob Sue
-garden :  Clare James
-
-Bob goes outside to the garden
-Sue goes upstairs to the bedroom
 Clare goes inside to the livingroom
-James goes inside to the livingroom
+Bob goes jump to the garden
 
-livingroom :  Clare James
-bedroom :  Sue
-garden :  Bob
+livingroom :  Sue Clare
+garden :  James Bob
 
+Sue goes upstairs to the bedroom
 Clare goes outside to the garden
-James goes north to the kitchen
-Sue goes jump to the garden
+James goes inside to the livingroom
 Bob goes inside to the livingroom
+
+livingroom :  James Bob
+garden :  Clare
+bedroom :  Sue
+
+James goes north to the kitchen
+Bob goes outside to the garden
+Clare goes inside to the livingroom
+Sue goes jump to the garden
 
 </pre>
 </div>
@@ -1097,16 +1071,14 @@ Bob goes inside to the livingroom
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Object-oriented-design">Object oriented design<a class="anchor-link" href="#Object-oriented-design">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>There are many choices for how to design programs to do this. Another choice would be to separately define exits as a different class from rooms. This way, 
 we can use arrays instead of dictionaries, but we have to first define all our rooms, then define all our exits.</p>
@@ -1159,7 +1131,7 @@ we can use arrays instead of dictionaries, but we have to first define all our r
             <span class="bp">self</span><span class="o">.</span><span class="n">step</span><span class="p">()</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1193,7 +1165,7 @@ we can use arrays instead of dictionaries, but we have to first define all our r
     
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1224,7 +1196,7 @@ we can use arrays instead of dictionaries, but we have to first define all our r
         <span class="nb">print</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="s2">&quot;is in the&quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">room</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1243,7 +1215,7 @@ we can use arrays instead of dictionaries, but we have to first define all our r
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">target</span><span class="o">.</span><span class="n">has_space</span><span class="p">()</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1256,7 +1228,7 @@ we can use arrays instead of dictionaries, but we have to first define all our r
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">house</span><span class="o">=</span><span class="n">Maze</span><span class="p">(</span><span class="s1">&#39;My New House&#39;</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1272,7 +1244,7 @@ we can use arrays instead of dictionaries, but we have to first define all our r
 <span class="n">kitchen</span> <span class="o">=</span> <span class="n">house</span><span class="o">.</span><span class="n">add_room</span><span class="p">(</span><span class="s1">&#39;kitchen&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1285,7 +1257,7 @@ we can use arrays instead of dictionaries, but we have to first define all our r
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">house</span><span class="o">.</span><span class="n">add_exit</span><span class="p">(</span><span class="s1">&#39;north&#39;</span><span class="p">,</span> <span class="n">living</span><span class="p">,</span> <span class="n">kitchen</span><span class="p">,</span> <span class="s1">&#39;south&#39;</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1298,7 +1270,7 @@ we can use arrays instead of dictionaries, but we have to first define all our r
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">house</span><span class="o">.</span><span class="n">add_exit</span><span class="p">(</span><span class="s1">&#39;upstairs&#39;</span><span class="p">,</span> <span class="n">living</span><span class="p">,</span> <span class="n">bed</span><span class="p">,</span> <span class="s1">&#39;downstairs&#39;</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1311,7 +1283,7 @@ we can use arrays instead of dictionaries, but we have to first define all our r
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">house</span><span class="o">.</span><span class="n">add_exit</span><span class="p">(</span><span class="s1">&#39;outside&#39;</span><span class="p">,</span> <span class="n">living</span><span class="p">,</span> <span class="n">garden</span><span class="p">,</span> <span class="s1">&#39;inside&#39;</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1324,7 +1296,7 @@ we can use arrays instead of dictionaries, but we have to first define all our r
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">house</span><span class="o">.</span><span class="n">add_exit</span><span class="p">(</span><span class="s1">&#39;jump&#39;</span><span class="p">,</span><span class="n">bed</span><span class="p">,</span> <span class="n">garden</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1340,7 +1312,7 @@ we can use arrays instead of dictionaries, but we have to first define all our r
 <span class="n">house</span><span class="o">.</span><span class="n">add_occupant</span><span class="p">(</span><span class="s1">&#39;Clare&#39;</span><span class="p">,</span> <span class="n">garden</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1353,7 +1325,7 @@ we can use arrays instead of dictionaries, but we have to first define all our r
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">house</span><span class="o">.</span><span class="n">simulate</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1363,7 +1335,7 @@ we can use arrays instead of dictionaries, but we have to first define all our r
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -1372,29 +1344,27 @@ Sue is in the garden
 Bob is in the bedroom
 Clare is in the garden
 
-James goes outside to the garden
+James goes north to the kitchen
 Sue goes inside to the livingroom
-Bob goes jump to the garden
-Clare goes inside to the livingroom
+Bob goes downstairs to the livingroom
 
-James is in the garden
+James is in the kitchen
 Sue is in the livingroom
-Bob is in the garden
-Clare is in the livingroom
-
-Sue goes upstairs to the bedroom
-Bob goes inside to the livingroom
-Clare goes outside to the garden
-
-James is in the garden
-Sue is in the bedroom
 Bob is in the livingroom
 Clare is in the garden
 
-James goes inside to the livingroom
-Sue goes jump to the garden
-Bob goes north to the kitchen
+Sue goes outside to the garden
+Bob goes upstairs to the bedroom
 Clare goes inside to the livingroom
+
+James is in the kitchen
+Sue is in the garden
+Bob is in the bedroom
+Clare is in the livingroom
+
+James goes south to the livingroom
+Bob goes jump to the garden
+Clare goes outside to the garden
 
 </pre>
 </div>
@@ -1405,8 +1375,7 @@ Clare goes inside to the livingroom
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>This is a huge topic, about which many books have been written. The differences between these two designs are important, and will have long-term consequences for the project. That is the how we start to think about <strong>software engineering</strong>, as opposed to learning to program, and is an important part of this course.</p>
 
@@ -1414,16 +1383,14 @@ Clare goes inside to the livingroom
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Exercise:-Your-own-solution">Exercise: Your own solution<a class="anchor-link" href="#Exercise:-Your-own-solution">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Compare the two solutions above. Discuss with a partner which you like better, and why. Then, starting from scratch, design your own. What choices did you make that are different from mine?</p>
 
@@ -1481,7 +1448,7 @@ Clare goes inside to the livingroom
       <li class="footer__item text-muted small">University College London,&nbsp;Gower Street,&nbsp;London,&nbsp;WC1E 6BT&nbsp;Tel:&nbsp;+44&nbsp;(0)&nbsp;20 7679 2000</li>
     </ul>
     <ul class="list-inline footer__list list-unstyled list-inline--divided">
-      <li class="text-muted small">Copyright © 2018-06-01 11:04:20 +0000 UCL</li>
+      <li class="text-muted small">Copyright © 2018-09-25 16:44:08 +0000 UCL</li>
       <li class="text-muted small"><a href="#">Disclaimer</a>
       </li>
       <li class="text-muted small"><a href="#">Freedom of Information</a>

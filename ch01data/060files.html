@@ -221,32 +221,28 @@
           
 
     <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Working-with-Data">Working with Data<a class="anchor-link" href="#Working-with-Data">&#182;</a></h1>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Loading-data-from-files">Loading data from files<a class="anchor-link" href="#Loading-data-from-files">&#182;</a></h2>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Loading-data">Loading data<a class="anchor-link" href="#Loading-data">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>An important part of this course is about using Python to analyse and visualise data.
 Most data, of course, is supplied to us in various <em>formats</em>: spreadsheets, database dumps, or text files in various formats (csv, tsv, json, yaml, hdf5, netcdf)
@@ -260,16 +256,14 @@ These are related, but separate questions.</p>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="An-example-datafile">An example datafile<a class="anchor-link" href="#An-example-datafile">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Let's write an example datafile to disk so we can investigate it. We'll just use a plain-text file. IPython notebook provides a way to do this: if we put
 <code>%%writefile</code> at the top of a cell, instead of being interpreted as python, the cell contents are saved to disk.</p>
@@ -308,7 +302,7 @@ Let it give us one more final pleasure; drink it and forget it all!
    - Richard Feynman
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -318,7 +312,7 @@ Let it give us one more final pleasure; drink it and forget it all!
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -332,8 +326,7 @@ Let it give us one more final pleasure; drink it and forget it all!
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Where did that go? It went to the current folder, which for a notebook, by default, is where the notebook is on disk.</p>
 
@@ -349,7 +342,7 @@ Let it give us one more final pleasure; drink it and forget it all!
 <span class="n">os</span><span class="o">.</span><span class="n">getcwd</span><span class="p">()</span> <span class="c1"># Use the &#39;getcwd&#39; function from the &#39;os&#39; module to find where we are on disk.</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -359,7 +352,7 @@ Let it give us one more final pleasure; drink it and forget it all!
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[2]:</div>
+    <div class="prompt output_prompt">Out[2]:</div>
 
 
 
@@ -375,8 +368,7 @@ Let it give us one more final pleasure; drink it and forget it all!
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Can we see if it is there?</p>
 
@@ -392,7 +384,7 @@ Let it give us one more final pleasure; drink it and forget it all!
 <span class="p">[</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">getcwd</span><span class="p">())</span> <span class="k">if</span> <span class="s2">&quot;.txt&quot;</span> <span class="ow">in</span> <span class="n">x</span><span class="p">]</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -402,7 +394,7 @@ Let it give us one more final pleasure; drink it and forget it all!
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[3]:</div>
+    <div class="prompt output_prompt">Out[3]:</div>
 
 
 
@@ -418,8 +410,7 @@ Let it give us one more final pleasure; drink it and forget it all!
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Yep! Note how we used a list comprehension to filter all the extraneous files.</p>
 
@@ -427,16 +418,14 @@ Let it give us one more final pleasure; drink it and forget it all!
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Path-independence-and-os">Path independence and <code>os</code><a class="anchor-link" href="#Path-independence-and-os">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>We can use <code>dirname</code> to get the parent folder for a folder, in a platform independent-way.</p>
 
@@ -451,7 +440,7 @@ Let it give us one more final pleasure; drink it and forget it all!
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">getcwd</span><span class="p">())</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -461,7 +450,7 @@ Let it give us one more final pleasure; drink it and forget it all!
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[4]:</div>
+    <div class="prompt output_prompt">Out[4]:</div>
 
 
 
@@ -477,8 +466,7 @@ Let it give us one more final pleasure; drink it and forget it all!
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>We could do this manually using <code>split</code>:</p>
 
@@ -493,7 +481,7 @@ Let it give us one more final pleasure; drink it and forget it all!
 <div class=" highlight hl-ipython3"><pre><span></span><span class="s2">&quot;/&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">getcwd</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;/&quot;</span><span class="p">)[:</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -503,7 +491,7 @@ Let it give us one more final pleasure; drink it and forget it all!
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[5]:</div>
+    <div class="prompt output_prompt">Out[5]:</div>
 
 
 
@@ -519,8 +507,7 @@ Let it give us one more final pleasure; drink it and forget it all!
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>But this would not work on windows, where path elements are separated with a <code>\</code> instead of a <code>/</code>. So it's important 
 to use <code>os.path</code> for this stuff.</p>
@@ -529,19 +516,17 @@ to use <code>os.path</code> for this stuff.</p>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Supplementary Materials</strong>: If you're not already comfortable with how files fit into folders, and folders form a tree,
-    with folders containing subfolders, then look at <a href="http://swcarpentry.github.io/shell-novice/02-filedir/">http://swcarpentry.github.io/shell-novice/02-filedir/</a>.</p>
+    with folders containing subfolders, then look at <a href="http://swcarpentry.github.io/shell-novice/02-filedir/index.html">http://swcarpentry.github.io/shell-novice/02-filedir/index.html</a>.</p>
 <p>Satisfy yourself that after using <code>%%writedir</code>, you can then find the file on disk with Windows Explorer, OSX Finder, or the Linux Shell.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>We can see how in Python we can investigate the file system with functions in the <code>os</code> module, using just the same programming approaches as for anything else.</p>
 
@@ -549,8 +534,7 @@ to use <code>os.path</code> for this stuff.</p>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>We'll gradually learn more features of the <code>os</code> module as we go, allowing us to move around the disk, <code>walk</code> around the
 disk looking for relevant files, and so on. These will be important to master for automating our data analyses.</p>
@@ -559,16 +543,14 @@ disk looking for relevant files, and so on. These will be important to master fo
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="The-python-file-type">The python <code>file</code> type<a class="anchor-link" href="#The-python-file-type">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>So, let's read our file:</p>
 
@@ -583,7 +565,7 @@ disk looking for relevant files, and so on. These will be important to master fo
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">myfile</span><span class="o">=</span><span class="nb">open</span><span class="p">(</span><span class="s1">&#39;mydata.txt&#39;</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -596,7 +578,7 @@ disk looking for relevant files, and so on. These will be important to master fo
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="n">myfile</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -606,7 +588,7 @@ disk looking for relevant files, and so on. These will be important to master fo
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[7]:</div>
+    <div class="prompt output_prompt">Out[7]:</div>
 
 
 
@@ -622,8 +604,7 @@ disk looking for relevant files, and so on. These will be important to master fo
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>We can go line-by-line, by treating the file as an iterable:</p>
 
@@ -638,7 +619,7 @@ disk looking for relevant files, and so on. These will be important to master fo
 <div class=" highlight hl-ipython3"><pre><span></span><span class="p">[</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">myfile</span><span class="p">]</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -648,7 +629,7 @@ disk looking for relevant files, and so on. These will be important to master fo
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[8]:</div>
+    <div class="prompt output_prompt">Out[8]:</div>
 
 
 
@@ -686,8 +667,7 @@ disk looking for relevant files, and so on. These will be important to master fo
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>If we do that again, the file has already finished, there is no more data.</p>
 
@@ -702,7 +682,7 @@ disk looking for relevant files, and so on. These will be important to master fo
 <div class=" highlight hl-ipython3"><pre><span></span><span class="p">[</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">myfile</span><span class="p">]</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -712,7 +692,7 @@ disk looking for relevant files, and so on. These will be important to master fo
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[9]:</div>
+    <div class="prompt output_prompt">Out[9]:</div>
 
 
 
@@ -728,8 +708,7 @@ disk looking for relevant files, and so on. These will be important to master fo
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>We need to 'rewind' it!</p>
 
@@ -745,7 +724,7 @@ disk looking for relevant files, and so on. These will be important to master fo
 <span class="p">[</span><span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">myfile</span> <span class="k">if</span> <span class="s1">&#39;know&#39;</span> <span class="ow">in</span> <span class="n">x</span><span class="p">]</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -755,7 +734,7 @@ disk looking for relevant files, and so on. These will be important to master fo
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[10]:</div>
+    <div class="prompt output_prompt">Out[10]:</div>
 
 
 
@@ -771,8 +750,7 @@ disk looking for relevant files, and so on. These will be important to master fo
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>It's really important to remember that a file is a <em>different</em> built in type than a string.</p>
 
@@ -780,16 +758,14 @@ disk looking for relevant files, and so on. These will be important to master fo
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Working-with-files.">Working with files.<a class="anchor-link" href="#Working-with-files.">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>We can read one line at a time with <code>readline</code>:</p>
 
@@ -805,7 +781,7 @@ disk looking for relevant files, and so on. These will be important to master fo
 <span class="n">first</span> <span class="o">=</span> <span class="n">myfile</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -818,7 +794,7 @@ disk looking for relevant files, and so on. These will be important to master fo
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">first</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -828,7 +804,7 @@ disk looking for relevant files, and so on. These will be important to master fo
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[12]:</div>
+    <div class="prompt output_prompt">Out[12]:</div>
 
 
 
@@ -851,7 +827,7 @@ disk looking for relevant files, and so on. These will be important to master fo
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">second</span><span class="o">=</span><span class="n">myfile</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -864,7 +840,7 @@ disk looking for relevant files, and so on. These will be important to master fo
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">second</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -874,7 +850,7 @@ disk looking for relevant files, and so on. These will be important to master fo
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[14]:</div>
+    <div class="prompt output_prompt">Out[14]:</div>
 
 
 
@@ -890,8 +866,7 @@ disk looking for relevant files, and so on. These will be important to master fo
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>We can read the whole remaining file with <code>read</code>:</p>
 
@@ -906,7 +881,7 @@ disk looking for relevant files, and so on. These will be important to master fo
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">rest</span><span class="o">=</span><span class="n">myfile</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -919,7 +894,7 @@ disk looking for relevant files, and so on. These will be important to master fo
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">rest</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -929,7 +904,7 @@ disk looking for relevant files, and so on. These will be important to master fo
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[16]:</div>
+    <div class="prompt output_prompt">Out[16]:</div>
 
 
 
@@ -945,8 +920,7 @@ disk looking for relevant files, and so on. These will be important to master fo
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Which means that when a file is first opened, read is useful to just get the whole thing as a string:</p>
 
@@ -961,7 +935,7 @@ disk looking for relevant files, and so on. These will be important to master fo
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">open</span><span class="p">(</span><span class="s1">&#39;mydata.txt&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -971,7 +945,7 @@ disk looking for relevant files, and so on. These will be important to master fo
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[17]:</div>
+    <div class="prompt output_prompt">Out[17]:</div>
 
 
 
@@ -987,8 +961,7 @@ disk looking for relevant files, and so on. These will be important to master fo
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>You can also read just a few characters:</p>
 
@@ -1003,7 +976,7 @@ disk looking for relevant files, and so on. These will be important to master fo
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">myfile</span><span class="o">.</span><span class="n">seek</span><span class="p">(</span><span class="mi">1335</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1013,7 +986,7 @@ disk looking for relevant files, and so on. These will be important to master fo
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[18]:</div>
+    <div class="prompt output_prompt">Out[18]:</div>
 
 
 
@@ -1036,7 +1009,7 @@ disk looking for relevant files, and so on. These will be important to master fo
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">myfile</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="mi">15</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1046,7 +1019,7 @@ disk looking for relevant files, and so on. These will be important to master fo
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[19]:</div>
+    <div class="prompt output_prompt">Out[19]:</div>
 
 
 
@@ -1062,16 +1035,14 @@ disk looking for relevant files, and so on. These will be important to master fo
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Converting-Strings-to-Files">Converting Strings to Files<a class="anchor-link" href="#Converting-Strings-to-Files">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Because files and strings are different types, we CANNOT just treat strings as if they were files:</p>
 
@@ -1086,7 +1057,7 @@ disk looking for relevant files, and so on. These will be important to master fo
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">mystring</span><span class="o">=</span> <span class="s2">&quot;Hello World</span><span class="se">\n</span><span class="s2"> My name is James&quot;</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1099,7 +1070,7 @@ disk looking for relevant files, and so on. These will be important to master fo
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">mystring</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1109,7 +1080,7 @@ disk looking for relevant files, and so on. These will be important to master fo
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[21]:</div>
+    <div class="prompt output_prompt">Out[21]:</div>
 
 
 
@@ -1132,7 +1103,7 @@ disk looking for relevant files, and so on. These will be important to master fo
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">mystring</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1142,7 +1113,7 @@ disk looking for relevant files, and so on. These will be important to master fo
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_text output_error">
@@ -1161,8 +1132,7 @@ disk looking for relevant files, and so on. These will be important to master fo
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>This is important, because some file format parsers expect input from a <strong>file</strong> and not a string. 
 We can convert between them using the StringIO module in the standard library:</p>
@@ -1178,7 +1148,7 @@ We can convert between them using the StringIO module in the standard library:</
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">io</span> <span class="k">import</span> <span class="n">StringIO</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1191,7 +1161,7 @@ We can convert between them using the StringIO module in the standard library:</
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">mystringasafile</span><span class="o">=</span><span class="n">StringIO</span><span class="p">(</span><span class="n">mystring</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1204,7 +1174,7 @@ We can convert between them using the StringIO module in the standard library:</
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">mystringasafile</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1214,7 +1184,7 @@ We can convert between them using the StringIO module in the standard library:</
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[25]:</div>
+    <div class="prompt output_prompt">Out[25]:</div>
 
 
 
@@ -1237,7 +1207,7 @@ We can convert between them using the StringIO module in the standard library:</
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">mystringasafile</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1247,7 +1217,7 @@ We can convert between them using the StringIO module in the standard library:</
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[26]:</div>
+    <div class="prompt output_prompt">Out[26]:</div>
 
 
 
@@ -1263,8 +1233,7 @@ We can convert between them using the StringIO module in the standard library:</
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Note that in a string, <code>\n</code> is used to represent a newline.</p>
 
@@ -1272,16 +1241,14 @@ We can convert between them using the StringIO module in the standard library:</
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Closing-files">Closing files<a class="anchor-link" href="#Closing-files">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>We really ought to close files when we've finished with them, as it makes the computer more efficient. (On a shared computer,
 this is particularly important)</p>
@@ -1297,14 +1264,13 @@ this is particularly important)</p>
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">myfile</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Because it's so easy to forget this, python provides a <strong>context manager</strong> to open a file, then close it automatically at
 the end of an indented block:</p>
@@ -1323,7 +1289,7 @@ the end of an indented block:</p>
 <span class="n">content</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1333,7 +1299,7 @@ the end of an indented block:</p>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[28]:</div>
+    <div class="prompt output_prompt">Out[28]:</div>
 
 
 
@@ -1349,8 +1315,7 @@ the end of an indented block:</p>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>The code to be done while the file is open is indented, just like for an <code>if</code> statement.</p>
 
@@ -1358,8 +1323,7 @@ the end of an indented block:</p>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>You should pretty much <strong>always</strong> use this syntax for working with files.</p>
 
@@ -1367,16 +1331,14 @@ the end of an indented block:</p>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Writing-files">Writing files<a class="anchor-link" href="#Writing-files">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>We might want to create a file from a string in memory. We can't do this with the notebook's <code>%%writefile</code> -- this is
 just a notebook convenience, and isn't very programmable.</p>
@@ -1385,8 +1347,7 @@ just a notebook convenience, and isn't very programmable.</p>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>When we open a file, we can specify a 'mode', in this case, 'w' for writing. ('r' for reading is the default.)</p>
 
@@ -1403,7 +1364,7 @@ just a notebook convenience, and isn't very programmable.</p>
     <span class="n">target</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;World&#39;</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1417,7 +1378,7 @@ just a notebook convenience, and isn't very programmable.</p>
     <span class="nb">print</span><span class="p">(</span><span class="n">source</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1427,7 +1388,7 @@ just a notebook convenience, and isn't very programmable.</p>
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -1441,8 +1402,7 @@ just a notebook convenience, and isn't very programmable.</p>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>And we can "append" to a file with mode 'a':</p>
 
@@ -1459,7 +1419,7 @@ just a notebook convenience, and isn't very programmable.</p>
     <span class="n">target</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;James&#39;</span><span class="p">)</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1473,7 +1433,7 @@ just a notebook convenience, and isn't very programmable.</p>
     <span class="nb">print</span><span class="p">(</span><span class="n">source</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
 </pre></div>
 
-</div>
+    </div>
 </div>
 </div>
 
@@ -1483,7 +1443,7 @@ just a notebook convenience, and isn't very programmable.</p>
 
 <div class="output_area">
 
-<div class="prompt"></div>
+    <div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -1497,8 +1457,7 @@ just a notebook convenience, and isn't very programmable.</p>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>If a file already exists, mode 'w' will overwrite it.</p>
 
@@ -1556,7 +1515,7 @@ just a notebook convenience, and isn't very programmable.</p>
       <li class="footer__item text-muted small">University College London,&nbsp;Gower Street,&nbsp;London,&nbsp;WC1E 6BT&nbsp;Tel:&nbsp;+44&nbsp;(0)&nbsp;20 7679 2000</li>
     </ul>
     <ul class="list-inline footer__list list-unstyled list-inline--divided">
-      <li class="text-muted small">Copyright © 2018-06-01 11:04:20 +0000 UCL</li>
+      <li class="text-muted small">Copyright © 2018-09-25 16:44:08 +0000 UCL</li>
       <li class="text-muted small"><a href="#">Disclaimer</a>
       </li>
       <li class="text-muted small"><a href="#">Freedom of Information</a>
