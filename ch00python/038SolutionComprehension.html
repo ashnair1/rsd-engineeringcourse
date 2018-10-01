@@ -135,7 +135,7 @@
 
     <div class="photograph">
   <div class="brand">
-    <p class="brand__heading">MPHYG001: Research Software Engineering With Python</p>
+    <p class="brand__heading">MPHY0021: Research Software Engineering With Python</p>
     <a href="/" class="brand__link"><span class="visually-hidden">Home</span></a>
     <img src="//cdn.ucl.ac.uk/img/blank.gif" data-src="//static.ucl.ac.uk/indigo/images/ucl-logo.svg" alt="UCL logo" id="logo" class="brand__logo lazy">  
   </div>
@@ -204,7 +204,7 @@
     <li class="breadcrumb__item"><a href="http://www.ucl.ac.uk/isd/services/research-it/training">Training</a></li>
   
 
-<li class="breadcrumb__item"><a href="/rsd-engineeringcourse/">MPHYG0001</a></li>
+<li class="breadcrumb__item"><a href="/rsd-engineeringcourse/">MPHY0021</a></li>
 
 
 
@@ -293,7 +293,7 @@
 <div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="p">{</span><span class="n">name</span> <span class="p">:</span> <span class="n">room</span><span class="p">[</span><span class="s1">&#39;capacity&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">room</span> <span class="ow">in</span> <span class="n">house</span><span class="o">.</span><span class="n">items</span><span class="p">()}</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="p">{</span><span class="n">name</span><span class="p">:</span> <span class="n">room</span><span class="p">[</span><span class="s1">&#39;capacity&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">room</span> <span class="ow">in</span> <span class="n">house</span><span class="o">.</span><span class="n">items</span><span class="p">()}</span>
 </pre></div>
 
     </div>
@@ -313,6 +313,47 @@
 
 <div class="output_text output_subarea output_execute_result">
 <pre>{&#39;living&#39;: 2, &#39;kitchen&#39;: 1, &#39;garden&#39;: 3, &#39;bedroom&#39;: 1}</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>To get the current number of occupants, we can use a similar dictionary comprehension. Remember that we can <em>filter</em> (only keep certain rooms) by adding an <code>if</code> clause:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="p">{</span><span class="n">name</span><span class="p">:</span> <span class="nb">len</span><span class="p">(</span><span class="n">room</span><span class="p">[</span><span class="s1">&#39;people&#39;</span><span class="p">])</span> <span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">room</span> <span class="ow">in</span> <span class="n">house</span><span class="o">.</span><span class="n">items</span><span class="p">()</span> <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">room</span><span class="p">[</span><span class="s1">&#39;people&#39;</span><span class="p">])</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[3]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>{&#39;living&#39;: 1, &#39;garden&#39;: 1}</pre>
 </div>
 
 </div>
@@ -372,7 +413,7 @@
       <li class="footer__item text-muted small">University College London,&nbsp;Gower Street,&nbsp;London,&nbsp;WC1E 6BT&nbsp;Tel:&nbsp;+44&nbsp;(0)&nbsp;20 7679 2000</li>
     </ul>
     <ul class="list-inline footer__list list-unstyled list-inline--divided">
-      <li class="text-muted small">Copyright © 2018-09-25 16:44:08 +0000 UCL</li>
+      <li class="text-muted small">Copyright © 2018-10-01 17:17:33 +0000 UCL</li>
       <li class="text-muted small"><a href="#">Disclaimer</a>
       </li>
       <li class="text-muted small"><a href="#">Freedom of Information</a>
