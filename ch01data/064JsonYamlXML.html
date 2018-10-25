@@ -262,7 +262,7 @@ Structured data formats like JSON, YAML, and XML are designed for this.</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>A very common structured data format is JSON.</p>
+<p><a href="https://en.wikipedia.org/wiki/JSON">JSON</a> is a very common open-standard data format that is used to store structured data in a human-readable way.</p>
 
 </div>
 </div>
@@ -347,7 +347,7 @@ looks a bit like a Javascript (or Python) data literal.</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Loading data is also really easy:</p>
+<p>If you would like a more readable output, you can use the <code>indent</code> argument.</p>
 
 </div>
 </div>
@@ -355,6 +355,53 @@ looks a bit like a Javascript (or Python) data literal.</p>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">mydata</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="mi">4</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>{
+    &#34;key&#34;: [
+        &#34;value1&#34;,
+        &#34;value2&#34;
+    ],
+    &#34;key2&#34;: {
+        &#34;key4&#34;: &#34;value3&#34;
+    }
+}
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Loading data is also really easy:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%</span><span class="k">writefile</span> myfile.json
@@ -388,7 +435,7 @@ looks a bit like a Javascript (or Python) data literal.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;myfile.json&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
@@ -402,7 +449,7 @@ looks a bit like a Javascript (or Python) data literal.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">mydataasstring</span>
@@ -418,7 +465,7 @@ looks a bit like a Javascript (or Python) data literal.</p>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[6]:</div>
+    <div class="prompt output_prompt">Out[7]:</div>
 
 
 
@@ -435,7 +482,7 @@ looks a bit like a Javascript (or Python) data literal.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">mydata</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">mydataasstring</span><span class="p">)</span>
@@ -448,7 +495,7 @@ looks a bit like a Javascript (or Python) data literal.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">mydata</span><span class="p">[</span><span class="s1">&#39;somekey&#39;</span><span class="p">]</span>
@@ -464,7 +511,7 @@ looks a bit like a Javascript (or Python) data literal.</p>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[8]:</div>
+    <div class="prompt output_prompt">Out[9]:</div>
 
 
 
@@ -513,7 +560,7 @@ looks a bit like a Javascript (or Python) data literal.</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>YAML is a very similar data format to JSON, with some nice additions:</p>
+<p><a href="https://en.wikipedia.org/wiki/YAML">YAML</a> is a very similar data format to JSON, with some nice additions:</p>
 
 </div>
 </div>
@@ -533,7 +580,7 @@ looks a bit like a Javascript (or Python) data literal.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%</span><span class="k">writefile</span> myfile.yaml
@@ -567,7 +614,7 @@ somekey:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">yaml</span>  <span class="c1"># This may need installed as pyyaml</span>
@@ -580,7 +627,7 @@ somekey:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">mydata</span> <span class="o">=</span> <span class="n">yaml</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="nb">open</span><span class="p">(</span><span class="s1">&#39;myfile.yaml&#39;</span><span class="p">))</span>
@@ -630,7 +677,7 @@ you can control this choice:</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">yaml</span><span class="o">.</span><span class="n">safe_dump</span><span class="p">(</span><span class="n">mydata</span><span class="p">))</span>
@@ -662,7 +709,7 @@ you can control this choice:</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">yaml</span><span class="o">.</span><span class="n">safe_dump</span><span class="p">(</span><span class="n">mydata</span><span class="p">,</span> <span class="n">default_flow_style</span><span class="o">=</span><span class="kc">False</span><span class="p">))</span>
@@ -785,7 +832,7 @@ It's very careful, but verbose. If your field uses XML data, you'll need to lear
       <li class="footer__item text-muted small">University College London,&nbsp;Gower Street,&nbsp;London,&nbsp;WC1E 6BT&nbsp;Tel:&nbsp;+44&nbsp;(0)&nbsp;20 7679 2000</li>
     </ul>
     <ul class="list-inline footer__list list-unstyled list-inline--divided">
-      <li class="text-muted small">Copyright © 2018-10-24 11:37:33 +0000 UCL</li>
+      <li class="text-muted small">Copyright © 2018-10-25 11:45:44 +0000 UCL</li>
       <li class="text-muted small"><a href="#">Disclaimer</a>
       </li>
       <li class="text-muted small"><a href="#">Freedom of Information</a>

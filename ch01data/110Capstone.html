@@ -230,7 +230,7 @@
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>We now know enough to understand everything we did in the initial example chapter on the "Greengraph". Go back to that part of the notes, and re-read the code.</p>
+<p>We now know enough to understand everything we did in <a href="../ch00python/010exemplar.html">the initial example chapter on the "Greengraph"</a> (<a href="../ch00python/010exemplar.ipynb">notebook</a>). Go back to that part of the notes, and re-read the code.</p>
 
 </div>
 </div>
@@ -256,7 +256,7 @@
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span>%%bash
-mkdir -p greengraph <span class="c1"># Create the folder for the module (on mac or linux)</span>
+mkdir -p greengraph  <span class="c1"># Create the folder for the module (on mac or linux)</span>
 </pre></div>
 
     </div>
@@ -274,24 +274,25 @@ import numpy as np
 import geopy
 from .map import Map
 
+
 class Greengraph(object):
     def __init__(self, start, end):
         self.start = start
         self.end = end
         self.geocoder = geopy.geocoders.Yandex(lang=&quot;en_US&quot;)
-        
+
     def geolocate(self, place):
         return self.geocoder.geocode(place, exactly_one=False)[0][1]
-    
+
     def location_sequence(self, start, end, steps):
-      lats = np.linspace(start[0], end[0], steps)
-      longs = np.linspace(start[1], end[1], steps)
-      return np.vstack([lats, longs]).transpose()
+        lats = np.linspace(start[0], end[0], steps)
+        longs = np.linspace(start[1], end[1], steps)
+        return np.vstack([lats, longs]).transpose()
 
     def green_between(self, steps):
         return [Map(*location).count_green()
                 for location in self.location_sequence(
-                    self.geolocate(self.start), 
+                    self.geolocate(self.start),
                     self.geolocate(self.end),
                     steps)]
 </pre></div>
@@ -332,34 +333,34 @@ import imageio as img
 import requests
 
 class Map(object):
-    def __init__(self, lat, long, satellite=True, zoom=10, 
-                 size=(400,400), sensor=False):
+    def __init__(self, lat, long, satellite=True, zoom=10,
+                 size=(400, 400), sensor=False):
         base = &quot;https://static-maps.yandex.ru/1.x/?&quot;
-  
+
         params = dict(
-            z = zoom,
-            size = str(size[0]) + &quot;,&quot; + str(size[1]),
-            ll = str(long) + &quot;,&quot; + str(lat),
-            l = &quot;sat&quot; if satellite else &quot;map&quot;,
-            lang = &quot;en_US&quot;
+            z=zoom,
+            size=str(size[0]) + &quot;,&quot; + str(size[1]),
+            ll=str(long) + &quot;,&quot; + str(lat),
+            l=&quot;sat&quot; if satellite else &quot;map&quot;,
+            lang=&quot;en_US&quot;
         )
-            
+
         self.image = requests.get(
-            base, params=params).content # Fetch our PNG image data
+            base, params=params).content  # Fetch our PNG image data
         content = BytesIO(self.image)
         self.pixels = img.imread(content) # Parse our PNG image as a numpy array
         
     def green(self, threshold):
         # Use NumPy to build an element-by-element logical array
-        greener_than_red = self.pixels[:, :, 1] &gt; threshold * self.pixels[:, : ,0]
+        greener_than_red = self.pixels[:, :, 1] &gt; threshold * self.pixels[:, :, 0]
         greener_than_blue = self.pixels[:, :, 1] &gt; threshold * self.pixels[:, :, 2]
-        green = np.logical_and(greener_than_red, greener_than_blue) 
+        green = np.logical_and(greener_than_red, greener_than_blue)
         return green
-    
+
     def count_green(self, threshold=1.1):
         return np.sum(self.green(threshold))
-    
-    def show_green(data, threshold = 1.1):
+
+    def show_green(data, threshold=1.1):
         green = self.green(threshold)
         out = green[:, :, np.newaxis] * array([0, 1, 0])[np.newaxis, np.newaxis, :]
         buffer = BytesIO()
@@ -471,7 +472,7 @@ from .graph import Greengraph
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>[&lt;matplotlib.lines.Line2D at 0x2ad18414bf98&gt;]</pre>
+<pre>[&lt;matplotlib.lines.Line2D at 0x2b0eb1ce0f98&gt;]</pre>
 </div>
 
 </div>
@@ -546,7 +547,7 @@ from .graph import Greengraph
       <li class="footer__item text-muted small">University College London,&nbsp;Gower Street,&nbsp;London,&nbsp;WC1E 6BT&nbsp;Tel:&nbsp;+44&nbsp;(0)&nbsp;20 7679 2000</li>
     </ul>
     <ul class="list-inline footer__list list-unstyled list-inline--divided">
-      <li class="text-muted small">Copyright © 2018-10-24 11:37:33 +0000 UCL</li>
+      <li class="text-muted small">Copyright © 2018-10-25 11:45:44 +0000 UCL</li>
       <li class="text-muted small"><a href="#">Disclaimer</a>
       </li>
       <li class="text-muted small"><a href="#">Freedom of Information</a>

@@ -243,7 +243,7 @@
 <li>The cython code in <code>.pyx</code> file will be translated to a <code>C</code> file.</li>
 <li>The <code>C</code> file will be compiled by a C compiler into a shared library, which will be directely loaded into Python. </li>
 </ul>
-<p>In ipython notebook, everything is a lot easier. One need only to load Cython extension (<code>%load_ext Cython</code>) at the beginning and put <code>%%cython</code> mark in front of cells of cython code. Cells with cython mark will be treated as a <code>.pyx</code> code and consequently, compiled into C.</p>
+<p>In a Jupyter notebook, everything is a lot easier. One needs only to load the Cython extension (<code>%load_ext Cython</code>) at the beginning and put <code>%%cython</code> mark in front of cells of cython code. Cells with cython mark will be treated as a <code>.pyx</code> code and consequently, compiled into C.</p>
 <p>For details, please see <a href="http://docs.cython.org/src/quickstart/build.html">Building Cython Code</a>.</p>
 
 </div>
@@ -426,8 +426,8 @@
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>711 ms ± 5.01 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
-421 ms ± 2.66 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
+<pre>659 ms ± 5.64 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
+405 ms ± 1.5 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
 </pre>
 </div>
 </div>
@@ -544,7 +544,7 @@
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>14.7 µs ± 97.2 ns per loop (mean ± std. dev. of 7 runs, 100000 loops each)
+<pre>14.2 µs ± 69.1 ns per loop (mean ± std. dev. of 7 runs, 100000 loops each)
 </pre>
 </div>
 </div>
@@ -576,7 +576,7 @@
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>8.65 µs ± 97.6 ns per loop (mean ± std. dev. of 7 runs, 100000 loops each)
+<pre>8.35 µs ± 126 ns per loop (mean ± std. dev. of 7 runs, 100000 loops each)
 </pre>
 </div>
 </div>
@@ -608,7 +608,7 @@
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>3.88 µs ± 107 ns per loop (mean ± std. dev. of 7 runs, 100000 loops each)
+<pre>3.79 µs ± 19.9 ns per loop (mean ± std. dev. of 7 runs, 100000 loops each)
 </pre>
 </div>
 </div>
@@ -640,7 +640,7 @@
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>898 ns ± 3.05 ns per loop (mean ± std. dev. of 7 runs, 1000000 loops each)
+<pre>870 ns ± 3.73 ns per loop (mean ± std. dev. of 7 runs, 1000000 loops each)
 </pre>
 </div>
 </div>
@@ -742,7 +742,7 @@
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>712 ms ± 3.02 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
+<pre>668 ms ± 10.8 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
 </pre>
 </div>
 </div>
@@ -773,7 +773,7 @@
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>65.9 ms ± 321 µs per loop (mean ± std. dev. of 7 runs, 10 loops each)
+<pre>67.5 ms ± 657 µs per loop (mean ± std. dev. of 7 runs, 10 loops each)
 </pre>
 </div>
 </div>
@@ -804,7 +804,7 @@
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>37.2 ms ± 341 µs per loop (mean ± std. dev. of 7 runs, 10 loops each)
+<pre>42.1 ms ± 293 µs per loop (mean ± std. dev. of 7 runs, 10 loops each)
 </pre>
 </div>
 </div>
@@ -856,7 +856,7 @@
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>44.6 ms ± 141 µs per loop (mean ± std. dev. of 7 runs, 10 loops each)
+<pre>47.5 ms ± 507 µs per loop (mean ± std. dev. of 7 runs, 10 loops each)
 </pre>
 </div>
 </div>
@@ -933,7 +933,7 @@
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>2.34 s ± 10.7 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
+<pre>2.37 s ± 71.5 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
 </pre>
 </div>
 </div>
@@ -964,7 +964,7 @@
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>1.39 s ± 4.98 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
+<pre>1.5 s ± 35.2 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
 </pre>
 </div>
 </div>
@@ -995,7 +995,7 @@
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>5.97 ms ± 12 µs per loop (mean ± std. dev. of 7 runs, 100 loops each)
+<pre>5.89 ms ± 19.8 µs per loop (mean ± std. dev. of 7 runs, 100 loops each)
 </pre>
 </div>
 </div>
@@ -1068,7 +1068,7 @@
       <li class="footer__item text-muted small">University College London,&nbsp;Gower Street,&nbsp;London,&nbsp;WC1E 6BT&nbsp;Tel:&nbsp;+44&nbsp;(0)&nbsp;20 7679 2000</li>
     </ul>
     <ul class="list-inline footer__list list-unstyled list-inline--divided">
-      <li class="text-muted small">Copyright © 2018-10-24 11:37:33 +0000 UCL</li>
+      <li class="text-muted small">Copyright © 2018-10-25 11:45:44 +0000 UCL</li>
       <li class="text-muted small"><a href="#">Disclaimer</a>
       </li>
       <li class="text-muted small"><a href="#">Freedom of Information</a>
