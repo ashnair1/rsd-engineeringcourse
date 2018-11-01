@@ -260,43 +260,47 @@
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li><p>Language agnostic: <a href="http://www.cmake.org/cmake/help/v2.8.12/ctest.html">CTest</a></p>
-<ul>
+<li>Language agnostic: <a href="http://www.cmake.org/cmake/help/v2.8.12/ctest.html">CTest</a><ul>
 <li>Test runner for executables, bash scripts, etc...</li>
 <li>Great for legacy code hardening</li>
 </ul>
 </li>
-<li><p>C unit-tests:</p>
+</ul>
 <ul>
+<li>C unit-tests:<ul>
 <li>all c++ frameworks,</li>
 <li><a href="http://check.sourceforge.net/">Check</a>,</li>
 <li><a href="http://cunit.sourceforge.net">CUnit</a></li>
 </ul>
 </li>
-<li><p>C++ unit-tests:</p>
+</ul>
 <ul>
+<li>C++ unit-tests:<ul>
 <li><a href="http://cpptest.sourceforge.net/">CppTest</a>,</li>
 <li><a href="http://www.boost.org/doc/libs/1_55_0/libs/test/doc/html/index.html">Boost::Test</a>,</li>
 <li><a href="https://code.google.com/p/googletest/">google-test</a>,</li>
 <li><a href="https://github.com/philsquared/Catch">Catch</a> (best)</li>
 </ul>
 </li>
-<li><p>Python unit-tests:</p>
+</ul>
 <ul>
+<li>Python unit-tests:<ul>
 <li><a href="https://nose.readthedocs.org/en/latest/">nose</a> includes test discovery, coverage, etc</li>
 <li><a href="http://docs.python.org/2/library/unittest.html">unittest</a> comes with standard python library</li>
-<li><a href="http://pytest.org/latest/">py.test</a>, branched off of nose</li>
+<li><a href="http://pytest.org/latest/">pytest</a>, branched off of nose</li>
 </ul>
 </li>
-<li><p>R unit-tests:</p>
+</ul>
 <ul>
+<li>R unit-tests:<ul>
 <li><a href="http://cran.r-project.org/web/packages/RUnit/index.html">RUnit</a>,</li>
 <li><a href="http://cran.r-project.org/web/packages/svUnit/index.html">svUnit</a></li>
 <li>(works with <a href="http://www.sciviews.org/">SciViews</a> GUI)</li>
 </ul>
 </li>
-<li><p>Fortran unit-tests:</p>
+</ul>
 <ul>
+<li>Fortran unit-tests:<ul>
 <li><a href="http://nasarb.rubyforge.org/funit/">funit</a>,</li>
 <li><a href="http://sourceforge.net/projects/pfunit/">pfunit</a>(works with MPI)</li>
 </ul>
@@ -309,7 +313,7 @@
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="py.test-framework:-usage">py.test framework: usage<a class="anchor-link" href="#py.test-framework:-usage">&#182;</a></h3><p><a href="https://docs.pytest.org/en/latest/">py.test</a> is a recommended python testing framework.</p>
+<h3 id="pytest-framework:-usage">pytest framework: usage<a class="anchor-link" href="#pytest-framework:-usage">&#182;</a></h3><p><a href="https://docs.pytest.org/en/latest/">pytest</a> is a recommended python testing framework.</p>
 
 </div>
 </div>
@@ -330,7 +334,7 @@
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">I_only_accept_positive_numbers</span><span class="p">(</span><span class="n">number</span><span class="p">):</span>
     <span class="c1"># Check input</span>
     <span class="k">if</span> <span class="n">number</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span> 
-        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Input &quot;</span><span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">number</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot; is negative&quot;</span><span class="p">)</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Input </span><span class="si">{}</span><span class="s2"> is negative&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">number</span><span class="p">))</span>
 
     <span class="c1"># Do something</span>
 </pre></div>
@@ -400,15 +404,15 @@ def overlap(field1, field2):
     left1, bottom1, top1, right1 = field1
     left2, bottom2, top2, right2 = field2
     
-    overlap_left=max(left1, left2)
-    overlap_bottom=max(bottom1, bottom2)
-    overlap_right=min(right1, right2)
-    overlap_top=min(top1, top2)
+    overlap_left = max(left1, left2)
+    overlap_bottom = max(bottom1, bottom2)
+    overlap_right = min(right1, right2)
+    overlap_top = min(top1, top2)
     # Here&#39;s our wrong code again
-    overlap_height=(overlap_top-overlap_bottom)
-    overlap_width=(overlap_right-overlap_left)
+    overlap_height = (overlap_top - overlap_bottom)
+    overlap_width = (overlap_right - overlap_left)
     
-    return overlap_height*overlap_width
+    return overlap_height * overlap_width
 </pre></div>
 
     </div>
@@ -443,13 +447,13 @@ def overlap(field1, field2):
 from .overlap import overlap
 
 def test_full_overlap():
-    assert overlap((1.,1.,4.,4.),(2.,2.,3.,3.)) == 1.0
+    assert overlap((1.,1.,4.,4.), (2.,2.,3.,3.)) == 1.0
 
 def test_partial_overlap():
-    assert overlap((1,1,4,4),(2,2,3,4.5)) == 2.0
+    assert overlap((1,1,4,4), (2,2,3,4.5)) == 2.0
                  
 def test_no_overlap():
-    assert overlap((1,1,4,4),(4.5,4.5,5,5)) == 0.0
+    assert overlap((1,1,4,4), (4.5,4.5,5,5)) == 0.0
 </pre></div>
 
     </div>
@@ -482,7 +486,7 @@ def test_no_overlap():
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span>%%bash
 <span class="nb">cd</span> saskatchewan
-py.test
+pytest
 </pre></div>
 
     </div>
@@ -511,7 +515,7 @@ test_overlap.py ..F                                                      [100%]
 _______________________________ test_no_overlap ________________________________
 
     def test_no_overlap():
-&gt;       assert overlap((1,1,4,4),(4.5,4.5,5,5)) == 0.0
+&gt;       assert overlap((1,1,4,4), (4.5,4.5,5,5)) == 0.0
 E       assert 0.25 == 0.0
 E        +  where 0.25 = overlap((1, 1, 4, 4), (4.5, 4.5, 5, 5))
 
@@ -559,8 +563,8 @@ test_overlap.py:10: AssertionError
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Some options:</p>
 <ul>
-<li>help: <code>py.test --help</code></li>
-<li>run only tests for a given feature: <code>py.test -k foo</code> # tests with 'foo' in the test name</li>
+<li>help: <code>pytest --help</code></li>
+<li>run only tests for a given feature: <code>pytest -k foo</code> # tests with 'foo' in the test name</li>
 </ul>
 
 </div>
@@ -746,7 +750,7 @@ test_overlap.py:10: AssertionError
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Choosing tolerances is a big area of debate: <a href="https://software-carpentry.org/blog/2014/10/why-we-dont-teach-testing.html">https://software-carpentry.org/blog/2014/10/why-we-dont-teach-testing.html</a></p>
+<p>Choosing tolerances is a big area of <a href="https://software-carpentry.org/blog/2014/10/why-we-dont-teach-testing.html">debate</a>.</p>
 
 </div>
 </div>
@@ -861,7 +865,7 @@ comparison easy:</p>
       <li class="footer__item text-muted small">University College London,&nbsp;Gower Street,&nbsp;London,&nbsp;WC1E 6BT&nbsp;Tel:&nbsp;+44&nbsp;(0)&nbsp;20 7679 2000</li>
     </ul>
     <ul class="list-inline footer__list list-unstyled list-inline--divided">
-      <li class="text-muted small">Copyright © 2018-10-25 11:45:44 +0000 UCL</li>
+      <li class="text-muted small">Copyright © 2018-11-01 09:30:35 +0000 UCL</li>
       <li class="text-muted small"><a href="#">Disclaimer</a>
       </li>
       <li class="text-muted small"><a href="#">Freedom of Information</a>

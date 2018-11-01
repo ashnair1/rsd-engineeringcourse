@@ -250,7 +250,7 @@
 
 <span class="n">density</span> <span class="o">=</span>  <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
 <span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">density</span><span class="p">))</span><span class="o">-</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">density</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">density</span><span class="p">)),</span> <span class="n">density</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">xrange</span><span class="o">=</span><span class="p">[</span><span class="o">-</span><span class="mf">0.5</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">density</span><span class="p">)</span><span class="o">-</span><span class="mf">0.5</span><span class="p">]</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;Particle count $n_i$&quot;</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;Position $i$&quot;</span><span class="p">)</span>
@@ -285,7 +285,7 @@
 
 
 <div class="output_png output_subarea ">
-<img src="data:image/png;base64,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
+<img src="data:image/png;base64,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
 "
 >
 </div>
@@ -345,16 +345,17 @@ touch diffusion/__init__.py
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%</span><span class="k">writefile</span> diffusion/model.py
 def energy(density, coeff=1.0):
-  &quot;&quot;&quot; Energy associated with the diffusion model
+    &quot;&quot;&quot; 
+    Energy associated with the diffusion model
 
-      Parameters
-      ----------
+    Parameters
+    ----------
 
-      density: array of positive integers
-          Number of particles at each position i in the array
-      coeff: float
-          Diffusion coefficient.
-  &quot;&quot;&quot;
+    density: array of positive integers
+        Number of particles at each position i in the array
+    coeff: float
+        Diffusion coefficient.
+    &quot;&quot;&quot;
   # implementation goes here
 </pre></div>
 
@@ -399,8 +400,8 @@ def energy(density, coeff=1.0):
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%</span><span class="k">writefile</span> diffusion/test_model.py
 from .model import energy
 def test_energy():
-  &quot;&quot;&quot; Optional description for nose reporting &quot;&quot;&quot;
-  # Test something
+    &quot;&quot;&quot; Optional description for reporting &quot;&quot;&quot;
+    # Test something
 </pre></div>
 
     </div>
@@ -441,7 +442,7 @@ def test_energy():
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span>%%bash
 <span class="nb">cd</span> diffusion
-py.test
+pytest
 </pre></div>
 
     </div>
@@ -500,29 +501,32 @@ test_model.py .                                                          [100%]
 &quot;&quot;&quot;  Simplistic 1-dimensional diffusion model &quot;&quot;&quot;
 
 def energy(density):
-  &quot;&quot;&quot; Energy associated with the diffusion model
-      :Parameters:
-        density: array of positive integers
-           Number of particles at each position i in the array/geometry
-  &quot;&quot;&quot;
-  from numpy import array, any, sum
-
-  # Make sure input is an numpy array
-  density = array(density)
-
-  # ...of the right kind (integer). Unless it is zero length, 
-  #    in which case type does not matter.
+    &quot;&quot;&quot; 
+    Energy associated with the diffusion model
     
-  if density.dtype.kind != &#39;i&#39; and len(density) &gt; 0:
-    raise TypeError(&quot;Density should be a array of *integers*.&quot;)
-  # and the right values (positive or null)
-  if any(density &lt; 0):
-    raise ValueError(&quot;Density should be an array of *positive* integers.&quot;)
-  if density.ndim != 1:
-    raise ValueError(&quot;Density should be an a *1-dimensional*&quot;+
-                     &quot;array of positive integers.&quot;)
-  
-  return sum(density * (density - 1))
+    :Parameters:
+    
+    density: array of positive integers
+      Number of particles at each position i in the array/geometry
+    &quot;&quot;&quot;
+    from numpy import array, any, sum
+
+    # Make sure input is an numpy array
+    density = array(density)
+
+    # ...of the right kind (integer). Unless it is zero length, 
+    #    in which case type does not matter.
+      
+    if density.dtype.kind != &#39;i&#39; and len(density) &gt; 0:
+        raise TypeError(&quot;Density should be a array of *integers*.&quot;)
+    # and the right values (positive or null)
+    if any(density &lt; 0):
+        raise ValueError(&quot;Density should be an array of *positive* integers.&quot;)
+    if density.ndim != 1:
+        raise ValueError(&quot;Density should be an a *1-dimensional*&quot; + 
+                         &quot;array of positive integers.&quot;)
+    
+    return sum(density * (density - 1))
 </pre></div>
 
     </div>
@@ -561,7 +565,7 @@ from .model import energy
 
 def test_energy_fails_on_non_integer_density():
     with raises(TypeError) as exception: 
-       energy([1.0, 2, 3])
+        energy([1.0, 2, 3])
     
 def test_energy_fails_on_negative_density():
     with raises(ValueError) as exception: energy(
@@ -572,46 +576,46 @@ def test_energy_fails_ndimensional_density():
             [[1, 2, 3], [3, 4, 5]])
 
 def test_zero_energy_cases():
-  # Zero energy at zero density
-  densities = [ [], [0], [0, 0, 0] ]
-  for density in densities: 
-    assert energy(density) == 0
+    # Zero energy at zero density
+    densities = [ [], [0], [0, 0, 0] ]
+    for density in densities: 
+        assert energy(density) == 0
 
 def test_derivative():
-  from numpy.random import randint
+    from numpy.random import randint
 
-  # Loop over vectors of different sizes (but not empty)
-  for vector_size in randint(1, 1000, size=30): 
+    # Loop over vectors of different sizes (but not empty)
+    for vector_size in randint(1, 1000, size=30): 
 
-    # Create random density of size N
-    density = randint(50, size=vector_size)
+        # Create random density of size N
+        density = randint(50, size=vector_size)
 
-    # will do derivative at this index
-    element_index = randint(vector_size)
+        # will do derivative at this index
+        element_index = randint(vector_size)
 
-    # modified densities
-    density_plus_one = density.copy()
-    density_plus_one[element_index] += 1
+        # modified densities
+        density_plus_one = density.copy()
+        density_plus_one[element_index] += 1
 
-    # Compute and check result
-    # d(n^2-1)/dn = 2n
-    expected = (2.0*density[element_index] 
-                if density[element_index] &gt; 0 
-                else 0 )
-    actual = energy(density_plus_one) - energy(density) 
-    assert expected == actual
+        # Compute and check result
+        # d(n^2-1)/dn = 2n
+        expected = (2.0 * density[element_index] 
+                    if density[element_index] &gt; 0 
+                    else 0 )
+        actual = energy(density_plus_one) - energy(density) 
+        assert expected == actual
 
 def test_derivative_no_self_energy():
-  &quot;&quot;&quot; If particle is alone, then its participation to energy is zero &quot;&quot;&quot;
-  from numpy import array
+    &quot;&quot;&quot; If particle is alone, then its participation to energy is zero &quot;&quot;&quot;
+    from numpy import array
 
-  density = array([1, 0, 1, 10, 15, 0])
-  density_plus_one = density.copy()
-  density[1] += 1 
+    density = array([1, 0, 1, 10, 15, 0])
+    density_plus_one = density.copy()
+    density[1] += 1 
 
-  expected = 0
-  actual = energy(density_plus_one) - energy(density) 
-  assert expected == actual
+    expected = 0
+    actual = energy(density_plus_one) - energy(density) 
+    assert expected == actual
 </pre></div>
 
     </div>
@@ -644,7 +648,7 @@ def test_derivative_no_self_energy():
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span>%%bash
 <span class="nb">cd</span> diffusion
-py.test
+pytest
 </pre></div>
 
     </div>
@@ -693,7 +697,7 @@ test_model.py ......                                                     [100%]
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span>%%bash
 <span class="nb">cd</span> diffusion
-py.test --cov
+pytest --cov
 </pre></div>
 
     </div>
@@ -854,7 +858,7 @@ test_model.py                                                                   
 TOTAL                                                                                              32193  26383    18%
 
 
-=========================== 6 passed in 3.34 seconds ===========================
+=========================== 6 passed in 3.31 seconds ===========================
 </pre>
 </div>
 </div>
@@ -878,7 +882,7 @@ TOTAL                                                                           
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span>%%bash
 <span class="nb">cd</span> diffusion
-py.test --cov --cov-report html
+pytest --cov --cov-report html
 </pre></div>
 
     </div>
@@ -907,7 +911,7 @@ test_model.py ......                                                     [100%]
 Coverage HTML written to dir htmlcov
 
 
-=========================== 6 passed in 5.98 seconds ===========================
+=========================== 6 passed in 5.96 seconds ===========================
 </pre>
 </div>
 </div>
@@ -988,7 +992,7 @@ Coverage HTML written to dir htmlcov
       <li class="footer__item text-muted small">University College London,&nbsp;Gower Street,&nbsp;London,&nbsp;WC1E 6BT&nbsp;Tel:&nbsp;+44&nbsp;(0)&nbsp;20 7679 2000</li>
     </ul>
     <ul class="list-inline footer__list list-unstyled list-inline--divided">
-      <li class="text-muted small">Copyright © 2018-10-25 11:45:44 +0000 UCL</li>
+      <li class="text-muted small">Copyright © 2018-11-01 09:30:35 +0000 UCL</li>
       <li class="text-muted small"><a href="#">Disclaimer</a>
       </li>
       <li class="text-muted small"><a href="#">Freedom of Information</a>
