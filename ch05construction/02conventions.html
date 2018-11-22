@@ -230,14 +230,7 @@
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="One-code,-many-layouts:">One code, many layouts:<a class="anchor-link" href="#One-code,-many-layouts:">&#182;</a></h3>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Consider the following fragment of python:</p>
+<p>Let's import first the context for this chapter.</p>
 
 </div>
 </div>
@@ -254,6 +247,21 @@
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="One-code,-many-layouts:">One code, many layouts:<a class="anchor-link" href="#One-code,-many-layouts:">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Consider the following fragment of python:</p>
+
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -287,8 +295,8 @@
 
 <span class="k">def</span> <span class="nf">add_to_reaction</span><span class="p">(</span><span class="n">a_name</span><span class="p">,</span>
                     <span class="n">a_reaction</span><span class="p">):</span>
-  <span class="n">l_species</span> <span class="o">=</span> <span class="n">Species</span><span class="p">(</span><span class="n">a_name</span><span class="p">)</span>
-  <span class="n">a_reaction</span><span class="o">.</span><span class="n">append</span><span class="p">(</span> <span class="n">l_species</span> <span class="p">)</span>
+    <span class="n">l_species</span> <span class="o">=</span> <span class="n">Species</span><span class="p">(</span><span class="n">a_name</span><span class="p">)</span>
+    <span class="n">a_reaction</span><span class="o">.</span><span class="n">append</span><span class="p">(</span> <span class="n">l_species</span> <span class="p">)</span>
 </pre></div>
 
     </div>
@@ -334,8 +342,8 @@
 <div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">reaction</span><span class="o">=</span> <span class="p">{</span>
-    <span class="s2">&quot;reactants&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;H&quot;</span><span class="p">,</span><span class="s2">&quot;H&quot;</span><span class="p">,</span><span class="s2">&quot;O&quot;</span><span class="p">],</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">reaction</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;reactants&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;H&quot;</span><span class="p">,</span> <span class="s2">&quot;H&quot;</span><span class="p">,</span> <span class="s2">&quot;O&quot;</span><span class="p">],</span>
     <span class="s2">&quot;products&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;H2O&quot;</span><span class="p">]</span>
 <span class="p">}</span>
 </pre></div>
@@ -394,6 +402,7 @@
 <li>Indentation</li>
 <li>Whitespace/Tabs</li>
 </ul>
+<p>Inconsistency will produce a mess in your code! Some choices will make your code harder to read, whereas others may affect the code. For example, if you copy/paste code with tabs in a place that's using spaces, they may appear OK in your screen but it will fail when running it.</p>
 
 </div>
 </div>
@@ -405,14 +414,22 @@
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a href="https://en.wikipedia.org/wiki/Camel_case">Camel case</a> is used in the following example, where class name is in UpperCamel, functions in lowerCamel and underscore_separation for variables names. This convention is used broadly in the python community.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">ClassName</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">ClassName</span><span class="p">:</span>
     <span class="k">def</span> <span class="nf">methodName</span><span class="p">(</span><span class="n">variable_name</span><span class="p">):</span>
-        <span class="n">instance_variable</span><span class="o">=</span><span class="n">variable_name</span>
+        <span class="n">instance_variable</span> <span class="o">=</span> <span class="n">variable_name</span>
 </pre></div>
 
     </div>
@@ -423,6 +440,7 @@
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p>This other example uses underscore_separation for all the names.</p>
 
 </div>
 </div>
@@ -432,9 +450,9 @@
 <div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">class_name</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">class_name</span><span class="p">:</span>
     <span class="k">def</span> <span class="nf">method_name</span><span class="p">(</span><span class="n">a_variable</span><span class="p">):</span>
-        <span class="n">m_instance_variable</span><span class="o">=</span><span class="n">a_variable</span>
+        <span class="n">m_instance_variable</span> <span class="o">=</span> <span class="n">a_variable</span>
 </pre></div>
 
     </div>
@@ -462,8 +480,29 @@
 <div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">fNumber</span><span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">sInput</span><span class="p">)</span> <span class="o">+</span> <span class="n">iOffset</span>
-<span class="n">number</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">)</span>  <span class="o">+</span> <span class="n">offset</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">fNumber</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">sEntry</span><span class="p">)</span> <span class="o">+</span> <span class="n">iOffset</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>So in the example above we know that we are creating a <code>f</code>loat number as a composition of a <code>s</code>tring entry and an <code>i</code>nteger offset.</p>
+<p>People may find this useful in languages like Python where the type is intrisic in the variable.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">number</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">entry</span><span class="p">)</span> <span class="o">+</span> <span class="n">offset</span>
 </pre></div>
 
     </div>
@@ -485,7 +524,7 @@
 <li>Newlines make code easier to read</li>
 <li>Newlines make less code fit on a screen</li>
 </ul>
-<p>Use newlines to describe your code's <em>rhythm</em></p>
+<p>Use newlines to describe your code's <em>rhythm</em>.</p>
 
 </div>
 </div>
@@ -497,35 +536,52 @@
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">anothervariable</span><span class="o">+=</span><span class="mi">1</span>
-<span class="k">if</span> <span class="p">((</span><span class="n">variable</span><span class="o">==</span><span class="n">anothervariable</span><span class="p">)</span> <span class="ow">and</span> <span class="n">flag1</span> <span class="ow">or</span> <span class="n">flag2</span><span class="p">):</span> <span class="n">do_something</span><span class="p">()</span>
-</pre></div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The following two snippets do the same, but the second is separated into more steps, making it more readable.</p>
 
-    </div>
 </div>
 </div>
-
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">anothervariable</span> <span class="o">=</span> <span class="n">anothervariable</span> <span class="o">+</span> <span class="mi">1</span>
-<span class="n">variable_equality</span> <span class="o">=</span> <span class="p">(</span><span class="n">variable</span> <span class="o">==</span> <span class="n">anothervariable</span><span class="p">);</span>
-<span class="k">if</span> <span class="p">((</span><span class="n">variable_equality</span> <span class="ow">and</span> <span class="n">flag1</span><span class="p">)</span> <span class="ow">or</span> <span class="n">flag2</span><span class="p">):</span>
-   <span class="n">do_something</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">anothervariable</span> <span class="o">+=</span> <span class="mi">1</span>
+<span class="k">if</span> <span class="p">((</span><span class="n">variable</span> <span class="o">==</span> <span class="n">anothervariable</span><span class="p">)</span> <span class="ow">and</span> <span class="n">flag1</span> <span class="ow">or</span> <span class="n">flag2</span><span class="p">):</span> <span class="n">do_something</span><span class="p">()</span>
 </pre></div>
 
     </div>
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">anothervariable</span> <span class="o">=</span> <span class="n">anothervariable</span> <span class="o">+</span> <span class="mi">1</span>
+<span class="n">variable_equality</span> <span class="o">=</span> <span class="p">(</span><span class="n">variable</span> <span class="o">==</span> <span class="n">anothervariable</span><span class="p">)</span>
+<span class="k">if</span> <span class="p">((</span><span class="n">variable_equality</span> <span class="ow">and</span> <span class="n">flag1</span><span class="p">)</span> <span class="ow">or</span> <span class="n">flag2</span><span class="p">):</span>
+    <span class="n">do_something</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>We create extra variables as an intermediate step. Don't worry about the performance now, the compiler will do the right thing.</p>
+<p>What about operator precedence? Being explicit helps to remind yourself what you are doing.</p>
+
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
@@ -557,10 +613,13 @@
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>You should try to have an agreed policy for your team for these matters.</p>
-<p>If your language sponsor has a standard policy, use that.</p>
-<p>E.g. <a href="http://legacy.python.org/dev/peps/pep-0008/">Python PEP8</a></p>
-<p>E.g. <a href="https://google-styleguide.googlecode.com/svn/trunk/Rguide.xml">Google's guide for R</a></p>
-<p>E.g. <a href="http://google-styleguide.googlecode.com/svn/trunk/cppguide.xml">Google's style guide for C++</a></p>
+<p>If your language sponsor has a standard policy, use that. For example:</p>
+<ul>
+<li><strong>Python</strong>: <a href="https://www.python.org/dev/peps/pep-0008/">PEP8</a></li>
+<li><strong>R</strong>: <a href="https://google.github.io/styleguide/Rguide.xml">Google's guide for R</a>, <a href="https://style.tidyverse.org/">tidyverse style guide</a></li>
+<li><strong>C++</strong>: <a href="https://google.github.io/styleguide/cppguide.html">Google's style guide</a>, <a href="https://developer.mozilla.org/en-US/docs/Mozilla/Developer_guide/Coding_Style">Mozilla's</a></li>
+<li><strong>Julia</strong>: <a href="https://docs.julialang.org/en/v1/manual/style-guide/index.html">Official style guide</a></li>
+</ul>
 
 </div>
 </div>
@@ -576,19 +635,19 @@
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>There are automated tools which enforce coding conventions and check for common mistakes.</p>
-<p>These are called <em>linters</em></p>
-<p>E.g. <code>pip install</code> <a href="https://pypi.python.org/pypi/pep8">pep8</a></p>
+<p>These are called <em>linters</em>:</p>
+<p>E.g. <code>pip install</code> <a href="https://pypi.org/project/pycodestyle/">pycodestyle</a></p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span>%%bash
-pep8 species.py
+pycodestyle species.py
 </pre></div>
 
     </div>
@@ -604,8 +663,8 @@ pep8 species.py
     <div class="prompt"></div>
 
 
-<div class="output_subarea output_stream output_stderr output_text">
-<pre>bash: line 1: pep8: command not found
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>species.py:2:6: E111 indentation is not a multiple of four
 </pre>
 </div>
 </div>
@@ -618,6 +677,77 @@ pep8 species.py
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>It is a good idea to run a linter before every commit, or include it in your CI tests.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>There are other tools that help with linting that are worth mentioning.
+With <code>pylint</code> you can also get other useful information about the quality of your code:</p>
+<p><code>pip install</code> <a href="https://www.pylint.org/">pylint</a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span>%%bash
+pylint species.py
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>************* Module species
+species.py:2:0: W0311: Bad indentation. Found 5 spaces, expected 4 (bad-indentation)
+species.py:1:0: C0111: Missing module docstring (missing-docstring)
+species.py:1:0: C0111: Missing class docstring (missing-docstring)
+species.py:1:0: R0205: Class &#39;Species&#39; inherits from object, can be safely removed from bases in python3 (useless-object-inheritance)
+species.py:1:0: R0903: Too few public methods (0/2) (too-few-public-methods)
+
+-------------------------------------
+Your code has been rated at -15.00/10
+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>and with <a href="https://black.readthedocs.io/">black</a> you can fix all the errors at once.</p>
+<div class="highlight"><pre><span></span>black species.py
+</pre></div>
+<p>These linters can be configured to choose which points to flag and which to ignore.</p>
+<p>Do not blindly believe all these automated tools! Style guides are <strong>guides</strong> not <strong>rules</strong>.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Finally, there are tools like <a href="https://editorconfig.org/">editorconfig</a> to help sharing the conventions used within a project, where each contributor uses different IDEs and tools. There are also bots like <a href="https://pep8speaks.com/">pep8speaks</a> that comments on contributors' pull requests suggesting what to change to follow the conventions for the project.</p>
 
 </div>
 </div>
@@ -673,7 +803,7 @@ pep8 species.py
       <li class="footer__item text-muted small">University College London,&nbsp;Gower Street,&nbsp;London,&nbsp;WC1E 6BT&nbsp;Tel:&nbsp;+44&nbsp;(0)&nbsp;20 7679 2000</li>
     </ul>
     <ul class="list-inline footer__list list-unstyled list-inline--divided">
-      <li class="text-muted small">Copyright © 2018-11-15 00:58:25 +0000 UCL</li>
+      <li class="text-muted small">Copyright © 2018-11-22 10:13:13 +0000 UCL</li>
       <li class="text-muted small"><a href="#">Disclaimer</a>
       </li>
       <li class="text-muted small"><a href="#">Freedom of Information</a>

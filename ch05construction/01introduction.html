@@ -237,9 +237,8 @@
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Software <em>design</em> gets a lot of press (Object orientation, UML, design patterns)</p>
-<p>In this session we're going to look at advice on software <em>construction</em></p>
-<p>This lecture is available as an <a href="http://nbviewer.ipython.org/url/development.rc.ucl.ac.uk/training/engineering/session05/../python/session05.ipynb">Jupyter Notebook</a></p>
+<p>Software <em>design</em> gets a lot of press (Object orientation, UML, design patterns).</p>
+<p>In this session we're going to look at advice on software <em>construction</em>.</p>
 
 </div>
 </div>
@@ -358,10 +357,8 @@ how letters and symbols are used to build code which is readable.</p>
 <ul>
 <li>The beauty of stories</li>
 <li>The beauty of plots</li>
-<li><p>The beauty of characters</p>
-</li>
-<li><p>The beauty of paragraphs</p>
-</li>
+<li>The beauty of characters</li>
+<li>The beauty of paragraphs</li>
 <li>The beauty of sentences</li>
 <li>The beauty of words</li>
 </ul>
@@ -384,10 +381,10 @@ to software construction.</p>
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
 <li>Remember you're programming for humans as well as computers</li>
-<li>A program is the best, most rigourous way to describe an algorithm</li>
+<li>A program is the best, most rigorous way to describe an algorithm</li>
 <li>Code should be pleasant to read, a form of scholarly communication</li>
 </ul>
-<p>Read <a href="http://www.amazon.co.uk/Code-Complete-Practical-Handbook-Construction/dp/0735619670">CodeComplete</a></p>
+<p>Read Steve McConnell's <a href="https://en.wikipedia.org/wiki/Code_Complete">Code Complete</a> [<a href="https://ucl-new-primo.hosted.exlibrisgroup.com/primo-explore/fulldisplay?docid=UCL_LMS_DS21156385750004761&amp;context=L">UCL library</a>].</p>
 
 </div>
 </div>
@@ -403,7 +400,7 @@ to software construction.</p>
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>This notebook is based on a number of fragments of code, with an implicit context.
-We've made a library to set up the context so the examples work:</p>
+We've made a library to set up the context so the examples work.</p>
 
 </div>
 </div>
@@ -420,6 +417,8 @@ class CompMock(Mock):
         return CompMock()
     def __lt__(self,b):
         return True
+    def __abs__(self):
+        return CompMock()
 array=[]
 agt=[]
 ws=[]
@@ -434,8 +433,8 @@ import numpy as np
 average=np.mean
 hawk=CompMock()
 starling=CompMock()
-sInput=&quot;2.0&quot;
-input =&quot;2.0&quot;
+sEntry=&quot;2.0&quot;
+entry =&quot;2.0&quot;
 iOffset=1
 offset =1
 anothervariable=1
@@ -491,19 +490,6 @@ import os
 </div>
 
 </div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
  
 
 
@@ -555,7 +541,7 @@ import os
       <li class="footer__item text-muted small">University College London,&nbsp;Gower Street,&nbsp;London,&nbsp;WC1E 6BT&nbsp;Tel:&nbsp;+44&nbsp;(0)&nbsp;20 7679 2000</li>
     </ul>
     <ul class="list-inline footer__list list-unstyled list-inline--divided">
-      <li class="text-muted small">Copyright © 2018-11-15 00:58:25 +0000 UCL</li>
+      <li class="text-muted small">Copyright © 2018-11-22 10:13:13 +0000 UCL</li>
       <li class="text-muted small"><a href="#">Disclaimer</a>
       </li>
       <li class="text-muted small"><a href="#">Freedom of Information</a>
